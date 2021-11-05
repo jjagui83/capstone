@@ -9,19 +9,19 @@ export default class Copyright extends Component {
         <h4>Other Links</h4>
         <ul>
           <li>
-            <Links href="https://github.com/wonkyDialup">
+            <Links href="">
               Github{" "}
             </Links>
           </li>
           <li>
-            <Links href="https://www.linkedin.com/in/justin-gibbs-215319141/">
+            <Links href="">
               LinkedIn
             </Links>
           </li>{" "}
         </ul>
         <div>
           <p>
-          Copyright © 2021 Strange Wheels Auto Sales. All rights reserved.
+          Copyright © 2021 Lavish Motors Luxury Rentals. All rights reserved.
           </p>
         </div>
       </CopyrightContainer>

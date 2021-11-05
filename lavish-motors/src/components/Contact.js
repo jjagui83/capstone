@@ -10,7 +10,7 @@ export default function Contact() {
             </p>
             <ul>
                 <li>Phone: <b>800.867.5309</b></li>
-                <li>Email: <b>sales@strangeauto.com</b></li>
+                <li>Email: <b>sales@lavishmotors.com</b></li>
             </ul>
         </MainContainer>
     )
