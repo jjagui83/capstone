@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-// import Products from "./components/Products";
+// import Vehicles from "./components/Vehicles";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   // Redirect,
 } from "react-router-dom";
-import Basket from "./components/Basket";
-import Products from "./components/Products";
+import Cart from "./components/Cart";
+import Vehicles from "./components/Vehicles";
 import Contact from "./components/Contact";
 import Homepage from "./components/Homepage";
 import BootstrapNavbar from './components/Navbar';
@@ -28,14 +28,14 @@ class App extends Component {
         <div className="main">
         <div className="App-header">
             <BootstrapNavbar />
-            <Route path="/Basket">
-                <Basket />
+            <Route path="/Cart">
+                <Cart />
                 </Route>
                 <Route path="/Contact"> 
                 <Contact />
               </Route>
-              <Route path="/Products"> 
-                <Products />
+              <Route path="/Vehicles"> 
+                <Vehicles />
               </Route>
               <Route path="/Homepage">
                 <Homepage />
