@@ -89,7 +89,7 @@ app.delete("/delete_car/:car_name", (req, res) => {
   try {
     creds.connect(async () => {
       const data = await creds.query(
-        `DELETE FROM cart WHERE car = ${car_name}`
+        `DELETE FROM cart WHERE car_name = ${car_name}`
       );
       res.send(data);
     });
