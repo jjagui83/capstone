@@ -10,14 +10,14 @@ export default class Copyright extends Component {
         <ul>
           <li>
             <Links href="https://github.com/jjagui83/capstone">
-              Github{"Github"}
+              Github{" "}
             </Links>
           </li>
-          <li>
+          {/* <li>
             <Links href="">
               LinkedIn
             </Links>
-          </li>{" "}
+          </li>{" "} */}
         </ul>
         <div>
           <p>
