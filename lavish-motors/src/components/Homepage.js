@@ -5,7 +5,7 @@ import Logo from "../assets/logo/logo6.png"
 export default function Homepage() {
     return (
         <HomepageStyle>
-            <Image src={Logo} alt="logo3.png" />
+            <Image src={"https://images.unsplash.com/photo-1535448580089-c7f9490c78b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1021&q=80"} alt="logo3.png" />
             <Description className="Description">Welcome to Lavish Auto Exotic Car Rental, the premier exotic car rental service and private jet charter in Atlanta, GA and Houston, TX. With locations at both George Bush Intercontinental (IAH) Airport or Hartsfield–Jackson Atlanta International (ATL) Airport, and delivery options throughout Georgia and Texas, no local luxury car rental business covers as much ground as Lavish.
             </Description>
             <br />
