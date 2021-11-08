@@ -9,8 +9,8 @@ export default class Copyright extends Component {
         <h4>Other Links</h4>
         <ul>
           <li>
-            <Links href="">
-              Github{" "}
+            <Links href="https://github.com/jjagui83/capstone">
+              Github{"Github"}
             </Links>
           </li>
           <li>

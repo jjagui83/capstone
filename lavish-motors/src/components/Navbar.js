@@ -23,8 +23,6 @@ class BootstrapNavbar extends React.Component{
                             <NavbarContainer>
                                 <Navbar className="NavbarContainer" bg="#282C34" variant="dark" expand="lg" sticky="top">
                                     <Image src={Logo} alt="" />
-                                {/* <Navbar.Brand href="#home">Strange Wheels Auto</Navbar.Brand> */}
-                                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
                                             {sidebardata?.map((linkData) => (
