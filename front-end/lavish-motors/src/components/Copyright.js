@@ -9,19 +9,19 @@ export default class Copyright extends Component {
         <h4>Other Links</h4>
         <ul>
           <li>
-            <Links href="">
+            <Links href="https://github.com/jjagui83/capstone">
               Github{" "}
             </Links>
           </li>
-          <li>
+          {/* <li>
             <Links href="">
               LinkedIn
             </Links>
-          </li>{" "}
+          </li>{" "} */}
         </ul>
         <div>
           <p>
-          Copyright © 2021 Lavish Motors Luxury Rentals. All rights reserved.
+          Copyright © 2021 Lavish Motors Exotic Rentals. All rights reserved.
           </p>
         </div>
       </CopyrightContainer>

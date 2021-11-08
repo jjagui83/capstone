@@ -12,6 +12,7 @@ import Vehicles from "./components/Vehicles";
 import Contact from "./components/Contact";
 import Homepage from "./components/Homepage";
 import BootstrapNavbar from './components/Navbar';
+import About from "./components/About";
 import store from "./store";
 import "./App.css";
 import Copyright from "./components/Copyright";
@@ -36,10 +37,16 @@ class App extends Component {
               </Route>
               <Route path="/Vehicles"> 
                 <Vehicles />
+                </Route>
+                <Route path="/About"> 
+                <About />
               </Route>
               <Route path="/Homepage">
                 <Homepage />
-              </Route>
+                </Route>
+                <Route path="/">
+                <Homepage />
+                </Route>
         <img src="\assets\logo\logo6.png" alt="" />
         </div>
         <div className="container">

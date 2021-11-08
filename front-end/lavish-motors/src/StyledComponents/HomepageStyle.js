@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
   `
 
 export const HomepageStyle = styled.div`
@@ -51,5 +51,5 @@ export const Description = styled.p`
   font-weight: 300;
   line-height: 1.5;
   color: #ffff;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   `
