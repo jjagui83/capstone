@@ -39,7 +39,10 @@ class App extends Component {
               </Route>
               <Route path="/Homepage">
                 <Homepage />
-              </Route>
+                </Route>
+                <Route path="/">
+                <Homepage />
+                </Route>
         <img src="\assets\logo\logo6.png" alt="" />
         </div>
         <div className="container">
