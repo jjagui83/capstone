@@ -31,12 +31,12 @@ class BootstrapNavbar extends React.Component{
                                                 <NavbarLinksData linkData={linkData}
                                         />
                                             ))}
-                                            <SearchBox className="form-inline my-2 my-lg-0">
+                                            {/* <SearchBox className="form-inline my-2 my-lg-0">
                                             <Form className="form-inline my-2 my-lg-0" inline>
                                                     <FormControl type="text" placeholder="Search" className="m-4" />
                                                     <Button variant="outline-success" class-="btn">Search</Button>
                                             </Form>  
-                                        </SearchBox>
+                                        </SearchBox> */}
                                         </Nav>
                                          
                                 </Navbar.Collapse>
