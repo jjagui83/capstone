@@ -60,7 +60,8 @@ app.put("/update_cart/:car_name", (req, res) => {
       );
       for (i in data.rows) {
         await creds.query(
-          `INSERT INTO cart(car_name) VALUES ('${data.rows[0].car_name}')`
+          `INSERT INTO cart(car_name, engine, car_seats, transmission, msrp, fuel_economy, drivetrain, horsepower, image)
+          VALUES ('${data.rows[0].car_name}', '${data.rows[0].engine}', '${data.rows[0].car_seats}', '${data.rows[0].transmission}', '${data.rows[0].msrp}', '${data.rows[0].fuel_economy}', '${data.rows[0].horsepower}', '${data.rows[0].image}')`
         );
         res.send(data);
       }
