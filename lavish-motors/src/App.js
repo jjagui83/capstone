@@ -16,6 +16,7 @@ import store from "./store";
 import "./App.css";
 import Copyright from "./components/Copyright";
 import "bootstrap/dist/css/bootstrap.min.css"
+import About from "./components/About";
 
 class App extends Component {
   render() {
@@ -36,6 +37,9 @@ class App extends Component {
               </Route>
               <Route path="/Vehicles"> 
                 <Vehicles />
+              </Route>
+              <Route path="/About"> 
+              <About/>
               </Route>
               <Route path="/Homepage">
                 <Homepage />
