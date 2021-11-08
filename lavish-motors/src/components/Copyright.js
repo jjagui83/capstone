@@ -21,7 +21,7 @@ export default class Copyright extends Component {
         </ul>
         <div>
           <p>
-          Copyright © 2021 Lavish Motors Luxury Rentals. All rights reserved.
+          Copyright © 2021 Lavish Motors Exotic Rentals. All rights reserved.
           </p>
         </div>
       </CopyrightContainer>
