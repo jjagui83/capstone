@@ -7,7 +7,7 @@ import {
   import { Navbar,Nav,Form,FormControl,Button } from 'react-bootstrap'
   import Home from './Homepage';
 import Contact from './Contact';
-import Logo from "../assets/logo/logo6.png"
+import Logo from "../assets/logo/logo2.png"
 import NavbarLinksData from "./NavbarLinksData"
 import { NavbarContainer, SearchBox, Image } from '../StyledComponents/NavbarStyle';
 import { sidebardata } from "./NavbarLinks.js";
