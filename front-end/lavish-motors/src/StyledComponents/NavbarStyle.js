@@ -2,25 +2,22 @@ import styled from "styled-components";
 import { Link } from "react-router-dom"
 
 export const NavbarContainer = styled.div`
-background-color: #282C34;
+background-color: black;
 width: 100vw;
 font-family: 'Raleway', sans-serif;
 display: flex;
 justify-content: center;
 align-items: center;
-padding:10px 0px 20px 0px;
+padding: 25px 0px 15px 25px;
 `;
 
-export const Image = styled.img`
-width: 10%;
-height: 10%;
-`
+export const NavImage = styled.img`
+width: 20%;
+height: 20%;
+`;
 
-export const SearchBox = styled.div`
-display:inline-block;
-flex-direction:row;
-width:500px;
-`
+
+
 
 export const SidebarLink = styled(Link)`
 font-size:20px;
