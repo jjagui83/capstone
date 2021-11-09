@@ -14,7 +14,7 @@ import Homepage from "./components/Homepage";
 import BootstrapNavbar from './components/Navbar';
 import About from "./components/About";
 import store from "./store";
-import "./App.css";
+// import "./App.css";
 import Copyright from "./components/Copyright";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,9 +26,10 @@ class App extends Component {
       <Provider store={store}>
         
         
-        <div className="main">
+        <div className="">
         <div className="App-header">
             <BootstrapNavbar />
+             </div>
             <Route path="/Cart">
                 <Cart />
                 </Route>
@@ -44,23 +45,18 @@ class App extends Component {
               <Route path="/About"> 
               <About/>
               </Route>
-              <Route path="/Homepage">
+              {/* <Route path="/Homepage">
                 <Homepage />
-                </Route>
+                </Route> */}
                 <Route path="/">
                 <Homepage />
                 </Route>
-        <img src="\assets\logo\logo6.png" alt="" />
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3">
-              <Copyright />
-            </div>
-          </div>
-        </div>
+       
+        
+        <Copyright />
         </div>
         </Provider>
+        
         </Switch>
         </Router>
     );
