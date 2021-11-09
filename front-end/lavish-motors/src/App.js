@@ -11,7 +11,7 @@ import Cart from "./components/Cart";
 import Vehicles from "./components/Vehicles";
 import Contact from "./components/Contact";
 import Homepage from "./components/Homepage";
-import BootstrapNavbar from './components/Navbar';
+import BootstrapNavbar from "./components/Navbar";
 import About from "./components/About";
 import store from "./store";
 // import "./App.css";
@@ -23,39 +23,33 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-      <Provider store={store}>
-        
-        
-        <div className="">
-        
-            <BootstrapNavbar />
-             
-            <Route path="/Cart">
+          <Provider store={store}>
+            <div className="">
+              <BootstrapNavbar />
+
+              <Route path="/Cart">
                 <Cart />
-                </Route>
-                <Route path="/Contact"> 
+              </Route>
+              <Route path="/Contact">
                 <Contact />
               </Route>
-              <Route path="/Vehicles"> 
+              <Route path="/Vehicles">
                 <Vehicles />
-                </Route>
-                <Route path="/About"> 
+              </Route>
+              <Route path="/About">
                 <About />
               </Route>
               {/* <Route path="/Homepage">
                 <Homepage />
                 </Route> */}
-                <Route path="/">
+              <Route path="/">
                 <Homepage />
-                </Route>
-       
-        
-        <Copyright />
-        </div>
-        </Provider>
-        
+              </Route>
+              <Copyright />
+            </div>
+          </Provider>
         </Switch>
-        </Router>
+      </Router>
     );
   }
 }

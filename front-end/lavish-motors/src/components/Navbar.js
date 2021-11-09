@@ -18,7 +18,6 @@ class BootstrapNavbar extends React.Component{
         return(
             <div>
                 <div className="row">
-                    <div className="col-md-12">
                         <Router>
                             <NavbarContainer>
                                 <Navbar className="NavbarContainer" bg="#282C34" variant="dark" expand="lg" sticky="top">
@@ -41,18 +40,9 @@ class BootstrapNavbar extends React.Component{
                             </Navbar>
                             </NavbarContainer>
                             <br />
-                            <Switch>
-                                {/* <Route exact path="/Homepage">
-                                    <Home />
-                                </Route> */}
-                                {/* <Route path="/Contact">
-                                    <Contact />
-                                </Route> */}
-                            </Switch>
                         </Router>
                     </div>
                 </div>
-            </div>
         )  
     }
 }
