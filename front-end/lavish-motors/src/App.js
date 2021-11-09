@@ -27,19 +27,19 @@ class App extends Component {
             <div className="">
               <BootstrapNavbar />
 
-              <Route path="/Cart">
-                <Cart />
+              <Route exact path="/Cart">
+                <Cart/>
               </Route>
-              <Route path="/Contact">
+              <Route exact path="/Contact">
                 <Contact />
               </Route>
-              <Route path="/Vehicles">
+              <Route exact path="/Vehicles">
                 <Vehicles />
               </Route>
-              <Route path="/About">
+              <Route exact path="/About">
                 <About />
               </Route>
-                <Route path="/">
+                <Route exact path="/Homepage">
                 <Homepage />
               </Route>
               <Copyright />
