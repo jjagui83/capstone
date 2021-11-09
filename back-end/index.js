@@ -4,8 +4,7 @@ const app = express();
 
 const creds = require("./elephant");
 
-// current port on elephantSQL
-// might have to change to 3000
+// current port on elephantSQL(saved as capstone)
 const PORT = 3001;
 
 app.use(express.json());

@@ -1,13 +1,9 @@
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-  } from "react-router-dom";
+
+import { BrowserRouter as Router, } from "react-router-dom";
   import { Navbar,Nav,Form,FormControl,Button } from 'react-bootstrap'
-  import Home from './Homepage';
-import Contact from './Contact';
-import Logo from "../assets/logo/LM.jpg"
+
+import Logo from "../assets/logo/logo2.png"
 import NavbarLinksData from "./NavbarLinksData"
 import { NavbarContainer, NavImage } from '../StyledComponents/NavbarStyle';
 import { sidebardata } from "./NavbarLinks.js";
