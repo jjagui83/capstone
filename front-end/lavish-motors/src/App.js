@@ -27,9 +27,9 @@ class App extends Component {
         
         
         <div className="">
-        <div className="App-header">
+        
             <BootstrapNavbar />
-             </div>
+             
             <Route path="/Cart">
                 <Cart />
                 </Route>
@@ -41,9 +41,6 @@ class App extends Component {
                 </Route>
                 <Route path="/About"> 
                 <About />
-              </Route>
-              <Route path="/About"> 
-              <About/>
               </Route>
               {/* <Route path="/Homepage">
                 <Homepage />
