@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { BrowserRouter as Router, } from "react-router-dom";
   import { Navbar,Nav,Form,FormControl,Button } from 'react-bootstrap'
 
@@ -36,7 +37,6 @@ class BootstrapNavbar extends React.Component{
                             </Navbar>
                             </NavbarContainer>
                             <br />
-               
                         </Router>
                     </div>
                 </div>

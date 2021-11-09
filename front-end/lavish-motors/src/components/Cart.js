@@ -9,7 +9,7 @@ class Basket extends Component {
     return (
       <MainContainer className="alert alert-info">
         {cartItems.length === 0 ? (
-          "Basket is empty"
+          "You currently don't have any vehicle selected to rent."
         ) : (
           <div>
             You have {cartItems.length} vehicles ready to begin the rental process. <hr />
