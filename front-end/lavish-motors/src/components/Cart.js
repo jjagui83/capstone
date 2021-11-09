@@ -20,7 +20,7 @@ class Basket extends Component {
             <ul style={{ marginLeft: -25 }}>
               {cartItems.map((item) => (
                 <li key={item.id}>
-                  <b><img src={item.image}></img></b>
+                  <b><img src={item.image} alt=""></img></b>
                   <b>{item.make} </b>
                   <b>{item.model}</b>
                   <Button
