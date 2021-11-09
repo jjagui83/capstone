@@ -7,9 +7,9 @@ import {
   import { Navbar,Nav,Form,FormControl,Button } from 'react-bootstrap'
   import Home from './Homepage';
 import Contact from './Contact';
-import Logo from "../assets/logo/logo2.png"
+import Logo from "../assets/logo/LM.jpg"
 import NavbarLinksData from "./NavbarLinksData"
-import { NavbarContainer, SearchBox, NavImage } from '../StyledComponents/NavbarStyle';
+import { NavbarContainer, NavImage } from '../StyledComponents/NavbarStyle';
 import { sidebardata } from "./NavbarLinks.js";
 
 class BootstrapNavbar extends React.Component{

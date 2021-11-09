@@ -13,12 +13,8 @@ export default class Copyright extends Component {
               Github{" "}
             </Links>
           </li>
-          {/* <li>
-            <Links href="">
-              LinkedIn
-            </Links>
-          </li>{" "} */}
-        </ul>
+          </ul>
+          
         <div>
           <p>
           Copyright © 2021 Lavish Motors Exotic Rentals. All rights reserved.
