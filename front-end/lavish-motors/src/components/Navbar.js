@@ -42,12 +42,12 @@ class BootstrapNavbar extends React.Component{
                             </NavbarContainer>
                             <br />
                             <Switch>
-                                <Route exact path="/Homepage">
+                                {/* <Route exact path="/Homepage">
                                     <Home />
                                 </Route>
                                 <Route path="/Contact">
                                     <Contact />
-                                </Route>
+                                </Route> */}
                             </Switch>
                         </Router>
                     </div>
