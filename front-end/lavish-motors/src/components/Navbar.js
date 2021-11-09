@@ -2,11 +2,11 @@ import React from 'react'
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
+    // Route,
   } from "react-router-dom";
   import { Navbar,Nav,Form,FormControl,Button } from 'react-bootstrap'
-  import Home from './Homepage';
-import Contact from './Contact';
+//   import Home from './Homepage';
+// import Contact from './Contact';
 import Logo from "../assets/logo/logo2.png"
 import NavbarLinksData from "./NavbarLinksData"
 import { NavbarContainer, SearchBox, Image } from '../StyledComponents/NavbarStyle';
@@ -42,12 +42,12 @@ class BootstrapNavbar extends React.Component{
                             </NavbarContainer>
                             <br />
                             <Switch>
-                                <Route exact path="/Homepage">
+                                {/* <Route exact path="/Homepage">
                                     <Home />
                                 </Route>
                                 <Route path="/Contact">
                                     <Contact />
-                                </Route>
+                                </Route> */}
                             </Switch>
                         </Router>
                     </div>
