@@ -12,7 +12,7 @@ class Basket extends Component {
           "Basket is empty"
         ) : (
           <div>
-            You have {cartItems.length} vehicles ready to begin the financing process. <hr />
+            You have {cartItems.length} vehicles ready to begin the rental process. <hr />
           </div>
         )}
         {cartItems.length > 0 && (
