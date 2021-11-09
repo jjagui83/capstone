@@ -9,7 +9,7 @@ import {
 import Contact from './Contact';
 import Logo from "../assets/logo/logo2.png"
 import NavbarLinksData from "./NavbarLinksData"
-import { NavbarContainer, SearchBox, Image } from '../StyledComponents/NavbarStyle';
+import { NavbarContainer, SearchBox, NavImage } from '../StyledComponents/NavbarStyle';
 import { sidebardata } from "./NavbarLinks.js";
 
 class BootstrapNavbar extends React.Component{
@@ -22,7 +22,7 @@ class BootstrapNavbar extends React.Component{
                         <Router>
                             <NavbarContainer>
                                 <Navbar className="NavbarContainer" bg="#282C34" variant="dark" expand="lg" sticky="top">
-                                    <Image src={Logo} alt="" />
+                                    <NavImage src={Logo} alt="" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
                                             {sidebardata?.map((linkData) => (

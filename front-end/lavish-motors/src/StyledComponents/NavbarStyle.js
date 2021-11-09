@@ -11,7 +11,7 @@ align-items: center;
 padding:10px 0px 20px 0px;
 `;
 
-export const Image = styled.img`
+export const NavImage = styled.img`
 width: 10%;
 height: 10%;
 `
