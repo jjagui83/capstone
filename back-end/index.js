@@ -36,13 +36,57 @@ app.use(cors());
 //     };
 
 // });
+app.post("/create_car", (req, res) => {
+  // cars table schema
+  // id SERIAL PRIMARY KEY,
+  // car_name VARCHAR NOT NULL,
+  // engine VARCHAR NOT NULL,
+  // transmission VARCHAR NOT NULL,
+  // msrp VARCHAR NOT NULL,
+  // fuel_economy VARCHAR NOT NULL,
+  // drivetrain VARCHAR NOT NULL,
+  // horsepower VARCHAR NOT NULL,
+  // image VARCHAR NOT NULL,
+  // car_seats VARCHAR NOT NULL,
+
+  try {
+    creds.connect(() => {
+      creds.query(
+        `INSERT INTO cars(
+        car_name,
+        engine,
+        transmission,
+        msrp,
+        fuel_economy,
+        drivetrain,
+        horsepower,
+        image,
+        car_seats) VALUES()`,
+        function (err, result) {
+          if (err) {
+            console.log(err);
+            res.status(401).send(err);
+          }
+          res.send(result.rows);
+        }
+      );
+    });
+  } catch (err) {
+    res.send(err);
+  }
+});
 
 // cars table
 app.get("/read_cars", (req, res) => {
   try {
-    creds.connect(async () => {
-      const data = await creds.query(`SELECT * FROM cars`);
-      res.send(data);
+    creds.connect(() => {
+      creds.query(`SELECT * FROM cars`, function (err, result) {
+        if (err) {
+          console.log(err);
+          res.status(401).send(err);
+        }
+        res.send(result.rows);
+      });
     });
   } catch (err) {
     res.send(err);
