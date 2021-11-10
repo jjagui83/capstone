@@ -1,5 +1,5 @@
 export const sidebardata = [
-    { name: "Home", path: "/Homepage" },
+    { name: "Home", path: "/" },
     { name: "About", path: "/About"},
     { name: "Contact", path: "/Contact" },
     { name: "Vehicles", path: "/Vehicles" },

@@ -17,6 +17,7 @@ import store from "./store";
 // import "./App.css";
 import Copyright from "./components/Copyright";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Register from "./components/Register";
 
 class App extends Component {
   render() {
@@ -26,7 +27,9 @@ class App extends Component {
           <Provider store={store}>
             <div className="">
               <BootstrapNavbar />
-
+              <Route exact path="/">
+                <Register />
+              </Route>
               <Route path="/Cart">
                 <Cart />
               </Route>
@@ -39,7 +42,7 @@ class App extends Component {
               <Route path="/About">
                 <About />
               </Route>
-                <Route path="/">
+                <Route exact path="/">
                 <Homepage />
               </Route>
               <Copyright />
