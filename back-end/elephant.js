@@ -1,6 +1,7 @@
 require("dotenv").config();
-const token = process.env.elephant;
-const Pool = require("pg").Client;
-const creds = new Pool(token);
+const token =
+  "postgres://donffadg:R98AfsPlmzFCp0nfsayN3VLzkX_JxZf-@fanny.db.elephantsql.com/donffadg";
+const pg = require("pg");
+const creds = new pg.Client(token);
 
 module.exports = creds;

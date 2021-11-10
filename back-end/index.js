@@ -36,13 +36,55 @@ app.use(cors());
 //     };
 
 // });
+app.post("/create_car", (req, res) => {
+  try {
+    creds.connect(() => {
+      creds.query(
+        `INSERT INTO cars(
+        car_name,
+        engine,
+        transmission,
+        msrp,
+        fuel_economy,
+        drivetrain,
+        horsepower,
+        image,
+        car_seats) 
+        VALUES(
+          '${data.rows[0].car_name}',
+          '${data.rows[0].engine}',
+          '${data.rows[0].car_seats}',
+          '${data.rows[0].transmission}',
+          '${data.rows[0].msrp}',
+          '${data.rows[0].fuel_economy}',
+          '${data.rows[0].drivetrain}',
+          '${data.rows[0].horsepower}',
+          '${data.rows[0].image}')`,
+        function (err, result) {
+          if (err) {
+            console.log(err);
+            res.status(401).send(err);
+          }
+          res.send(result.rows);
+        }
+      );
+    });
+  } catch (err) {
+    res.send(err);
+  }
+});
 
 // cars table
 app.get("/read_cars", (req, res) => {
   try {
-    creds.connect(async () => {
-      const data = await creds.query(`SELECT * FROM cars`);
-      res.send(data);
+    creds.connect(() => {
+      creds.query(`SELECT * FROM cars`, function (err, result) {
+        if (err) {
+          console.log(err);
+          res.status(401).send(err);
+        }
+        res.send(result.rows);
+      });
     });
   } catch (err) {
     res.send(err);
@@ -97,3 +139,31 @@ app.delete("/delete_car/:car_name", (req, res) => {
   }
 });
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
+
+// cars table schema
+// id SERIAL PRIMARY KEY,
+// car_name VARCHAR NOT NULL,
+// engine VARCHAR NOT NULL,
+// transmission VARCHAR NOT NULL,
+// msrp VARCHAR NOT NULL,
+// fuel_economy VARCHAR NOT NULL,
+// drivetrain VARCHAR NOT NULL,
+// horsepower VARCHAR NOT NULL,
+// image VARCHAR NOT NULL,
+// car_seats VARCHAR NOT NULL
+
+// cart table schema
+// id SERIAL PRIMARY KEY,
+// car_name VARCHAR NOT NULL FOREIGN KEY car_name FROM cars,
+// first_name VARCHAR NOT NULL FOREIGN KEY first_name FROM login,
+// last_name VARCHAR NOT NULL FOREIGN KEY last_name FROM login,
+// pickup_date DATE NOT NULL,
+// return_date DATE NOT NULL,
+// price INTEGER NOT NULL
+
+// login table schema
+// id SERIAL PRIMARY KEY,
+// first_name VARCHAR NOT NULL,
+// last_name VARCHAR NOT NULL,
+// email VARCHAR NOT NULL,
+// password VARCHAR NOT NULL
