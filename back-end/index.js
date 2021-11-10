@@ -4,7 +4,6 @@ const app = express();
 
 const creds = require("./elephant");
 
-// current port on elephantSQL(saved as capstone)
 const PORT = 3001;
 
 app.use(express.json());
@@ -39,33 +38,41 @@ app.use(cors());
 app.post("/create_car", (req, res) => {
   try {
     creds.connect(() => {
+      const {
+        car_name,
+        car_model,
+        year,
+        color,
+        day_price,
+        week_price,
+        car_seats,
+        image,
+      } = req.body;
       creds.query(
         `INSERT INTO cars(
-        car_name,
-        engine,
-        transmission,
-        msrp,
-        fuel_economy,
-        drivetrain,
-        horsepower,
-        image,
-        car_seats) 
-        VALUES(
-          '${data.rows[0].car_name}',
-          '${data.rows[0].engine}',
-          '${data.rows[0].car_seats}',
-          '${data.rows[0].transmission}',
-          '${data.rows[0].msrp}',
-          '${data.rows[0].fuel_economy}',
-          '${data.rows[0].drivetrain}',
-          '${data.rows[0].horsepower}',
-          '${data.rows[0].image}')`,
+      car_name,
+      car_model,
+      year,
+      color,
+      day_price,
+      week_price,
+      car_seats,
+      image)
+      VALUES(
+        '${car_name}',
+        '${car_model}',
+        '${year}',
+        '${color}',
+        '${day_price}',
+        '${week_price}',
+        '${car_seats}',
+        '${image}')`,
         function (err, result) {
           if (err) {
             console.log(err);
             res.status(401).send(err);
           }
-          res.send(result.rows);
+          res.send(result);
         }
       );
     });
@@ -145,9 +152,9 @@ app.listen(PORT, console.log(`Listening on port ${PORT}`));
 // car_name VARCHAR NOT NULL,
 // engine VARCHAR NOT NULL,
 // transmission VARCHAR NOT NULL,
-// msrp VARCHAR NOT NULL,
-// fuel_economy VARCHAR NOT NULL,
-// drivetrain VARCHAR NOT NULL,
+// msrp VARCHAR NULL,
+// fuel_economy VARCHAR NULL,
+// drivetrain VARCHAR NULL,
 // horsepower VARCHAR NOT NULL,
 // image VARCHAR NOT NULL,
 // car_seats VARCHAR NOT NULL
@@ -159,7 +166,8 @@ app.listen(PORT, console.log(`Listening on port ${PORT}`));
 // last_name VARCHAR NOT NULL FOREIGN KEY last_name FROM login,
 // pickup_date DATE NOT NULL,
 // return_date DATE NOT NULL,
-// price INTEGER NOT NULL
+// day_price INTEGER NOT NULL,
+// total_price INTEGER NOT NULL
 
 // login table schema
 // id SERIAL PRIMARY KEY,
