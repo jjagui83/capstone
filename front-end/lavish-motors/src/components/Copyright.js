@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import {CopyrightContainer, Links} from "../StyledComponents/CopyrightStyle"
 
 
-export default class Copyright extends Component {
-  render() {
+
+
+export default function Copyright () {
+  
     return (
       <CopyrightContainer>
         <h4>Other Links</h4>
@@ -23,4 +25,3 @@ export default class Copyright extends Component {
       </CopyrightContainer>
     );
   }
-}

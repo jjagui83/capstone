@@ -19,8 +19,8 @@ import Copyright from "./components/Copyright";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Register from "./components/Register";
 
-class App extends Component {
-  render() {
+function App() {
+  
     return (
       <Router>
         <Switch>
@@ -50,6 +50,6 @@ class App extends Component {
       </Router>
     );
   }
-}
+
 
 export default App;
