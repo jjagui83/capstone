@@ -11,7 +11,7 @@ export default function Homepage() {
 
             <Register/>
             <HomeContainer>
-                <HomeH1> Some of our Inventory</HomeH1>
+                <HomeH1> Our Inventory</HomeH1>
             </HomeContainer>
 
             <HomeContainer>
