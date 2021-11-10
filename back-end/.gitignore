@@ -1,3 +1,5 @@
 .env
 node_modules
 .DS_Store
+const token =
+  "postgres://lftinrsd:8xWOylw4vIeJwOvr034JxmQwBD-V-g5A@fanny.db.elephantsql.com/lftinrsd"
