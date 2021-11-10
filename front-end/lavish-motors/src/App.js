@@ -11,55 +11,43 @@ import Cart from "./components/Cart";
 import Vehicles from "./components/Vehicles";
 import Contact from "./components/Contact";
 import Homepage from "./components/Homepage";
-import BootstrapNavbar from './components/Navbar';
+import BootstrapNavbar from "./components/Navbar";
 import About from "./components/About";
 import store from "./store";
-import "./App.css";
+// import "./App.css";
 import Copyright from "./components/Copyright";
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import Register from "./components/Register";
 
 class App extends Component {
   render() {
     return (
       <Router>
         <Switch>
-      <Provider store={store}>
-        
-        
-        <div className="main">
-        <div className="App-header">
-            <BootstrapNavbar />
-            <Route path="/Cart">
-                <Cart />
-                </Route>
-                <Route path="/Contact"> 
+          <Provider store={store}>
+            <div className="">
+              <BootstrapNavbar />
+
+              <Route exact path="/Cart">
+                <Cart/>
+              </Route>
+              <Route exact path="/Contact">
                 <Contact />
               </Route>
-              <Route path="/Vehicles"> 
+              <Route exact path="/Vehicles">
                 <Vehicles />
-                </Route>
-                <Route path="/About"> 
+              </Route>
+              <Route exact path="/About">
                 <About />
               </Route>
-              <Route path="/Homepage">
+                <Route exact path="/">
                 <Homepage />
-                </Route>
-                <Route path="/">
-                <Homepage />
-                </Route>
-        <img src="\assets\logo\logo6.png" alt="" />
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3">
+              </Route>
               <Copyright />
             </div>
-          </div>
-        </div>
-        </div>
-        </Provider>
+          </Provider>
         </Switch>
-        </Router>
+      </Router>
     );
   }
 }

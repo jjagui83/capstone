@@ -9,10 +9,10 @@ class Basket extends Component {
     return (
       <MainContainer className="alert alert-info">
         {cartItems.length === 0 ? (
-          "Basket is empty"
+          "You currently don't have any vehicle selected to rent."
         ) : (
           <div>
-            You have {cartItems.length} vehicles ready to begin the financing process. <hr />
+            You have {cartItems.length} vehicles ready to begin the rental process. <hr />
           </div>
         )}
         {cartItems.length > 0 && (
@@ -20,6 +20,7 @@ class Basket extends Component {
             <ul style={{ marginLeft: -25 }}>
               {cartItems.map((item) => (
                 <li key={item.id}>
+                  <b><img src={item.image} alt=""></img></b>
                   <b>{item.make} </b>
                   <b>{item.model}</b>
                   <Button

@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import {VehicleContainer} from "../StyledComponents/ProductStyle"
-import "../App.css"
+import "../App.css";
+
 class Products extends Component {
   componentDidMount() {
     this.props.fetchProducts();

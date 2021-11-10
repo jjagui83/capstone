@@ -1,17 +1,28 @@
 import React from 'react'
-import { Description, HomepageStyle, Image } from '../StyledComponents/HomepageStyle'
+import { Description, HomeContainer, HomeH1, Image } from '../StyledComponents/HomepageStyle'
 import Logo from "../assets/logo/logo6.png"
+import Banner from './Banner'
+import Register from './Register'
 
 export default function Homepage() {
     return (
-        <HomepageStyle>
-            <Image src={Logo} alt="logo3.png" />
-            <Description className="Description">Welcome to Lavish Auto Exotic Car Rental, the premier exotic car rental service and private jet charter in Atlanta, GA and Houston, TX. With locations at both George Bush Intercontinental (IAH) Airport or Hartsfield–Jackson Atlanta International (ATL) Airport, and delivery options throughout Georgia and Texas, no local luxury car rental business covers as much ground as Lavish.
-            </Description>
-            <br />
-            <Description className="Description">Browse our selection of elite luxury cars and SUVs from manufacturers like Ferrari, Lamborghini, Rolls Royce, Aston Martin, Bentley, Mercedes, Cadillac, Maserati, Range Rover, BMW and Porsche.</Description>
-            <br />
-            <Description className="Description">We also provide full-compliment wedding and chauffeur services, as well as in-demand cars for film and photo shoots. Through our private jet charter services, you can also fly Lavish to hundreds of airports worldwide in the same five-star comfort we offer on the road.</Description>
-        </HomepageStyle>
+        <HomeContainer>
+            <Banner/>
+
+            <Register/>
+            <HomeContainer>
+                <HomeH1> Our Inventory</HomeH1>
+            </HomeContainer>
+
+            <HomeContainer>
+            <img src="https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL3ZlaGljbGUtcGhvdG9zLXB1Ymxpc2hlZC52YXV0by5jb20vZGYvN2YvZTAvOWEtZDEzZi00M2ZiLWJhZTctNjFhMjk2NmFkMTdjL2ltYWdlLTEuanBn&hmac=ArUsHMh02ZY" alt="" />
+            <img src="https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL3ZlaGljbGUtcGhvdG9zLXB1Ymxpc2hlZC52YXV0by5jb20vZGYvN2YvZTAvOWEtZDEzZi00M2ZiLWJhZTctNjFhMjk2NmFkMTdjL2ltYWdlLTEuanBn&hmac=ArUsHMh02ZY" alt="" />
+            <img src="https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL3ZlaGljbGUtcGhvdG9zLXB1Ymxpc2hlZC52YXV0by5jb20vZGYvN2YvZTAvOWEtZDEzZi00M2ZiLWJhZTctNjFhMjk2NmFkMTdjL2ltYWdlLTEuanBn&hmac=ArUsHMh02ZY" alt="" />
+            <img src="https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL3ZlaGljbGUtcGhvdG9zLXB1Ymxpc2hlZC52YXV0by5jb20vZGYvN2YvZTAvOWEtZDEzZi00M2ZiLWJhZTctNjFhMjk2NmFkMTdjL2ltYWdlLTEuanBn&hmac=ArUsHMh02ZY" alt="" />
+            <img src="https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL3ZlaGljbGUtcGhvdG9zLXB1Ymxpc2hlZC52YXV0by5jb20vZGYvN2YvZTAvOWEtZDEzZi00M2ZiLWJhZTctNjFhMjk2NmFkMTdjL2ltYWdlLTEuanBn&hmac=ArUsHMh02ZY" alt="" />
+            <img src="https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL3ZlaGljbGUtcGhvdG9zLXB1Ymxpc2hlZC52YXV0by5jb20vZGYvN2YvZTAvOWEtZDEzZi00M2ZiLWJhZTctNjFhMjk2NmFkMTdjL2ltYWdlLTEuanBn&hmac=ArUsHMh02ZY" alt="" />
+            </HomeContainer>
+
+        </HomeContainer>
     )
 }

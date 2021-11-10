@@ -16,7 +16,7 @@
   } */
   
   .App-header {
-    background-color: #282c34;
+    background-color: #fff;
     min-height: 40vh;
     width: 100%;
     display: flex;
@@ -53,9 +53,9 @@
   }
 
   .vehicles {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr,1fr,1fr));
+      display: grid;
+    
+      grid-template-columns: 1fr,1fr,1fr;
   }
 
   .Description {
