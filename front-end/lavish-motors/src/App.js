@@ -27,17 +27,9 @@ class App extends Component {
           <Provider store={store}>
             <div className="">
               <BootstrapNavbar />
-<<<<<<< HEAD
-              <Route exact path="/">
-                <Register />
-              </Route>
-              <Route path="/Cart">
-                <Cart />
-=======
 
               <Route exact path="/Cart">
                 <Cart/>
->>>>>>> 5fd1d562ac9ec1d22e0ec0a7aa9bd5c2d1d3afb0
               </Route>
               <Route exact path="/Contact">
                 <Contact />
@@ -48,11 +40,7 @@ class App extends Component {
               <Route exact path="/About">
                 <About />
               </Route>
-<<<<<<< HEAD
                 <Route exact path="/">
-=======
-                <Route exact path="/Homepage">
->>>>>>> 5fd1d562ac9ec1d22e0ec0a7aa9bd5c2d1d3afb0
                 <Homepage />
               </Route>
               <Copyright />
