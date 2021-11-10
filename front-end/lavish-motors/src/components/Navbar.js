@@ -8,9 +8,9 @@ import NavbarLinksData from "./NavbarLinksData"
 import { NavbarContainer, NavImage } from '../StyledComponents/NavbarStyle';
 import { sidebardata } from "./NavbarLinks.js";
 
-class BootstrapNavbar extends React.Component{
+function BootstrapNavbar() {
 
-    render(){
+    
         return(
             <div>
                 <div className="row">
@@ -41,6 +41,6 @@ class BootstrapNavbar extends React.Component{
                 </div>
         )  
     }
-}
+
 
 export default BootstrapNavbar;
