@@ -19,6 +19,19 @@ function Register() {
               
             </form> 
             <input type="submit" />
+            {/* {props?.register ? (
+            <button
+              onClick={(e) => register(e)}
+              type="submit"
+              value=""
+            >
+              Register
+            </button>
+          ) : (
+            <button onClick={(e) => login(e)} type="submit" value="">
+              Log In
+            </button>
+          )} */}
         </div>
     )
 }
