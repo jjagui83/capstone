@@ -18,7 +18,7 @@ function BootstrapNavbar() {
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
               <Nav.Link as={Link} to={"/Register"}>Register</Nav.Link>
               <Nav.Link as={Link} to={"/About"}>About</Nav.Link>
-              <Nav.Link as={Link} to={"/Contacts"}>Contacts</Nav.Link>
+              <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
               <Nav.Link as={Link} to={"/Vehicles"}>Vehicles</Nav.Link>
             </Nav>
             <Nav>
