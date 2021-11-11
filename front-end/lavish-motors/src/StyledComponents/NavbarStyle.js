@@ -12,8 +12,8 @@ padding: 25px 0px 15px 25px;
 `;
 
 export const NavImage = styled.img`
-width: 20%;
-height: 5%;
+width: 100px;
+height: 55px;
 `;
 
 

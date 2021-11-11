@@ -9,32 +9,57 @@ const PORT = 3001;
 app.use(express.json());
 app.use(cors());
 
-// user table
-// sign in or user account page?
-// app.post("/create_user", (req,res) => {
-//     creds.connect(async() => {
-//     try{
-//         const data = await creds.query(`INSERT INTO users(user_name, password) VALUES ('${req.body.user_name}','${req.body.password}')`)
-//         res.send(`Inserted New user with ${req.body.user_name} ${req.body.password}`);
-//         // console.log(res.send);
-//     }catch(err){
-//         res.send(err);
-//     };
-// });
+// user_login table WORKS
+// NEED BCRYPT
+app.post("/create_user", (req, res) => {
+  try {
+    creds.connect(() => {
+      const { first_name, last_name, email, password } = req.body;
+      creds.query(
+        `INSERT INTO user_login(
+           first_name,
+           last_name,
+           email,
+           password) 
+           VALUES(
+             '${first_name}',
+             '${last_name}',
+             '${email}',
+             '${password}')`,
+        function (err, result) {
+          if (err) {
+            console.log(err);
+            res.status(401).send(err);
+          }
+          res.send(result);
+        }
+      );
+    });
+  } catch (err) {
+    res.send(err);
+  }
+});
 
-// });
-
-// app.get("/read_user", (req,res) => {
-//     try{
-//         creds.connect(async() => {
-//         const data = await creds.query(`SELECT * FROM users`);
-//         res.send (data);
-//             });
-//     }catch(err){
-// res.send(err);
-//     };
-
-// });
+// AUTH user_login?
+app.get("/read_user_login", (req, res) => {
+  const user_login = req.params.user_login;
+  try {
+    creds.connect(() => {
+      creds.query(
+        `SELECT FROM user_login WHERE user_login = ${user_login}`,
+        function (err, result) {
+          if (err) {
+            console.log(err);
+            res.status(401).send(err);
+          }
+          res.send(result);
+        }
+      );
+    });
+  } catch (err) {
+    res.send(err);
+  }
+});
 
 // manually put car in cars table WORKS
 app.post("/create_car", (req, res) => {
