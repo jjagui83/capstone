@@ -8,7 +8,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 export default function Copyright () {
   
     return (
-      <div>
+      <CopyrightContainer>
         {/* <h4>Other Links</h4>
         <ul>
           <li>
@@ -34,7 +34,7 @@ export default function Copyright () {
     </Nav>
     </Container>
   </Navbar>
-      </div>
+      </CopyrightContainer>
 
     );
   }
