@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const NavbarContainer = styled.div`
 background-color: black;
-width: 100vw;
+width: 100%;
 font-family: 'Raleway', sans-serif;
 display: flex;
 justify-content: center;

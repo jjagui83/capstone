@@ -1,46 +1,35 @@
-import React from 'react'
+import React from "react";
 
-import { BrowserRouter as Router, } from "react-router-dom";
-  import { Navbar,Nav } from 'react-bootstrap'
-
-import Logo from "../assets/logo/logo2.png"
-import NavbarLinksData from "./NavbarLinksData"
-import { NavbarContainer, NavImage } from '../StyledComponents/NavbarStyle';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo/LM.jpg";
+import NavbarLinksData from "./NavbarLinksData";
+import { NavbarContainer, NavImage } from "../StyledComponents/NavbarStyle";
 import { sidebardata } from "./NavbarLinks.js";
 
 function BootstrapNavbar() {
-
-    
-        return(
-            <div>
-                <div className="row">
-                       
-                            <NavbarContainer>
-                                <Navbar className="NavbarContainer" bg="#282C34" variant="dark" expand="lg" sticky="top">
-                                    <NavImage src={Logo} alt="" />
-                                <Navbar.Collapse id="basic-navbar-nav">
-                                    <Nav className="mr-auto">
-                                            {sidebardata?.map((linkData) => (
-                                                <NavbarLinksData linkData={linkData}
-                                        />
-                                            ))}
-                                            {/* <SearchBox className="form-inline my-2 my-lg-0">
-                                            <Form className="form-inline my-2 my-lg-0" inline>
-                                                    <FormControl type="text" placeholder="Search" className="m-4" />
-                                                    <Button variant="outline-success" class-="btn">Search</Button>
-                                            </Form>  
-                                        </SearchBox> */}
-                                        </Nav>
-                                         
-                                </Navbar.Collapse>
-                            </Navbar>
-                            </NavbarContainer>
-                            <br />
-                       
-                    </div>
-                </div>
-        )  
-    }
-
+  return (
+    <div>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Placeholder</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+              <Nav.Link as={Link} to={"/About"}>About</Nav.Link>
+              <Nav.Link as={Link} to={"/Contacts"}>Contacts</Nav.Link>
+              <Nav.Link as={Link} to={"/Vehicles"}>Vehicles</Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link as={Link} to={"/Cart"}>Cart</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
+  );
+}
 
 export default BootstrapNavbar;
