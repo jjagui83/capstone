@@ -7,7 +7,15 @@ export const Image = styled.img`
   `
 
 export const HomeContainer = styled.div`
+width: 100%;
+`;
 
+export const LogInContainer =styled.div`
+text-align: center;
+`;
+
+export const GridColContainer = styled.div`
+margin-bottom: 15px;
 `;
 
 export const HomeH1 = styled.h1`

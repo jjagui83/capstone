@@ -35,6 +35,8 @@ app.use(cors());
 //     };
 
 // });
+
+// manually put car in cars table WORKS
 app.post("/create_car", (req, res) => {
   try {
     creds.connect(() => {
@@ -81,8 +83,9 @@ app.post("/create_car", (req, res) => {
   }
 });
 
-// cars table
+// cars table reads ALL cars WORKS
 app.get("/read_cars", (req, res) => {
+  const id = req.params.id;
   try {
     creds.connect(() => {
       creds.query(`SELECT * FROM cars`, function (err, result) {
@@ -90,7 +93,7 @@ app.get("/read_cars", (req, res) => {
           console.log(err);
           res.status(401).send(err);
         }
-        res.send(result.rows);
+        res.send(result);
       });
     });
   } catch (err) {
@@ -146,18 +149,6 @@ app.delete("/delete_car/:car_name", (req, res) => {
   }
 });
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
-
-// cars table schema
-// id SERIAL PRIMARY KEY,
-// car_name VARCHAR NOT NULL,
-// engine VARCHAR NOT NULL,
-// transmission VARCHAR NOT NULL,
-// msrp VARCHAR NULL,
-// fuel_economy VARCHAR NULL,
-// drivetrain VARCHAR NULL,
-// horsepower VARCHAR NOT NULL,
-// image VARCHAR NOT NULL,
-// car_seats VARCHAR NOT NULL
 
 // cart table schema
 // id SERIAL PRIMARY KEY,
