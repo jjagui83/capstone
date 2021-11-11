@@ -11,14 +11,14 @@ function BootstrapNavbar() {
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home"><img src={Logo}></img></Navbar.Brand>
+          <Navbar.Brand href="#home"><NavImage src={Logo}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
               <Nav.Link as={Link} to={"/Register"}>Register</Nav.Link>
               <Nav.Link as={Link} to={"/About"}>About</Nav.Link>
-              <Nav.Link as={Link} to={"/Contacts"}>Contacts</Nav.Link>
+              <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
               <Nav.Link as={Link} to={"/Vehicles"}>Vehicles</Nav.Link>
             </Nav>
             <Nav>
