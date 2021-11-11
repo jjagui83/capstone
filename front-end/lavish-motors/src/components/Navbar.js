@@ -8,13 +8,13 @@ import NavbarLinksData from "./NavbarLinksData"
 import { NavbarContainer, NavImage } from '../StyledComponents/NavbarStyle';
 import { sidebardata } from "./NavbarLinks.js";
 
-class BootstrapNavbar extends React.Component{
+function BootstrapNavbar() {
 
-    render(){
+    
         return(
             <div>
                 <div className="row">
-                        <Router>
+                       
                             <NavbarContainer>
                                 <Navbar className="NavbarContainer" bg="#282C34" variant="dark" expand="lg" sticky="top">
                                     <NavImage src={Logo} alt="" />
@@ -36,11 +36,11 @@ class BootstrapNavbar extends React.Component{
                             </Navbar>
                             </NavbarContainer>
                             <br />
-                        </Router>
+                       
                     </div>
                 </div>
         )  
     }
-}
+
 
 export default BootstrapNavbar;
