@@ -13,6 +13,7 @@ import Contact from "./components/Contact";
 import Homepage from "./components/Homepage";
 import BootstrapNavbar from "./components/Navbar";
 import About from "./components/About";
+
 import store from "./store";
 // import "./App.css";
 import Copyright from "./components/Copyright";
@@ -28,16 +29,19 @@ function App() {
             <div className="">
               <BootstrapNavbar />
 
-              <Route exact path="/Cart">
+              <Route  path="/Cart">
                 <Cart/>
               </Route>
-              <Route exact path="/Contact">
-                <Contact />
+              <Route path="/Contact">
+                <Contact/>
               </Route>
-              <Route exact path="/Vehicles">
+              <Route  path="/Vehicles">
                 <Vehicles />
               </Route>
-              <Route exact path="/About">
+              <Route  path="/Register">
+                <Register />
+              </Route>
+              <Route  path="/About">
                 <About />
               </Route>
                 <Route exact path="/">

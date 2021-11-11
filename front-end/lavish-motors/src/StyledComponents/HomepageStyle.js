@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const Image = styled.img`
-  width: 60%;
-  height: 60%;
+export const HomeImage = styled.img`
+  width: 450px;
+  height: 250px;
   object-fit: contain;
   `
 
@@ -29,6 +29,6 @@ export const Description = styled.p`
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #ffff;
+  color: black;
   margin-bottom: 3rem;
   `
