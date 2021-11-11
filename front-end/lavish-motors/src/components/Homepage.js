@@ -16,10 +16,9 @@ export default function Homepage() {
     <HomeContainer>
       <Banner />
 
-           
-            <HomeContainer>
-                <HomeH1> Our Inventory</HomeH1>
-            </HomeContainer>
+      <LogInContainer>
+      <Register />
+      </LogInContainer>
 
       <HomeContainer>
         <HomeH1> Our Inventory</HomeH1>
