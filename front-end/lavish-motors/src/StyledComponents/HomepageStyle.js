@@ -7,7 +7,7 @@ export const Image = styled.img`
   `
 
 export const HomeContainer = styled.div`
-
+width: 100%;
 `;
 
 export const LogInContainer =styled.div`
