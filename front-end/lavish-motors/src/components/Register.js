@@ -14,10 +14,9 @@ function Register() {
                 <input onChange={(e) => dispatch({type:"SET_FIRST_NAME",payload:e.target.value})} type="text" placeholder="First Name"/>
                 <input onChange={(e) => dispatch({type:"SET_LAST_NAME",payload:e.target.value})} type="text" placeholder="Last Name" />
                 <input onChange={(e) => dispatch({type:"SET_EMAIL",payload:e.target.value})} type="text" placeholder="Email"/>
-                
-                <input type="submit" />
+                <input onChange={(e) => dispatch({type:"SET_PASSWORD",payload:e.target.value})} type="text" placeholder="password"/> 
             </form> 
-          
+            <input type="submit" />
         </div>
     )
 }

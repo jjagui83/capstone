@@ -1,4 +1,4 @@
-import { SET_FIRST_NAME, SET_LAST_NAME, SET_EMAIL } from "../actions/types";
+import { SET_FIRST_NAME, SET_LAST_NAME, SET_EMAIL, SET_PASSWORD } from "../actions/types";
 
 
 
@@ -10,6 +10,7 @@ const initialState = {
     firstName: "",
     lastName: "",
     email: "",
+    password: "",
 
 };
 
@@ -24,6 +25,9 @@ const  registerUser = (state=initialState, action) => {
 
         case SET_EMAIL:
             return {...state, email: ""};
+
+        case SET_PASSWORD:
+            return {...state, password: ""}
             
         default:
             return state;
