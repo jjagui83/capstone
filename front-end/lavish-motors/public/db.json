@@ -99,6 +99,24 @@
         "color": "Gunmetal Gray",
         "price": "295,000",
         "image": "https://www.dupontregistry.com/autos/virtual_folder/vehicle_photos/f7e97603-e5c6-4500-b20d-680bede6bac4/4baa32ee-c5e3-4508-b67d-ed25408e605b/21_09_21_SHELBY_7.jpg?404=privatelg&width=644&height=428"
+     },
+     {
+        "id": 12,
+        "make": "Lamborghini",
+        "model": "Aventador SS Roadster",
+        "year": "2018",
+        "color": "Blue",
+        "price": "595,000",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9jZG4uZGVhbGVyYWNjZWxlcmF0ZS5jb20vZnVzaW9uLzEvOTE0LzM1NzUwLzc5MHgxMDI0LzIwMTgtbGFtYm9yZ2hpbmktYXZlbnRhZG9yLXMtcm9hZHN0ZXI&hmac=uYPrPL_UiBM"
+     },
+     {
+        "id": 12,
+        "make": "Aston Martin",
+        "model": "DBS Superleggera",
+        "year": "2019",
+        "color": "Black",
+        "price": "595,000",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vRi1nMmphTHgvNjQweDAvMTYzMzM2OTA2MS91L2VjbC81SjYyL1MyZHYvaXIydS94MWxTL0dZUnkvOWcuanBn&hmac=S20fmuT5yqI" 
      }
     ]
 }
