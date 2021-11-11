@@ -10,6 +10,10 @@ export const HomeContainer = styled.div`
 
 `;
 
+export const LogInContainer =styled.div`
+text-align: center;
+`;
+
 export const HomeH1 = styled.h1`
 margin-top: 15px;
 margin-bottom: 15px;
