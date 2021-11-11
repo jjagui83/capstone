@@ -4,9 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/LM.jpg";
-import NavbarLinksData from "./NavbarLinksData";
-import { NavbarContainer, NavImage } from "../StyledComponents/NavbarStyle";
-import { sidebardata } from "./NavbarLinks.js";
+import { NavImage } from "../StyledComponents/NavbarStyle";
 
 function BootstrapNavbar() {
   return (

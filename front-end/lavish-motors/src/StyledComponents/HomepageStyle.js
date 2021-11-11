@@ -29,6 +29,6 @@ export const Description = styled.p`
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #ffff;
+  color: black;
   margin-bottom: 3rem;
   `
