@@ -1,13 +1,14 @@
 import React from 'react';
 import { firstName, lastName, email } from "../actions/userActions"
 import {useDispatch} from "react-redux";
+import { LogInContainer } from '../StyledComponents/HomepageStyle';
 
 
 
 function Register() {
     const dispatch = useDispatch();
     return (
-        <div>
+        <LogInContainer>
           <h1>Log In </h1>
           
           <form action="">
@@ -30,7 +31,7 @@ function Register() {
               Log In
             </button>
           )} */}
-        </div>
+        </LogInContainer>
     )
 }
 
