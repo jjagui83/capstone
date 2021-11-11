@@ -14,7 +14,7 @@ function BootstrapNavbar() {
         return(
             <div>
                 <div className="row">
-                        <Router>
+                       
                             <NavbarContainer>
                                 <Navbar className="NavbarContainer" bg="#282C34" variant="dark" expand="lg" sticky="top">
                                     <NavImage src={Logo} alt="" />
@@ -36,7 +36,7 @@ function BootstrapNavbar() {
                             </Navbar>
                             </NavbarContainer>
                             <br />
-                        </Router>
+                       
                     </div>
                 </div>
         )  
