@@ -53,9 +53,9 @@
   }
 
   .vehicles {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr,1fr,1fr));
+      display: grid;
+    
+      grid-template-columns: 1fr,1fr,1fr;
   }
 
   .Description {
