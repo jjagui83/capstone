@@ -1,4 +1,4 @@
-import { SET_FIRST_NAME, SET_LAST_NAME, SET_EMAIL } from "./types";
+import { SET_FIRST_NAME, SET_LAST_NAME, SET_EMAIL, SET_PASSWORD } from "./types";
 import {useDispatch} from "react-redux";
 
 
@@ -10,4 +10,7 @@ export const lastName = (dispatch) => {
 };
 export const email = (dispatch) => {
     dispatch({type: SET_EMAIL})
+};
+export const password = (dispatch) => {
+    dispatch({type: SET_PASSWORD})
 }
