@@ -33,7 +33,7 @@ function App() {
                 <Cart/>
               </Route>
               <Route path="/Contact">
-                <Contact />
+                <Contact/>
               </Route>
               <Route  path="/Vehicles">
                 <Vehicles />
