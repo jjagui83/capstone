@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const Image = styled.img`
-  width: 60%;
-  height: 60%;
+export const HomeImage = styled.img`
+  width: 450px;
+  height: 250px;
   object-fit: contain;
   `
 
