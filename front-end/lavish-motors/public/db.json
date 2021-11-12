@@ -110,13 +110,31 @@
         "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9jZG4uZGVhbGVyYWNjZWxlcmF0ZS5jb20vZnVzaW9uLzEvOTE0LzM1NzUwLzc5MHgxMDI0LzIwMTgtbGFtYm9yZ2hpbmktYXZlbnRhZG9yLXMtcm9hZHN0ZXI&hmac=uYPrPL_UiBM"
      },
      {
-        "id": 12,
+        "id": 13,
         "make": "Aston Martin",
         "model": "DBS Superleggera",
         "year": "2019",
         "color": "Black",
         "price": "595,000",
         "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vRi1nMmphTHgvNjQweDAvMTYzMzM2OTA2MS91L2VjbC81SjYyL1MyZHYvaXIydS94MWxTL0dZUnkvOWcuanBn&hmac=S20fmuT5yqI" 
-     }
+     },
+     {
+      "id": 14,
+      "make": "Mclaren",
+      "model": "600 LT Spider",
+      "year": "2020",
+      "color": "Mauvine Blue",
+      "price": "595,000",
+      "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly93d3cubWNsYXJlbmNmLmNvbS9nYWxsZXJpYV9pbWFnZXMvMTUxLzE1MV9wMzlfbC5qcGc&hmac=oZ5Dh4Fzclo" 
+   },
+   {
+      "id": 15,
+      "make": "Mercedes-Benz",
+      "model": "AMG GT C",
+      "year": "2018",
+      "color": "Black",
+      "price": "595,000",
+      "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vUkVXWlc4TXcvNjQweDAvMTYzNDU4MDk3Ny91L2VjbC9UVTY1L0ppRzUvYmwyNy95czhFLzFaVkIvN3cuanBn&hmac=41NBEskxaxs" 
+   }
     ]
 }
