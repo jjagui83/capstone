@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
-import { Row, Col, Container } from "react-bootstrap";
 import "../App.css";
 
 class Products extends Component {
