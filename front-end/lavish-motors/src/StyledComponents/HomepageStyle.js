@@ -16,6 +16,7 @@ text-align: center;
 
 export const GridColContainer = styled.div`
 margin-bottom: 15px;
+text-align: center;
 `;
 
 export const HomeH1 = styled.h1`
