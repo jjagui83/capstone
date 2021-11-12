@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const VehicleContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   columns: 100px 3;
