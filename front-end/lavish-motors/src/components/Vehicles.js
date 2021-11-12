@@ -38,21 +38,12 @@ class Products extends Component {
     return (
       <div className="container">
             <div className="row">
+              <h1>Rent Here</h1>
                 {productItems}
             </div>
-        </div>);
-
-    //     <Container>
-    //   <Row>
-    //     <Col xs>{productItems}</Col>
-    //   </Row>
-    // </Container>
-
-    {
-      /* <div className="">{productItems}</div> */
+        </div>)
     }
   }
-}
 const mapStateToProps = (state) => ({
   products: state.products.filteredItems,
   cartItems: state.cart.items,
