@@ -37,7 +37,6 @@ class Products extends Component {
     return (
       <div className="container">
             <div className="row">
-              <h1> Vehicles </h1>
                 {productItems}
             </div>
         </div>);
