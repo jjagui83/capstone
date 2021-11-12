@@ -1,8 +1,8 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
-import {VehicleContainer} from "../StyledComponents/ProductStyle"
+import { Row, Col, Container } from "react-bootstrap";
 import "../App.css";
 
 class Products extends Component {
@@ -11,17 +11,20 @@ class Products extends Component {
   }
   render() {
     const productItems = this.props.products.map((product) => (
-      <VehicleContainer className="col-md-4" key={product.model}>
+      <div className="col-md-4" key={product.model}>
         <div className="container">
           <a
             href={`#${product.make}`}
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
-            <img className="productImages" src={product.image} alt={product.make} />
+            <img
+              className="productImages"
+              src={product.image}
+              alt={product.make}
+            />
             <p>{product.make}</p>
             <p>{product.model}</p>
           </a>
-          {/* <b>{util.formatCurrency(product.price)}</b> */}
           <button
             className="btn btn-primary"
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
@@ -29,10 +32,25 @@ class Products extends Component {
             Add to cart
           </button>
         </div>
-      </VehicleContainer>
+      </div>
     ));
 
-    return <div className="col-md-4">{productItems}</div>;
+    return (
+      <div className="container">
+            <div className="row">
+                {productItems}
+            </div>
+        </div>);
+
+    //     <Container>
+    //   <Row>
+    //     <Col xs>{productItems}</Col>
+    //   </Row>
+    // </Container>
+
+    {
+      /* <div className="">{productItems}</div> */
+    }
   }
 }
 const mapStateToProps = (state) => ({
