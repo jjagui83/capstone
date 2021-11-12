@@ -1,10 +1,8 @@
-import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { MainContainer, Button } from "../StyledComponents/BasketStyle";
-class Cart extends Component {
-  render() {
-    const { cartItems } = this.props;
+function Basket(props) {
+    const { cartItems } = props;
 
     return (
       <MainContainer className="alert alert-info">
@@ -27,7 +25,7 @@ class Cart extends Component {
                     style={{ float: "right" }}
                     className="btn btn-danger btn-xs"
                     onClick={(e) =>
-                      this.props.removeFromCart(this.props.cartItems, item)
+                      props.removeFromCart(props.cartItems, item)
                     }
                   >
                     X
@@ -49,8 +47,8 @@ class Cart extends Component {
       </MainContainer>
     );
   }
-}
+
 const mapStateToProps = (state) => ({
   cartItems: state.cart.items,
 });
-export default connect(mapStateToProps, { addToCart, removeFromCart })(Cart);
+export default connect(mapStateToProps, { addToCart, removeFromCart })(Basket);

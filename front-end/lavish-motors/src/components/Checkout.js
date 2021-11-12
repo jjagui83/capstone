@@ -6,7 +6,7 @@ import {
 } from '@material-ui/pickers';
 import { Divider } from '@material-ui/core';
 
-
+// Had to start over on this one.
 
 function Checkout() {
 
