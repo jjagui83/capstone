@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { sortProducts } from "../actions/productActions";
-class Filter extends Component {
-  render() {
+function Filter(props) {
     return (
       <div className="row">
-        <div className="col-md-4">{`${this.props.filteredProducts.length} vehicles found.`}</div>
+        <div className="col-md-4">{`${props.filteredProducts.length} vehicles found.`}</div>
         <div className="col-md-4">
           <label>
             Order by
             <select
               className="form-control"
-              value={this.props.sort}
+              value={props.sort}
               onChange={(event) => {
-                this.props.sortProducts(
-                  this.props.filteredProducts,
+                props.sortProducts(
+                  props.filteredProducts,
                   event.target.value
                 );
               }}
@@ -28,7 +27,6 @@ class Filter extends Component {
       </div>
     );
   }
-}
 const mapStateToProps = (state) => ({
   products: state.products.items,
   filteredProducts: state.products.filteredItems,
