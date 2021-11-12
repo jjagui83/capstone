@@ -11,7 +11,17 @@ width: 100%;
 `;
 
 export const LogInContainer =styled.div`
-text-align: center;
+
+
+justify-content: right;
+align-items: center;
+width: 50vh;
+margin: auto;
+gap: 15px;
+border-radius: 8px;
+width: 250px;
+height: 400px;
+background-color: #B7CFDC;
 `;
 
 export const GridColContainer = styled.div`
