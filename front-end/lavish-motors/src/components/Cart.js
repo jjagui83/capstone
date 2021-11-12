@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { MainContainer, Button } from "../StyledComponents/BasketStyle";
-class Basket extends Component {
+class Cart extends Component {
   render() {
     const { cartItems } = this.props;
 
@@ -38,12 +38,12 @@ class Basket extends Component {
               ))}
             </ul>
 
-            <button
-              onClick={() => alert("Todo: Implement checkout page.")}
-              className="btn btn-primary"
+            <form action="/checkout"
+            className="btn btn-primary" 
             >
-              Begin Rental Process
-            </button>
+            <input type="submit" value="Rent Me">
+            </input>
+          </form>
           </div>
         )}
       </MainContainer>
@@ -53,4 +53,4 @@ class Basket extends Component {
 const mapStateToProps = (state) => ({
   cartItems: state.cart.items,
 });
-export default connect(mapStateToProps, { addToCart, removeFromCart })(Basket);
+export default connect(mapStateToProps, { addToCart, removeFromCart })(Cart);
