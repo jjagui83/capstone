@@ -24,12 +24,13 @@ class Products extends Component {
             <p>{product.make}</p>
             <p>{product.model}</p>
           </a>
-          <button
-            className="btn btn-primary"
-            onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
-          >
-            Add to cart
-          </button>
+          {/* <b>{util.formatCurrency(product.price)}</b> */}
+          <form action="/cart"
+            className="btn btn-primary" 
+            onClick={(e) => this.props.addToCart(this.props.cartItems, product)}>
+            <input type="submit" value="Rent Me">
+            </input>
+          </form>
         </div>
       </div>
     ));
