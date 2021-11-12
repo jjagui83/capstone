@@ -11,7 +11,7 @@ class Products extends Component {
   }
   render() {
     const productItems = this.props.products.map((product) => (
-      <VehicleContainer className="col-md-4" key={product.model}>
+      <VehicleContainer  key={product.model}>
         <div className="container">
           <a
             href={`#${product.make}`}
@@ -23,7 +23,7 @@ class Products extends Component {
           </a>
           {/* <b>{util.formatCurrency(product.price)}</b> */}
           <form action="/cart"
-            className="btn btn-primary" 
+            className="" 
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}>
             <input type="submit" value="Rent Me">
             </input>
@@ -32,7 +32,7 @@ class Products extends Component {
       </VehicleContainer>
     ));
 
-    return <div className="col-md-4">{productItems}</div>;
+    return <div className="">{productItems}</div>;
   }
 }
 const mapStateToProps = (state) => ({
