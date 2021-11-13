@@ -7,30 +7,17 @@ const PORT = 3001;
 
 app.use(express.json());
 app.use(cors());
-app.use(supabase());
+// app.use(supabase());
 
 // NEW user_login table NEED TO RUN
 // NEED BCRYPT
 app.post("/create_user", (req, res) => {
-  const { first_name, last_name, email, password, error } =
-    supabase.auth.signUp({
-      first_name: "",
-      last_name: "",
-      email: "",
-      password: "",
-    });
-  //       function (err, result) {
-  //         if (err) {
-  //           console.log(err);
-  //           res.status(401).send(err);
-  //         }
-  //         res.send(result);
-  //       }
-  //     );
-  //   });
-  // } catch (err) {
-  //   res.send(err);
-  // }
+  const { first_name, last_name, email, password } = supabase.auth.signUp({
+    first_name: "",
+    last_name: "",
+    email: "",
+    password: "",
+  });
 });
 
 // AUTH user_login table NEED TO RUN
@@ -40,18 +27,6 @@ app.get("/read/user_login", (req, res) => {
     email: "",
     password: "",
   });
-  //         function (err, result) {
-  //           if (err) {
-  //             console.log(err);
-  //             res.status(401).send(err);
-  //           }
-  //           res.send(result);
-  //         }
-  //       );
-  //     });
-  //   } catch (err) {
-  //     res.send(err);
-  //   }
 });
 
 // update cars to cart NEED TO RUN
@@ -102,19 +77,22 @@ app.delete("/delete_car/:car_name", (req, res) => {
       total_price: "",
     })
     .match({ car_name: "" });
-  //     creds.connect(async () => {
-  //       const data = await creds.query(
-  //         `DELETE FROM cart WHERE car_name = ${car_name}`
-  //       );
-  //       res.send(data);
-  //     });
-  //   } catch (err) {
-  //     res.send(err);
-  //   }
+  creds.connect(
+    async () => {
+      const data = await creds.query(
+        `DELETE FROM cart WHERE car_name = ${car_name}`
+      );
+    }
+    //     res.send(data);
+    //   });
+    // } catch (err) {
+    //   res.send(err);
+  );
 });
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
 
 // STOP RIGHT THERE!!
+// NO FOR REAL JUST STOP!!
 
 // manually put car in cars table WORKS
 // don't need for supabase
@@ -150,16 +128,4 @@ app.listen(PORT, console.log(`Listening on port ${PORT}`));
 //         '${week_price}',
 //         '${car_seats}',
 //         '${image}')`,
-//         function (err, result) {
-//           if (err) {
-//             console.log(err);
-//             res.status(401).send(err);
-//           }
-//           res.send(result);
-//         }
-//       );
-//     });
-//   } catch (err) {
-//     res.send(err);
-//   }
-// });
+//       )})}})
