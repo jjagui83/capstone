@@ -12,12 +12,13 @@ app.use(cors());
 // NEW user_login table NEED TO RUN
 // NEED BCRYPT
 app.post("/create_user", (req, res) => {
-  const { first_name, last_name, email, password } = supabase.auth.signUp({
-    first_name: "",
-    last_name: "",
-    email: "",
-    password: "",
-  });
+  const { first_name, last_name, email, password, error } =
+    supabase.auth.signUp({
+      first_name: "",
+      last_name: "",
+      email: "",
+      password: "",
+    });
 });
 
 // AUTH user_login table NEED TO RUN
