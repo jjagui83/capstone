@@ -10,6 +10,7 @@ import {
 import Cart from "./components/Cart";
 import Vehicles from "./components/Vehicles";
 import Contact from "./components/Contact";
+import Checkout from "./components/Checkout";
 import Homepage from "./components/Homepage";
 import BootstrapNavbar from "./components/Navbar";
 import About from "./components/About";
@@ -31,6 +32,9 @@ function App() {
 
               <Route  path="/Cart">
                 <Cart/>
+              </Route>
+              <Route path="/Checkout">
+                <Checkout />
               </Route>
               <Route path="/Contact">
                 <Contact/>
