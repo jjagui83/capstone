@@ -4,7 +4,7 @@ import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import "../App.css";
 import { VehicleImage, VehicleContainer, 
-  VehicleInput, VehicleH1, VehicleH4 } from '../StyledComponents/VehicleStyle'
+  VehicleInput, VehicleH3, VehicleH6 } from '../StyledComponents/VehicleStyle'
 
 class Products extends Component {
   componentDidMount() {
@@ -23,8 +23,8 @@ class Products extends Component {
               src={product.image}
               alt={product.make}
             />
-            <VehicleH4>{product.make}</VehicleH4>
-            <VehicleH1>{product.model}</VehicleH1>
+            <VehicleH6>{product.make}</VehicleH6>
+            <VehicleH3>{product.model}</VehicleH3>
           </a>
           {/* <b>{util.formatCurrency(product.price)}</b> */}
           <form action="/cart"

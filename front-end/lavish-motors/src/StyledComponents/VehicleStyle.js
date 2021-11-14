@@ -18,11 +18,11 @@ border-radius: 7px 7px 7px;
 color: white;
 `;
 
-export const VehicleH4 = styled.h5`
+export const VehicleH6 = styled.h6`
 color: black;
 margin-top: 5px;
 `;
 
-export const VehicleH1 = styled.h1`
+export const VehicleH3 = styled.h3`
 color: black;
 `;
