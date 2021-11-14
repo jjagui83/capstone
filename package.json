@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@supabase/supabase-js": "^1.27.0"
+    "@supabase/supabase-js": "^1.27.0",
+    "git": "^0.1.5"
   }
 }
