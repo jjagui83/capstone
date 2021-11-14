@@ -13,7 +13,7 @@ text-align: center;
 `;
 
 export const VehicleInput = styled.input`
-background-color: red;
+background-color: green;
 border-radius: 7px 7px 7px;
 color: white;
 `;
