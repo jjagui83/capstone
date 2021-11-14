@@ -13,16 +13,18 @@ text-align: center;
 `;
 
 export const VehicleInput = styled.input`
-background-color: green;
+background-color: gold;
 border-radius: 7px 7px 7px;
-color: white;
+color: black;
 `;
 
 export const VehicleH6 = styled.h6`
 color: black;
 margin-top: 5px;
+text-decoration: none;
 `;
 
 export const VehicleH3 = styled.h3`
 color: black;
+text-decoration: none;
 `;

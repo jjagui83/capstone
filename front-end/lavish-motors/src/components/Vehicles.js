@@ -14,7 +14,7 @@ class Products extends Component {
     const productItems = this.props.products.map((product) => (
       <VehicleContainer className="col-md-4" key={product.model}>
         <div className="shadow p-3 mb-5 bg-white rounded">
-          <a
+          <p
             href={`#${product.make}`}
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
@@ -25,7 +25,7 @@ class Products extends Component {
             />
             <VehicleH6>{product.make}</VehicleH6>
             <VehicleH3>{product.model}</VehicleH3>
-          </a>
+          </p>
           {/* <b>{util.formatCurrency(product.price)}</b> */}
           <form action="/cart"
             className="" 
