@@ -17,3 +17,12 @@ background-color: green;
 border-radius: 7px 7px 7px;
 color: white;
 `;
+
+export const VehicleH4 = styled.h5`
+color: black;
+margin-top: 5px;
+`;
+
+export const VehicleH1 = styled.h1`
+color: black;
+`;

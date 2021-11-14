@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import "../App.css";
-import { VehicleImage, VehicleContainer, VehicleInput } from '../StyledComponents/VehicleStyle'
+import { VehicleImage, VehicleContainer, 
+  VehicleInput, VehicleH1, VehicleH4 } from '../StyledComponents/VehicleStyle'
 
 class Products extends Component {
   componentDidMount() {
@@ -22,8 +23,8 @@ class Products extends Component {
               src={product.image}
               alt={product.make}
             />
-            <p>{product.make}</p>
-            <p>{product.model}</p>
+            <VehicleH4>{product.make}</VehicleH4>
+            <VehicleH1>{product.model}</VehicleH1>
           </a>
           {/* <b>{util.formatCurrency(product.price)}</b> */}
           <form action="/cart"
