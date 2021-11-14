@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import "../App.css";
+import { VehicleImage, VehicleContainer } from '../StyledComponents/VehicleStyle'
 
 class Products extends Component {
   componentDidMount() {
@@ -10,13 +11,13 @@ class Products extends Component {
   }
   render() {
     const productItems = this.props.products.map((product) => (
-      <div className="col-md-4" key={product.model}>
-        <div className="container">
+      <VehicleContainer className="col-md-4" key={product.model}>
+        <div className="shadow p-3 mb-5 bg-white rounded">
           <a
             href={`#${product.make}`}
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
-            <img
+            <VehicleImage
               className="productImages"
               src={product.image}
               alt={product.make}
@@ -32,7 +33,7 @@ class Products extends Component {
             </input>
           </form>
         </div>
-      </div>
+      </VehicleContainer>
     ));
 
     return (
