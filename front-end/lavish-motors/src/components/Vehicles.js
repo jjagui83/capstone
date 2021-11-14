@@ -12,7 +12,7 @@ class Products extends Component {
   render() {
     const productItems = this.props.products.map((product) => (
       <VehicleContainer className="col-md-4" key={product.model}>
-        <div className="container">
+        <div className="shadow p-3 mb-5 bg-white rounded">
           <a
             href={`#${product.make}`}
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
