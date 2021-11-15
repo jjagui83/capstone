@@ -11,15 +11,15 @@ width: 100%;
 `;
 
 export const LogInContainer =styled.div`
-
-
-justify-content: right;
+margin-top: 35px;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
 align-items: center;
-width: 50vh;
-margin: auto;
+width: 80vh;
 gap: 15px;
 border-radius: 8px;
-width: 250px;
 height: 400px;
 background-color: #B7CFDC;
 `;

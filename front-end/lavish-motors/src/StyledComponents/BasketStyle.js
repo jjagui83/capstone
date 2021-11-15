@@ -24,3 +24,16 @@ export const Button = styled.button`
     color: #282C34;
   }
   `
+
+  export const CartH1 = styled.h1`
+  color: white;
+  `;
+
+  export const CartH3 = styled.h3`
+  color: white;
+  `;
+
+  export const CartH6 = styled.h6`
+  margin-top: 15px;
+  color: white;
+  `;

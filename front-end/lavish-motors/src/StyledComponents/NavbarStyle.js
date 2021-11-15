@@ -17,8 +17,6 @@ height: 55px;
 `;
 
 
-
-
 export const SidebarLink = styled(Link)`
 font-size:20px;
 font-weight:300;
