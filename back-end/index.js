@@ -30,6 +30,11 @@ app.get("/read/user_login", (req, res) => {
   });
 });
 
+// sign out of lavish motors
+app.get("/read/user_login", (req, res) => {
+  const { error } = await supabase.auth.signOut({});
+});
+
 // update cars to cart NEED TO RUN
 app.get("/read_cars", (req, res) => {
   const { car_name, image, pickup_date, return_date, day_price, total_price } =
