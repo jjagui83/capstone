@@ -20,8 +20,6 @@ function BootstrapNavbar() {
               <Nav.Link as={Link} to={"/About"}>About</Nav.Link>
               <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
               <Nav.Link as={Link} to={"/Vehicles"}>Vehicles</Nav.Link>
-            </Nav>
-            <Nav>
               <Nav.Link as={Link} to={"/Cart"}>Cart</Nav.Link>
             </Nav>
           </Navbar.Collapse>

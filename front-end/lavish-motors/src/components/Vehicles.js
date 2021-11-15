@@ -1,9 +1,10 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
-import {VehicleContainer} from "../StyledComponents/ProductStyle"
 import "../App.css";
+import { VehicleImage, VehicleContainer, 
+  VehicleInput, VehicleH3, VehicleH6 } from '../StyledComponents/VehicleStyle'
 
 class Products extends Component {
   componentDidMount() {
@@ -12,29 +13,39 @@ class Products extends Component {
   render() {
     const productItems = this.props.products.map((product) => (
       <VehicleContainer className="col-md-4" key={product.model}>
-        <div className="container">
-          <a
+        <div className="shadow p-3 mb-5 bg-white rounded">
+          <p
             href={`#${product.make}`}
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
-            <img className="productImages" src={product.image} alt={product.make} />
-            <p>{product.make}</p>
-            <p>{product.model}</p>
-          </a>
+            <VehicleImage
+              className="productImages"
+              src={product.image}
+              alt={product.make}
+            />
+            <VehicleH6>{product.make}</VehicleH6>
+            <VehicleH3>{product.model}</VehicleH3>
+          </p>
           {/* <b>{util.formatCurrency(product.price)}</b> */}
           <form action="/cart"
-            className="btn btn-primary" 
+            className="" 
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}>
-            <input type="submit" value="Rent Me">
-            </input>
+            <VehicleInput type="submit" value="Rent Me">
+            </VehicleInput>
           </form>
         </div>
       </VehicleContainer>
     ));
 
-    return <div className="col-md-4">{productItems}</div>;
+    return (
+      <div className="container">
+            <div className="row">
+              <h1>Rent Here</h1>
+                {productItems}
+            </div>
+        </div>)
+    }
   }
-}
 const mapStateToProps = (state) => ({
   products: state.products.filteredItems,
   cartItems: state.cart.items,

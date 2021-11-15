@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 const token = "postgres://lftinrsd:8xWOylw4vIeJwOvr034JxmQwBD-V-g5A@fanny.db.elephantsql.com/lftinrsd"
 const token = "postgres://donffadg:R98AfsPlmzFCp0nfsayN3VLzkX_JxZf-@fanny.db.elephantsql.com/donffadg"
+const APIkey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjczMjY3NiwiZXhwIjoxOTUyMzA4Njc2fQ.Tm2RgeX9qDiT8vVT89NMvEj7MDvRzFrGjwPyfV6LGvI"
