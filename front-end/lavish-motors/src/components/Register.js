@@ -15,7 +15,7 @@ function Register(props) {
 
     const login = async (e)  => {
       e.preventDefault();
-      const {user,session, error} = await supabase.auth.signIn({
+      const {user,session, error} = await supabase.auth.signUp({
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
@@ -28,7 +28,7 @@ function Register(props) {
 
     const register = async (e) => {
       e.preventDefault();
-      const {user,session, error} = await supabase.auth.signUp({
+      const {user,session, error} = await supabase.auth.signIn({
         email: formData.username,
         password: formData.password,
       });
@@ -76,8 +76,8 @@ function Register(props) {
             name="password"
             value={formData?.password}/> 
            
-          {/* <input type="submit" /> */}
-            {props?.register ? (
+          <input type="submit" />
+            {/* {props?.register ? (
             <button
               onClick={(e) => register(e)}
               type="submit"
@@ -89,7 +89,7 @@ function Register(props) {
             <button onClick={(e) => login(e)} type="submit" value="">
               Log In
             </button>
-          )}
+          )} */}
         </LogInContainer>
     )
 }
