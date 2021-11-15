@@ -60,80 +60,69 @@ function Register(props) {
   };
 
   return (
-    <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
-      {/*  */}
-      <h1>Log In </h1>
+    (
+      <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
+        <h1>Log In </h1>
 
-      <input
-        className="shadow p-2 mb-1 bg-white rounded"
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
-        type="text"
-        placeholder="First Name"
-        name="firstName"
-        value={formData?.firstName}
-      />
+        <input
+          onChange={(e) =>
+            setFormData({ ...formData, [e.target.name]: e.target.value })
+          }
+          type="text"
+          placeholder="First Name"
+          name="firstName"
+          value={formData?.firstName}
+        />
 
-      <input
-        className="shadow p-2 mb-1 bg-white rounded"
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
-        type="text"
-        placeholder="Last Name"
-        name="lastName"
-        value={formData?.lastName}
-      />
+        <input
+          onChange={(e) =>
+            setFormData({ ...formData, [e.target.name]: e.target.value })
+          }
+          type="text"
+          placeholder="Last Name"
+          name="lastName"
+          value={formData?.lastName}
+        />
 
-      <input
-        className="shadow p-2 mb-1 bg-white rounded"
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
-        type="email"
-        placeholder="Email"
-        name="email"
-        value={formData?.email}
-      />
+        <input
+          onChange={(e) =>
+            setFormData({ ...formData, [e.target.name]: e.target.value })
+          }
+          type="email"
+          placeholder="Email"
+          name="email"
+          value={formData?.email}
+        />
 
-      <input
-        className="shadow p-2 mb-1 bg-white rounded"
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
-        type="text"
-        placeholder="Password"
-        name="password"
-        value={formData?.password}
-      />
+        <input
+          onChange={(e) =>
+            setFormData({ ...formData, [e.target.name]: e.target.value })
+          }
+          type="text"
+          placeholder="Password"
+          name="password"
+          value={formData?.password}
+        />
 
-      
-            <div>
-            <button
-              onClick={(e) => register(e)}
-              type="submit"
-              value=""
-            >
-              Register
-            </button>
-           ) : ( 
-            <button onClick={(e) => login(e)} type="submit" value="">
-              Log In
-            </button>
-            </div>
-            
-          {/* )}  */}
-        </LogInContainer>
-    )
-}
-
+        <div>
+          <button onClick={(e) => register(e)} type="submit" value="">
+            Register
+          </button>
+          ) : (
+          <button onClick={(e) => login(e)} type="submit" value="">
+            Log In
+          </button>
+          )
+          {/* <button onClick={(e) => signout(e)}type="submit">Sign Out</button> */}
+        </div>
+      </LogInContainer>
+    ) <
+    div >
+    (
       <button onClick={(e) => signout(e)} type="submit">
         Sign Out
       </button>
-
-      {/* )}  */}
-    </LogInContainer>
+    )
   );
 }
 
