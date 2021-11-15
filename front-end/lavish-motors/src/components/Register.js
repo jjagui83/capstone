@@ -61,6 +61,7 @@ function Register(props) {
     
 
   return (
+
     <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
       <h1>Log In </h1>
 
@@ -104,8 +105,7 @@ function Register(props) {
         value={formData?.password}
       />
 
-      
-            {props?.login ? ( 
+            <div>
             <button
               onClick={(e) => register(e)}
               type="submit"
@@ -113,16 +113,13 @@ function Register(props) {
             >
               Register
             </button>
-           ) : ( 
+            
             <button onClick={(e) => login(e)} type="submit" value="">
               Log In
             </button>
+            </div>
 
-            
-           )}
-
-          {/* <button onClick={(e) => signout(e)}type="submit">Sign Out</button> */}
-        </LogInContainer>
+             </LogInContainer>
     )
 }
 
