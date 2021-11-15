@@ -3,6 +3,7 @@ import { useState } from "react";
 import { firstName, lastName, email } from "../actions/userActions";
 import { useDispatch } from "react-redux";
 import { LogInContainer } from "../StyledComponents/HomepageStyle";
+import { RegisterButton } from '../StyledComponents/RegisterStyle';
 import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router";
 
@@ -106,17 +107,17 @@ function Register(props) {
       />
 
             <div>
-            <button
+            <RegisterButton
               onClick={(e) => register(e)}
               type="submit"
               value=""
             >
               Register
-            </button>
-            
-            <button onClick={(e) => login(e)} type="submit" value="">
+            </RegisterButton>
+
+            <RegisterButton onClick={(e) => login(e)} type="submit" value="">
               Log In
-            </button>
+            </RegisterButton>
             </div>
 
              </LogInContainer>

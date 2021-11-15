@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/LM.jpg";
-import { NavImage } from "../StyledComponents/NavbarStyle";
+import { NavImage, NavSignOutButton } from "../StyledComponents/NavbarStyle";
 
 
 function BootstrapNavbar() {
@@ -59,7 +59,7 @@ function BootstrapNavbar() {
               <Nav.Link as={Link} to={"/Cart"}>Cart</Nav.Link>
             </Nav>
             <Nav>
-            <button onClick={(e) => signout(e)}type="submit">Sign Out</button>
+            <NavSignOutButton onClick={(e) => signout(e)}type="submit">Sign Out</NavSignOutButton>
             </Nav>
           </Navbar.Collapse>
         </Container>
