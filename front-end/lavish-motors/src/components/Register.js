@@ -65,6 +65,7 @@ function Register(props) {
       <h1>Log In </h1>
 
       <input
+        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -75,6 +76,7 @@ function Register(props) {
       />
 
       <input
+        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -85,6 +87,7 @@ function Register(props) {
       />
 
       <input
+        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -95,6 +98,7 @@ function Register(props) {
       />
 
       <input
+        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -104,18 +108,25 @@ function Register(props) {
         value={formData?.password}
       />
 
-      {/* <input type="submit" />
-            {props?.login ? ( */}
-      <div>
-        <button onClick={(e) => register(e)} type="submit" value="">
-          Register
-        </button>
-        {/* ) : ( */}
-        <button onClick={(e) => login(e)} type="submit" value="">
-          Log In
-        </button>
-      </div>
-      {/* // */}
+      
+            <div>
+            <button
+              onClick={(e) => register(e)}
+              type="submit"
+              value=""
+            >
+              Register
+            </button>
+           ) : ( 
+            <button onClick={(e) => login(e)} type="submit" value="">
+              Log In
+            </button>
+            </div>
+            
+          {/* )}  */}
+        </LogInContainer>
+    )
+}
 
       <button onClick={(e) => signout(e)} type="submit">
         Sign Out

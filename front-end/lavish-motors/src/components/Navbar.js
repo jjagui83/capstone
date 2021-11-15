@@ -1,12 +1,46 @@
 import React from "react";
-
+import { useState } from "react";
+import { useHistory } from "react-router";
+import { useDispatch } from "react-redux";
+import { createClient } from "@supabase/supabase-js";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/LM.jpg";
 import { NavImage } from "../StyledComponents/NavbarStyle";
 
+
 function BootstrapNavbar() {
+  const supabase = createClient(
+    "https://olnhrurwmonhkejpackd.supabase.co/",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjczMjY3NiwiZXhwIjoxOTUyMzA4Njc2fQ.Tm2RgeX9qDiT8vVT89NMvEj7MDvRzFrGjwPyfV6LGvI"
+  );
+    const dispatch = useDispatch();
+    const [formData, setFormData] = useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      password: "",
+    });
+    const history = useHistory();
+
+    const signout = async (e) => {
+      e.preventDefault();
+      const { user, session, error } = await supabase.auth.signOut({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        password: formData.password,
+      });
+      if (user) {
+        history.push("/About");
+      } else {
+        alert(error);
+      }
+    };
+
+
+
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -21,6 +55,9 @@ function BootstrapNavbar() {
               <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
               <Nav.Link as={Link} to={"/Vehicles"}>Vehicles</Nav.Link>
               <Nav.Link as={Link} to={"/Cart"}>Cart</Nav.Link>
+            </Nav>
+            <Nav>
+            <button onClick={(e) => signout(e)}type="submit">Sign Out</button>
             </Nav>
           </Navbar.Collapse>
         </Container>
