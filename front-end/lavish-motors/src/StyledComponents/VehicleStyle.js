@@ -12,6 +12,10 @@ background-color: white;
 text-align: center;
 `;
 
+export const VehicleContainer2 = styled.div`
+text-align: center;
+`;
+
 export const VehicleInput = styled.input`
 background-color: gold;
 border-radius: 7px 7px 7px;

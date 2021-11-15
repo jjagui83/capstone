@@ -58,4 +58,5 @@ width: 160px;
 height: 40px;
 border-radius: 60px;
 background-color: gold;
+color: black;
 `;

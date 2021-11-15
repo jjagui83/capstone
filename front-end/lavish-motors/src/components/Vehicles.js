@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import "../App.css";
-import { VehicleImage, VehicleContainer, 
+import { VehicleImage, VehicleContainer, VehicleContainer2,
   VehicleInput, VehicleH3, VehicleH6 } from '../StyledComponents/VehicleStyle'
 
 class Products extends Component {
@@ -40,7 +40,7 @@ class Products extends Component {
     return (
       <div className="container">
             <div className="row">
-              <h1>Rent Here</h1>
+              <VehicleContainer2 className="shadow p-3 mb-5 bg-light"><h1>Browse Vehicles here</h1></VehicleContainer2>
                 {productItems}
             </div>
         </div>)
