@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(cors());
 // app.use(supabase());
 
-// NEW user_login table NEED TO RUN
-// NEED BCRYPT
+// NEW user_login table WORKS!!!
+// NEED BCRYPT!!!
 app.post("/create_user", (req, res) => {
   const { first_name, last_name, email, password, error } =
     supabase.auth.signUp({
@@ -21,8 +21,8 @@ app.post("/create_user", (req, res) => {
     });
 });
 
-// AUTH user_login table NEED TO RUN
-// NEED BCRYPT
+// AUTH user_login table WORKS!!!
+// NEED BCRYPT!!!!
 app.get("/read/user_login", (req, res) => {
   const { email, password, error } = supabase.auth.signIn({
     email: "",
