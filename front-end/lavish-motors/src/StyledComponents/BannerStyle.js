@@ -52,6 +52,7 @@ animation-name: ${FadeIn};
 animation-duration: 13s;
 `;
 
+
 export const BannerButton = styled.button`
 animation-name: ${FadeIn};
 animation-duration: 16s;

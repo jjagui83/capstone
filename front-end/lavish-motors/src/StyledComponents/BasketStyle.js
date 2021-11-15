@@ -2,14 +2,18 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   display: flex;
-  color: #fff;
+  color: black;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  background-color: #282C34;
+  background-color: #fff;
   `
+
+export const CartTitle = styled.div`
+text-align: center;
+`;
 export const Button = styled.button`
 //   background-color: #282C34;
   color: #fff;
@@ -26,14 +30,14 @@ export const Button = styled.button`
   `
 
   export const CartH1 = styled.h1`
-  color: white;
+  color: green;
   `;
 
   export const CartH3 = styled.h3`
-  color: white;
+  color: black;
   `;
 
   export const CartH6 = styled.h6`
   margin-top: 15px;
-  color: white;
+  color: black;
   `;

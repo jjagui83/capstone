@@ -3,7 +3,7 @@ import { useState } from "react";
 import { firstName, lastName, email } from "../actions/userActions";
 import { useDispatch } from "react-redux";
 import { LogInContainer } from "../StyledComponents/HomepageStyle";
-import { RegisterButton } from '../StyledComponents/RegisterStyle';
+import { RegisterButton, RegisterTitle } from '../StyledComponents/RegisterStyle';
 import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router";
 
@@ -61,7 +61,8 @@ function Register(props) {
   };
 
   return (
-
+   <div>
+     <RegisterTitle className="shadow p-3 mb-5 bg-light"><h1>Credentials</h1></RegisterTitle>
     <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
       <h1>Log In </h1>
 
@@ -124,6 +125,7 @@ function Register(props) {
             </div>
 
              </LogInContainer>
+             </div>
     )
   );
       }

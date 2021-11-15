@@ -8,3 +8,7 @@ export const MainContainer = styled.div`
   justify-content: center;
   width: 100%;
 `
+
+export const ContactTitle = styled.div`
+text-align: center;
+`;

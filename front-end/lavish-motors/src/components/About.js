@@ -1,9 +1,11 @@
 import React from "react";
-import { AboutContainer } from "../StyledComponents/AboutStyle";
+import { AboutContainer, ContactTitle } from "../StyledComponents/AboutStyle";
 import { HomepageStyle, Image, Description } from "../StyledComponents/HomepageStyle";
 
 export default function About() {
   return (
+    <div>
+      <ContactTitle className="shadow p-3 mb-5 bg-light"><h1>About</h1></ContactTitle>
     <AboutContainer>
     <Description className="Description">Welcome to Lavish Auto Exotic Car Rental, the premier exotic car rental service and private jet charter (Coming Soon!) in Atlanta, GA and Houston, TX. With locations at both George Bush Intercontinental (IAH) Airport or Hartsfield–Jackson Atlanta International (ATL) Airport, and delivery options throughout Georgia and Texas, no local luxury car rental business covers as much ground as Lavish.
     </Description>
@@ -12,5 +14,6 @@ export default function About() {
     <br />
     <Description className="Description">We also provide full-compliment wedding and chauffeur services, as well as in-demand cars for film and photo shoots. Through our private jet charter services, you can also fly Lavish to hundreds of airports worldwide in the same five-star comfort we offer on the road.</Description>
 </AboutContainer>
+</div>
   );
 }
