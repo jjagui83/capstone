@@ -1,10 +1,11 @@
 import React from 'react'
-import { MainContainer } from "../StyledComponents/ContactStyle"
+import { MainContainer, ContactTitle } from "../StyledComponents/ContactStyle"
 
 export default function Contact() {
     return (
+        <div>
+             <ContactTitle className="shadow p-3 mb-5 bg-light"><h1>Contact Us</h1></ContactTitle>
         <MainContainer>
-            <h1>Contact Us</h1>
             <p>
             We put you behind the wheel of the best cars in the world. Visit our location at George Bush Intercontinental Airport or Hartsfield–Jackson Atlanta International Airport to choose from our unsurpassed selection of luxury car rentals.
             </p>
@@ -13,5 +14,6 @@ export default function Contact() {
                 <li>Email: <b>contact@lavishmotors.com</b></li>
             </ul>
         </MainContainer>
+        </div>
     )
 }

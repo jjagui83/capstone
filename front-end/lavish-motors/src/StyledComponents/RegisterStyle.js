@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-
+export const RegisterTitle = styled.div`
+text-align: center;
+`;
 
 export const RegisterButton = styled.button`
 margin: 2px;
