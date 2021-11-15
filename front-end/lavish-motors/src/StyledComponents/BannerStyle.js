@@ -54,7 +54,7 @@ animation-duration: 13s;
 
 export const BannerButton = styled.button`
 animation-name: ${FadeIn};
-animation-duration: 18s;
+animation-duration: 16s;
 padding: 5px;
 width: 160px;
 height: 40px;

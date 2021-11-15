@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
-import { MainContainer, Button } from "../StyledComponents/BasketStyle";
+import { MainContainer, Button, CartH1, CartH3, CartH6 } from "../StyledComponents/BasketStyle";
 import { VehicleImage } from '../StyledComponents/VehicleStyle'
 function Basket(props) {
     const { cartItems } = props;
@@ -20,8 +20,8 @@ function Basket(props) {
               {cartItems.map((item) => (
                 <li key={item.id}>
                   <b><VehicleImage  src={item.image} alt=""></VehicleImage ></b>
-                  <h6>{item.make} </h6>
-                  <h3>{item.model}</h3>
+                  <CartH6>{item.make} </CartH6>
+                  <CartH3>{item.model}</CartH3>
                   <Button
                     style={{ float: "right" }}
                     className="btn btn-danger btn-xs"
@@ -31,7 +31,7 @@ function Basket(props) {
                   >
                     Remove
                   </Button>
-                   <h1>${(item.price)}</h1>
+                   <CartH1>${(item.price)}</CartH1>
                 </li>
               ))}
             </ul>
