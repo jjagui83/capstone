@@ -37,29 +37,28 @@ function Register(props) {
     }
   };
 
-    const login = async (e) => {
-      e.preventDefault();
-      const {user,session, error} = await supabase.auth.signIn({
-        email: formData.email,
-        password: formData.password,
-      });
-      if (user) {
-        history.push("/");
-      } else {
-        alert(error.message);
-      }
-    };
+  const login = async (e) => {
+    e.preventDefault();
+    const { user, session, error } = await supabase.auth.signIn({
+      email: formData.email,
+      password: formData.password,
+    });
+    if (user) {
+      history.push("/");
+    } else {
+      alert(error.message);
+    }
+  };
 
-    const signout = async (e) => {
-      e.preventDefault();
-      const { error } = await supabase.auth.signOut();
-      if (error) {
-        history.push("/About");
-      } else {
-        alert(error);
-      }
-    };
-    
+  const signout = async (e) => {
+    e.preventDefault();
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      alert(error);
+    } else {
+      history.push("/About");
+    }
+  };
 
   return (
 
@@ -126,7 +125,7 @@ function Register(props) {
 
              </LogInContainer>
     )
-}
+  );
+      }
 
-export default Register
-
+export default Register;
