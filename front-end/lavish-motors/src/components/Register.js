@@ -67,7 +67,7 @@ function Register(props) {
     
 
   return (
-    <LogInContainer>
+    <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
       <h1>Log In </h1>
 
       <input
