@@ -10,7 +10,7 @@ class Checkout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      location: "ATlanta",
+      location: "Atlanta",
       date: ""
     };
   }
@@ -64,16 +64,16 @@ class Checkout extends React.Component {
   render() {
     const locationOptions = ["Atlanta", "Houston"];
     const map = new Map();
-    // for (const carInstance of this.props.carDetails) {
-    //   if (!map.has(carInstance.location)) {
-    //     map.set(carInstance.location, true);
-    //     locationOptions.push({
-    //       key: carInstance.location,
-    //       text: carInstance.location,
-    //       value: carInstance.location
-    //     });
-    //   }
-    // }
+    for (const carInstance of this.props.carDetails) {
+      if (!map.has(carInstance.location)) {
+        map.set(carInstance.location, true);
+        locationOptions.push({
+          key: carInstance.location,
+          text: carInstance.location,
+          value: carInstance.location
+        });
+      }
+    }
 
     if (this.state.redirect) {
       return <Redirect to={`/car/${this.state.location}/${this.state.date}`} />;
