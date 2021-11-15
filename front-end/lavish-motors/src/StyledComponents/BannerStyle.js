@@ -52,11 +52,21 @@ animation-duration: 13s;
 
 export const BannerButton = styled.button`
 animation-name: ${FadeIn};
-animation-duration: 22s;
+animation-duration: 18s;
 padding: 5px;
 width: 160px;
 height: 40px;
 border-radius: 60px;
 background-color: gold;
 color: black;
+
+&:hover {
+    background-color: white;
+}
+
+&:active {
+    background-color: white;
+    box-shadow: 0 3px black;
+    transform: translateY(12px);
+}
 `;

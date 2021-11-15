@@ -18,8 +18,18 @@ text-align: center;
 
 export const VehicleInput = styled.input`
 background-color: gold;
-border-radius: 7px 7px 7px;
+border-radius: 60px;
+width: 150px;
 color: black;
+
+&:hover {
+    background-color: white;
+}
+
+&:active {
+    background-color: white;
+    transform: translateY(6px);
+}
 `;
 
 export const VehicleH6 = styled.h6`
