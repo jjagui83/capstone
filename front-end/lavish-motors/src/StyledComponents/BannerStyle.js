@@ -39,12 +39,14 @@ to {
 `;
 
 export const BannerH3 = styled.h3`
+color: white;
 font-size: 50px;
 animation-name: ${FadeIn};
 animation-duration: 8s;
 `;
 
 export const BannerH1 = styled.h1`
+color: white;
 font-size: 75px;
 animation-name: ${FadeIn};
 animation-duration: 13s;
