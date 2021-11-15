@@ -11,6 +11,7 @@
     "@material-ui/pickers": "^3.3.10",
     "@react-google-maps/api": "^2.2.0",
     "@reduxjs/toolkit": "^1.6.1",
+    "@supabase/supabase-js": "^1.28.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",

@@ -77,7 +77,7 @@ function Register(props) {
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
-        type="text"
+        type="email"
         placeholder="Email"
         name="email"
         value={formData?.email}
@@ -107,7 +107,7 @@ function Register(props) {
   );
 }
 
-// export default Register
+export default Register
 
 //       {/* <input type="submit" /> */}
 //       {props?.register ? (
@@ -123,4 +123,4 @@ function Register(props) {
 //   );
 // }
 
-export default Register;
+// export default Register;
