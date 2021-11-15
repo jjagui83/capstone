@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 
 export const RegisterButton = styled.button`
+margin: 2px;
 font-size: 12px;
 padding: 2px;
 width: 100px;

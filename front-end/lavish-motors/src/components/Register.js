@@ -67,6 +67,7 @@ function Register(props) {
       <h1>Log In </h1>
 
       <input
+      className="shadow p-1 mb-2 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -77,6 +78,7 @@ function Register(props) {
       />
 
       <input
+       className="shadow p-1 mb-2 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -87,6 +89,7 @@ function Register(props) {
       />
 
       <input
+       className="shadow p-1 mb-2 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -97,6 +100,7 @@ function Register(props) {
       />
 
       <input
+       className="shadow p-1 mb-2 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
