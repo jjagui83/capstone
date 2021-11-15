@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const BannerImg = styled.img`
 height: 600px;
@@ -26,6 +26,36 @@ justify-content: center;
 flex-direction: column;
 `;
 
-export const BannerImageText = styled.div`
+export const FadeIn = keyframes`
+from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+}
 
+to {
+    opacity: 1;
+    transform: rotateX(0);
+}
+`;
+
+export const BannerH3 = styled.h3`
+font-size: 50px;
+animation-name: ${FadeIn};
+animation-duration: 8s;
+`;
+
+export const BannerH1 = styled.h1`
+font-size: 75px;
+animation-name: ${FadeIn};
+animation-duration: 13s;
+`;
+
+export const BannerButton = styled.button`
+animation-name: ${FadeIn};
+animation-duration: 22s;
+padding: 5px;
+width: 160px;
+height: 40px;
+border-radius: 60px;
+background-color: gold;
 `;
