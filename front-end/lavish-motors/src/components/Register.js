@@ -38,6 +38,16 @@ function Register(props) {
         alert(error.message);
       }
     };
+    const signout = async (e) => {
+      e.preventDefault();
+      const {user,session, error} = await supabase.auth.signOut();
+      if (user) {
+        history.push("/");
+      } else {
+        alert(error.message);
+      }
+    };
+    
 
     return (
         <LogInContainer>
@@ -89,6 +99,8 @@ function Register(props) {
             <button onClick={(e) => login(e)} type="submit" value="">
               Log In
             </button>
+
+            <button onClick={(e) => signout(e)}>Sign Out</button>
           {/* )}  */}
         </LogInContainer>
     )
