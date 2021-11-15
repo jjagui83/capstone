@@ -11,7 +11,7 @@ function BootstrapNavbar() {
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home"><NavImage src={Logo}/></Navbar.Brand>
+          <Navbar.Brand href="/"><NavImage src={Logo}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
