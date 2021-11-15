@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { firstName, lastName, email } from "../actions/userActions";
 import { useDispatch } from "react-redux";
 import { LogInContainer } from "../StyledComponents/HomepageStyle";
 import { createClient } from "@supabase/supabase-js";
@@ -11,7 +12,7 @@ const supabase = createClient(
 );
 
 function Register(props) {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -20,9 +21,9 @@ function Register(props) {
   });
   const history = useHistory();
 
-  const login = async (e) => {
+  const register = async (e) => {
     e.preventDefault();
-    const { user, session, error } = await supabase.auth.signIn({
+    const { user, session, error } = await supabase.auth.signUp({
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
@@ -35,14 +36,14 @@ function Register(props) {
     }
   };
 
-  const register = async (e) => {
+  const login = async (e) => {
     e.preventDefault();
-    const { user, session, error } = await supabase.auth.signUp({
-      email: formData.username,
+    const { user, session, error } = await supabase.auth.signIn({
+      email: formData.email,
       password: formData.password,
     });
     if (user) {
-      history.push("/login");
+      history.push("/");
     } else {
       alert(error.message);
     }
@@ -58,7 +59,7 @@ function Register(props) {
         }
         type="text"
         placeholder="First Name"
-        name="firstname"
+        name="firstName"
         value={formData?.firstName}
       />
 
@@ -68,7 +69,7 @@ function Register(props) {
         }
         type="text"
         placeholder="Last Name"
-        name="lastname"
+        name="lastName"
         value={formData?.lastName}
       />
 
@@ -92,18 +93,34 @@ function Register(props) {
         value={formData?.password}
       />
 
-      {/* <input type="submit" /> */}
-      {props?.register ? (
-        <button onClick={(e) => register(e)} type="submit" value="">
-          Register
-        </button>
-      ) : (
-        <button onClick={(e) => login(e)} type="submit" value="">
-          Log In
-        </button>
-      )}
+      {/* <input type="submit" />
+            {props?.login ? ( */}
+      <button onClick={(e) => register(e)} type="submit" value="">
+        Register
+      </button>
+      {/* ) : ( */}
+      <button onClick={(e) => login(e)} type="submit" value="">
+        Log In
+      </button>
+      {/* )}  */}
     </LogInContainer>
   );
 }
+
+// export default Register
+
+//       {/* <input type="submit" /> */}
+//       {props?.register ? (
+//         <button onClick={(e) => register(e)} type="submit" value="">
+//           Register
+//         </button>
+//       ) : (
+//         <button onClick={(e) => login(e)} type="submit" value="">
+//           Log In
+//         </button>
+//       )}
+//     </LogInContainer>
+//   );
+// }
 
 export default Register;
