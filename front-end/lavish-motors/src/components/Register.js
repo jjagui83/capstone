@@ -51,13 +51,7 @@ function Register(props) {
 
     const signout = async (e) => {
       e.preventDefault();
-      const { user, session, error } = await supabase.auth.signOut({
-        // firstName: formData.firstName,
-        // lastName: formData.lastName,
-         email: formData.email,
-       password: formData.password,
-        
-      });
+      const { user, session, error } = await supabase.auth.signOut();
       if (user) {
         history.push("/About");
       } else {
