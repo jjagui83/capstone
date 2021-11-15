@@ -1,17 +1,17 @@
-import React from 'react';
-import {useState} from 'react';
-import { firstName, lastName, email } from "../actions/userActions"
-import {useDispatch} from "react-redux";
-import { LogInContainer } from '../StyledComponents/HomepageStyle';
-import {createClient} from '@supabase/supabase-js'
-import {useHistory} from "react-router"
+// import React from 'react';
+// import {useState} from 'react';
+// import { firstName, lastName, email } from "../actions/userActions"
+// import {useDispatch} from "react-redux";
+// import { LogInContainer } from '../StyledComponents/HomepageStyle';
+// import {createClient} from '@supabase/supabase-js'
+// import {useHistory} from "react-router"
 
-const supabase = createClient("https://olnhrurwmonhkejpackd.supabase.co/", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjczMjY3NiwiZXhwIjoxOTUyMzA4Njc2fQ.Tm2RgeX9qDiT8vVT89NMvEj7MDvRzFrGjwPyfV6LGvI")
+// const supabase = createClient("https://olnhrurwmonhkejpackd.supabase.co/", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjczMjY3NiwiZXhwIjoxOTUyMzA4Njc2fQ.Tm2RgeX9qDiT8vVT89NMvEj7MDvRzFrGjwPyfV6LGvI")
 
-function Register(props) {
-    // const dispatch = useDispatch();
-    const [formData,setFormData] = useState({firstName:"", lastName: "", email: "", password: ""});
-    const history = useHistory();
+// function Register(props) {
+//     // const dispatch = useDispatch();
+//     const [formData,setFormData] = useState({firstName:"", lastName: "", email: "", password: ""});
+//     const history = useHistory();
 
     const login = async (e)  => {
       e.preventDefault();
@@ -39,42 +39,42 @@ function Register(props) {
       }
     };
 
-    return (
-        <LogInContainer>
-          <h1>Log In </h1>
+//     return (
+//         <LogInContainer>
+//           <h1>Log In </h1>
           
          
-                <input   onChange={(e) =>
-              setFormData({ ...formData, [e.target.name]: e.target.value })
-            }
-            type="text"
-            placeholder="First Name"
-            name="firstname"
-            value={formData?.firstName}/>
+//                 <input   onChange={(e) =>
+//               setFormData({ ...formData, [e.target.name]: e.target.value })
+//             }
+//             type="text"
+//             placeholder="First Name"
+//             name="firstname"
+//             value={formData?.firstName}/>
 
-            <input onChange={(e) =>
-              setFormData({ ...formData, [e.target.name]: e.target.value })
-            }
-            type="text"
-            placeholder="Last Name"
-            name="lastname"
-            value={formData?.lastName} />
+//             <input onChange={(e) =>
+//               setFormData({ ...formData, [e.target.name]: e.target.value })
+//             }
+//             type="text"
+//             placeholder="Last Name"
+//             name="lastname"
+//             value={formData?.lastName} />
 
-            <input onChange={(e) =>
-              setFormData({ ...formData, [e.target.name]: e.target.value })
-            }
-            type="text"
-            placeholder="Email"
-            name="email"
-            value={formData?.email}/>
+//             <input onChange={(e) =>
+//               setFormData({ ...formData, [e.target.name]: e.target.value })
+//             }
+//             type="text"
+//             placeholder="Email"
+//             name="email"
+//             value={formData?.email}/>
 
-          <input onChange={(e) =>
-              setFormData({ ...formData, [e.target.name]: e.target.value })
-            }
-            type="text"
-            placeholder="Password"
-            name="password"
-            value={formData?.password}/> 
+//           <input onChange={(e) =>
+//               setFormData({ ...formData, [e.target.name]: e.target.value })
+//             }
+//             type="text"
+//             placeholder="Password"
+//             name="password"
+//             value={formData?.password}/> 
            
           <input type="submit" />
             {/* {props?.register ? (
@@ -94,7 +94,7 @@ function Register(props) {
     )
 }
 
-export default Register
+// export default Register
 
       
     

@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { MainContainer, Button } from "../StyledComponents/BasketStyle";
+import { VehicleImage } from '../StyledComponents/VehicleStyle'
 function Basket(props) {
     const { cartItems } = props;
 
@@ -18,9 +19,9 @@ function Basket(props) {
             <ul style={{ marginLeft: -25 }}>
               {cartItems.map((item) => (
                 <li key={item.id}>
-                  <b><img src={item.image} alt=""></img></b>
-                  <b>{item.make} </b>
-                  <b>{item.model}</b>
+                  <b><VehicleImage  src={item.image} alt=""></VehicleImage ></b>
+                  <h6>{item.make} </h6>
+                  <h3>{item.model}</h3>
                   <Button
                     style={{ float: "right" }}
                     className="btn btn-danger btn-xs"
@@ -28,10 +29,9 @@ function Basket(props) {
                       props.removeFromCart(props.cartItems, item)
                     }
                   >
-                    X
+                    Remove
                   </Button>
-                  <br />
-                   ${(item.price)}
+                   <h1>${(item.price)}</h1>
                 </li>
               ))}
             </ul>
