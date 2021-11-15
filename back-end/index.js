@@ -32,10 +32,7 @@ app.get("/read/user_login", (req, res) => {
 
 // sign out of lavish motors? Giving problems
 app.put("/update/user_login", (req, res) => {
-  const { email, password, error } = await supabase.auth.signOut({
-    email: "",
-    password: "",
-  });
+  const { error } = await supabase.auth.signOut({});
 });
 
 // update cars to cart NEED TO RUN

@@ -36,37 +36,32 @@ function Register(props) {
     }
   };
 
-    const login = async (e) => {
-      e.preventDefault();
-      const {user,session, error} = await supabase.auth.signIn({
-        email: formData.email,
-        password: formData.password,
-      });
-      if (user) {
-        history.push("/");
-      } else {
-        alert(error.message);
-      }
-    };
+  const login = async (e) => {
+    e.preventDefault();
+    const { user, session, error } = await supabase.auth.signIn({
+      email: formData.email,
+      password: formData.password,
+    });
+    if (user) {
+      history.push("/");
+    } else {
+      alert(error.message);
+    }
+  };
 
-    const signout = async (e) => {
-      e.preventDefault();
-      const { user, session, error } = await supabase.auth.signOut({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        password: formData.password,
-      });
-      if (user) {
-        history.push("/About");
-      } else {
-        alert(error);
-      }
-    };
-    
+  const signout = async (e) => {
+    e.preventDefault();
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      alert(error);
+    } else {
+      history.push("/About");
+    }
+  };
 
   return (
     <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
+      {/*  */}
       <h1>Log In </h1>
 
       <input
@@ -111,26 +106,24 @@ function Register(props) {
 
       {/* <input type="submit" />
             {props?.login ? ( */}
-            <div>
-            <button
-              onClick={(e) => register(e)}
-              type="submit"
-              value=""
-            >
-              Register
-            </button>
-           {/* ) : ( */}
-            <button onClick={(e) => login(e)} type="submit" value="">
-              Log In
-            </button>
-            </div>
-            
-            <button onClick={(e) => signout(e)}type="submit">Sign Out</button>
-            
-          {/* )}  */}
-        </LogInContainer>
-    )
+      <div>
+        <button onClick={(e) => register(e)} type="submit" value="">
+          Register
+        </button>
+        {/* ) : ( */}
+        <button onClick={(e) => login(e)} type="submit" value="">
+          Log In
+        </button>
+      </div>
+      {/* // */}
+
+      <button onClick={(e) => signout(e)} type="submit">
+        Sign Out
+      </button>
+
+      {/* )}  */}
+    </LogInContainer>
+  );
 }
 
-export default Register
-
+export default Register;
