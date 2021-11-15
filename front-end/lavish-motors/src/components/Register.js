@@ -50,11 +50,14 @@ function Register(props) {
     };
     const signout = async (e) => {
       e.preventDefault();
-      const {user,session, error} = await supabase.auth.signOut();
+      const {user,session, error} = await supabase.auth.signOut({
+        email: formData.email,
+        password: formData.password,
+      });
       if (user) {
-        history.push("/");
+        history.push("/About");
       } else {
-        alert(error.message);
+        alert(error);
       }
     };
     
