@@ -36,18 +36,34 @@ function Register(props) {
     }
   };
 
-  const login = async (e) => {
-    e.preventDefault();
-    const { user, session, error } = await supabase.auth.signIn({
-      email: formData.email,
-      password: formData.password,
-    });
-    if (user) {
-      history.push("/");
-    } else {
-      alert(error.message);
-    }
-  };
+    const login = async (e) => {
+      e.preventDefault();
+      const {user,session, error} = await supabase.auth.signIn({
+        email: formData.email,
+        password: formData.password,
+      });
+      if (user) {
+        history.push("/");
+      } else {
+        alert(error.message);
+      }
+    };
+
+    const signout = async (e) => {
+      e.preventDefault();
+      const { user, session, error } = await supabase.auth.signOut({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        password: formData.password,
+      });
+      if (user) {
+        history.push("/About");
+      } else {
+        alert(error);
+      }
+    };
+    
 
   return (
     <LogInContainer>
@@ -95,32 +111,23 @@ function Register(props) {
 
       {/* <input type="submit" />
             {props?.login ? ( */}
-      <button onClick={(e) => register(e)} type="submit" value="">
-        Register
-      </button>
-      {/* ) : ( */}
-      <button onClick={(e) => login(e)} type="submit" value="">
-        Log In
-      </button>
-      {/* )}  */}
-    </LogInContainer>
-  );
+            <button
+              onClick={(e) => register(e)}
+              type="submit"
+              value=""
+            >
+              Register
+            </button>
+           {/* ) : ( */}
+            <button onClick={(e) => login(e)} type="submit" value="">
+              Log In
+            </button>
+
+            <button onClick={(e) => signout(e)}type="submit">Sign Out</button>
+          {/* )}  */}
+        </LogInContainer>
+    )
 }
 
 export default Register
 
-//       {/* <input type="submit" /> */}
-//       {props?.register ? (
-//         <button onClick={(e) => register(e)} type="submit" value="">
-//           Register
-//         </button>
-//       ) : (
-//         <button onClick={(e) => login(e)} type="submit" value="">
-//           Log In
-//         </button>
-//       )}
-//     </LogInContainer>
-//   );
-// }
-
-// export default Register;

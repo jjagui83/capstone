@@ -16,7 +16,7 @@ function BootstrapNavbar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
-              <Nav.Link as={Link} to={"/Register"}>Register</Nav.Link>
+              <Nav.Link as={Link} to={"/Register"}>Account</Nav.Link>
               <Nav.Link as={Link} to={"/About"}>About</Nav.Link>
               <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
               <Nav.Link as={Link} to={"/Vehicles"}>Vehicles</Nav.Link>
