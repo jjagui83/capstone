@@ -5,7 +5,7 @@ import { HomepageStyle, Image, Description } from "../StyledComponents/HomepageS
 export default function About() {
   return (
     <AboutContainer>
-    <Description className="Description">Welcome to Lavish Auto Exotic Car Rental, the premier exotic car rental service and private jet charter in Atlanta, GA and Houston, TX. With locations at both George Bush Intercontinental (IAH) Airport or Hartsfield–Jackson Atlanta International (ATL) Airport, and delivery options throughout Georgia and Texas, no local luxury car rental business covers as much ground as Lavish.
+    <Description className="Description">Welcome to Lavish Auto Exotic Car Rental, the premier exotic car rental service and private jet charter (Coming Soon!) in Atlanta, GA and Houston, TX. With locations at both George Bush Intercontinental (IAH) Airport or Hartsfield–Jackson Atlanta International (ATL) Airport, and delivery options throughout Georgia and Texas, no local luxury car rental business covers as much ground as Lavish.
     </Description>
     <br />
     <Description className="Description">Browse our selection of elite luxury cars and SUVs from manufacturers like Ferrari, Lamborghini, Rolls Royce, Aston Martin, Bentley, Mercedes, Cadillac, Maserati, Range Rover, BMW and Porsche.</Description>
