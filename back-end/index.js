@@ -24,7 +24,7 @@ app.post("/create_user", (req, res) => {
 // AUTH user_login table NEED TO RUN
 // NEED BCRYPT
 app.get("/read/user_login", (req, res) => {
-  const { email1, password1, error } = supabase.auth.signIn({
+  const { email, password, error } = supabase.auth.signIn({
     email: "",
     password: "",
   });
