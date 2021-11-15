@@ -51,8 +51,8 @@ function Register(props) {
 
     const signout = async (e) => {
       e.preventDefault();
-      const { user, session, error } = await supabase.auth.signOut();
-      if (user) {
+      const { error } = await supabase.auth.signOut();
+      if (error) {
         history.push("/About");
       } else {
         alert(error);
@@ -66,7 +66,6 @@ function Register(props) {
       <h1>Log In </h1>
 
       <input
-        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -77,7 +76,6 @@ function Register(props) {
       />
 
       <input
-        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -88,7 +86,6 @@ function Register(props) {
       />
 
       <input
-        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -99,7 +96,6 @@ function Register(props) {
       />
 
       <input
-        className="shadow p-2 mb-1 bg-white rounded"
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
@@ -109,7 +105,7 @@ function Register(props) {
         value={formData?.password}
       />
 
-            {/* {props?.login ? ( 
+            <div>
             <button
               onClick={(e) => register(e)}
               type="submit"
@@ -117,12 +113,13 @@ function Register(props) {
             >
               Register
             </button>
-           ) : ( 
+            
             <button onClick={(e) => login(e)} type="submit" value="">
               Log In
             </button>
+            </div>
 
-             </LogInContainer> */}
+             </LogInContainer>
     )
 }
 
