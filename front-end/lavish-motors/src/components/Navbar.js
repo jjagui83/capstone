@@ -32,10 +32,12 @@ function BootstrapNavbar() {
         email: formData.email,
         password: formData.password,
       });
-      if (user) {
-        history.push("/About");
+      if (error) {
+        alert(error)
+        ;
       } else {
-        alert(error);
+        history.push("/About")
+        ;
       }
     };
 
