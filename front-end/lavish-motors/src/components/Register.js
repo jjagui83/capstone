@@ -52,10 +52,11 @@ function Register(props) {
     const signout = async (e) => {
       e.preventDefault();
       const { user, session, error } = await supabase.auth.signOut({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        password: formData.password,
+        // firstName: formData.firstName,
+        // lastName: formData.lastName,
+         email: formData.email,
+       password: formData.password,
+        
       });
       if (user) {
         history.push("/About");
@@ -113,9 +114,8 @@ function Register(props) {
         value={formData?.password}
       />
 
-      {/* <input type="submit" />
-            {props?.login ? ( */}
-            <div>
+      
+            {props?.login ? ( 
             <button
               onClick={(e) => register(e)}
               type="submit"
@@ -123,7 +123,7 @@ function Register(props) {
             >
               Register
             </button>
-           {/* ) : ( */}
+           ) : ( 
             <button onClick={(e) => login(e)} type="submit" value="">
               Log In
             </button>
