@@ -9,7 +9,7 @@ export default function Banner() {
              <BannerOverlay>        
                     <BannerH3>Welcome</BannerH3>
                     <BannerH1> To Lavish Motors</BannerH1>
-                    <BannerButton>Click</BannerButton>
+                    <BannerButton>View Vehicles</BannerButton>
              </BannerOverlay>
          </BannerTextWrapper>
         </div>
