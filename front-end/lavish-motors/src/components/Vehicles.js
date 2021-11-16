@@ -3,8 +3,14 @@ import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import "../App.css";
-import { VehicleImage, VehicleContainer, VehicleContainer2,
-  VehicleInput, VehicleH3, VehicleH6 } from '../StyledComponents/VehicleStyle'
+import {
+  VehicleImage,
+  VehicleContainer,
+  VehicleContainer2,
+  VehicleInput,
+  VehicleH3,
+  VehicleH6,
+} from "../StyledComponents/VehicleStyle";
 
 class Products extends Component {
   componentDidMount() {
@@ -27,25 +33,27 @@ class Products extends Component {
             <VehicleH3>{product.model}</VehicleH3>
           </p>
           {/* <b>{util.formatCurrency(product.price)}</b> */}
-          <form action="/cart"
-            className="" 
-            onClick={(e) => this.props.addToCart(this.props.cartItems, product)}>
-            <VehicleInput type="submit" value="Rent Me">
-            </VehicleInput>
+          <form
+            action="/cart"
+            className=""
+            onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
+          >
+            <VehicleInput type="submit" value="Rent Me"></VehicleInput>
           </form>
         </div>
       </VehicleContainer>
     ));
 
     return (
-      <div className="container">
-            <div className="row">
-              <VehicleContainer2 className="shadow p-3 mb-5 bg-light"><h1>Browse Vehicles here</h1></VehicleContainer2>
-                {productItems}
-            </div>
-        </div>)
-    }
+      <div>
+        <VehicleContainer2 className="shadow p-3 mb-5 bg-light"><h1>Browse Vehicles here</h1></VehicleContainer2>
+        <div className="container">
+          <div className="row">{productItems}</div>
+        </div>
+      </div>
+    );
   }
+}
 const mapStateToProps = (state) => ({
   products: state.products.filteredItems,
   cartItems: state.cart.items,
