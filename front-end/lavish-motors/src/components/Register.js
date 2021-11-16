@@ -7,6 +7,7 @@ import {
   RegisterButton,
   RegisterTitle,
   RegisterContainer,
+  RegisterHeader
 } from "../StyledComponents/RegisterStyle";
 import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router";
@@ -67,7 +68,7 @@ function Register(props) {
   return (
     <div>
       <RegisterTitle className="shadow p-3 mb-5 bg-light">
-        <h4>Credentials</h4>
+        <RegisterHeader>Credentials</RegisterHeader>
       </RegisterTitle>
       <RegisterContainer>
         <LogInContainer className="shadow p-3 mb-5 bg-white rounded">

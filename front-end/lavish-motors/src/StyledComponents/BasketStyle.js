@@ -30,6 +30,11 @@ export const Button = styled.button`
   }
   `
 
+  export const Cartheader = styled.h4`
+color: gold;
+text-shadow: 2px 2px 2px grey;
+`;
+
   export const CartH1 = styled.h1`
   color: green;
   `;

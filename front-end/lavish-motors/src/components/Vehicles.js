@@ -10,6 +10,7 @@ import {
   VehicleInput,
   VehicleH3,
   VehicleH6,
+  Vehicleheader
 } from "../StyledComponents/VehicleStyle";
 
 class Products extends Component {
@@ -46,7 +47,7 @@ class Products extends Component {
 
     return (
       <div>
-        <VehicleContainer2 className="shadow p-3 mb-5 bg-light"><h4>Browse Vehicles here</h4></VehicleContainer2>
+        <VehicleContainer2 className="shadow p-3 mb-5 bg-light"><Vehicleheader>Browse Vehicles here</Vehicleheader></VehicleContainer2>
         <div className="container">
           <div className="row">{productItems}</div>
         </div>

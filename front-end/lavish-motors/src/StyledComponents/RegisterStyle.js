@@ -5,6 +5,11 @@ text-align: center;
 
 `;
 
+export const RegisterHeader = styled.h4`
+color: gold;
+text-shadow: 2px 2px 2px grey;
+`;
+
 export const RegisterContainer = styled.div`
 display: flex;
 justify-content: center;
