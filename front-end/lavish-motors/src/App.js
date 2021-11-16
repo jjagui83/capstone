@@ -22,42 +22,40 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Register from "./components/Register";
 
 function App() {
-  
-    return (
-      <Router>
-        <Switch>
-          <Provider store={store}>
-            <div className="">
-              <BootstrapNavbar />
+  return (
+    <Router>
+      <Switch>
+        <Provider store={store}>
+          <div className="">
+            <BootstrapNavbar />
 
-              <Route  path="/Cart">
-                <Cart/>
-              </Route>
-              <Route path="/Checkout">
-                <Checkout />
-              </Route>
-              <Route path="/Contact">
-                <Contact/>
-              </Route>
-              <Route  path="/Vehicles">
-                <Vehicles />
-              </Route>
-              <Route  path="/Register">
-                <Register />
-              </Route>
-              <Route  path="/About">
-                <About />
-              </Route>
-                <Route exact path="/">
-                <Homepage />
-              </Route>
-              <Copyright />
-            </div>
-          </Provider>
-        </Switch>
-      </Router>
-    );
-  }
-
+            <Route path="/Cart">
+              <Cart />
+            </Route>
+            <Route path="/Checkout">
+              <Checkout />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+            <Route path="/Vehicles">
+              <Vehicles />
+            </Route>
+            <Route path="/Register">
+              <Register />
+            </Route>
+            <Route path="/About">
+              <About />
+            </Route>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
+            <Copyright />
+          </div>
+        </Provider>
+      </Switch>
+    </Router>
+  );
+}
 
 export default App;
