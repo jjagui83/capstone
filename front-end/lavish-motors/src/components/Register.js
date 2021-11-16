@@ -63,7 +63,7 @@ function Register(props) {
 
   return (
    <div>
-     <RegisterTitle className="shadow p-3 mb-5 bg-light"><h1>Credentials</h1></RegisterTitle>
+     <RegisterTitle className="shadow p-3 mb-5 bg-light"><h4>Credentials</h4></RegisterTitle>
     <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
       <h1>Log In </h1>
 
