@@ -21,7 +21,7 @@ export default function Homepage() {
       
 
       <HomeContainer>
-        <HomeH1>Brands We Work With</HomeH1>
+        <HomeH1>BRANDS WE WORK WITH</HomeH1>
       </HomeContainer>
 
     <LogoMainContainer>

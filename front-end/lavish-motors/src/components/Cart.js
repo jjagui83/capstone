@@ -1,13 +1,13 @@
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
-import { MainContainer, Button, CartH1, CartH3, CartH6, CartTitle } from "../StyledComponents/BasketStyle";
+import { MainContainer, Button, CartH1, CartH3, CartH6, CartTitle, Cartheader } from "../StyledComponents/BasketStyle";
 import { VehicleImage } from '../StyledComponents/VehicleStyle'
 function Cart(props) {
     const { cartItems } = props;
 
     return (
       <div>
-        <CartTitle className="shadow p-3 mb-5 bg-light"><h4>Cart</h4></CartTitle>
+        <CartTitle className="shadow p-3 mb-5 bg-light"><Cartheader>CART</Cartheader></CartTitle>
       <MainContainer className="shadow p-3 mb-5 bg-light">
         {cartItems.length === 0 ? (
           "You currently don't have any vehicle selected to rent."

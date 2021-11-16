@@ -6,7 +6,8 @@ import { LogInContainer } from "../StyledComponents/HomepageStyle";
 import {
   RegisterButton,
   RegisterTitle,
-  RegisterContainer
+  RegisterContainer,
+  RegisterHeader
 } from "../StyledComponents/RegisterStyle";
 import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router";
@@ -65,77 +66,68 @@ function Register(props) {
   };
 
   return (
-   <div>
-     <RegisterTitle className="shadow p-3 mb-5 bg-light"><h4>Credentials</h4></RegisterTitle>
-     <RegisterContainer>
-    <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
-      <h1>Log In </h1>
+    <div>
+      <RegisterTitle className="shadow p-3 mb-5 bg-light">
+        <RegisterHeader>CREDENTIALS</RegisterHeader>
+      </RegisterTitle>
+      <RegisterContainer>
+        <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
+          <h1>Log In </h1>
 
-      <input
-      className="shadow p-1 mb-2 bg-white rounded"
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
-        type="text"
-        placeholder="First Name"
-        name="firstName"
-        value={formData?.firstName}
-      />
+          <input
+            className="shadow p-1 mb-2 bg-white rounded"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
+            type="text"
+            placeholder="First Name"
+            name="firstName"
+            value={formData?.firstName}
+          />
 
-        <input
-          className="shadow p-1 mb-2 bg-white rounded"
-          onChange={(e) =>
-            setFormData({ ...formData, [e.target.name]: e.target.value })
-          }
-          type="text"
-          placeholder="First Name"
-          name="firstName"
-          value={formData?.firstName}
-        />
+          <input
+            className="shadow p-1 mb-2 bg-white rounded"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            value={formData?.lastName}
+          />
 
-        <input
-          className="shadow p-1 mb-2 bg-white rounded"
-          onChange={(e) =>
-            setFormData({ ...formData, [e.target.name]: e.target.value })
-          }
-          type="text"
-          placeholder="Last Name"
-          name="lastName"
-          value={formData?.lastName}
-        />
+          <input
+            className="shadow p-1 mb-2 bg-white rounded"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={formData?.email}
+          />
 
-        <input
-          className="shadow p-1 mb-2 bg-white rounded"
-          onChange={(e) =>
-            setFormData({ ...formData, [e.target.name]: e.target.value })
-          }
-          type="email"
-          placeholder="Email"
-          name="email"
-          value={formData?.email}
-        />
+          <input
+            className="shadow p-1 mb-2 bg-white rounded"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
+            type="text"
+            placeholder="Password"
+            name="password"
+            value={formData?.password}
+          />
 
-        <input
-          className="shadow p-1 mb-2 bg-white rounded"
-          onChange={(e) =>
-            setFormData({ ...formData, [e.target.name]: e.target.value })
-          }
-          type="text"
-          placeholder="Password"
-          name="password"
-          value={formData?.password}
-        />
+          <div>
+            <RegisterButton onClick={(e) => register(e)} type="submit" value="">
+              Register
+            </RegisterButton>
 
-        <div>
-          <RegisterButton onClick={(e) => register(e)} type="submit" value="">
-            Register
-          </RegisterButton>
-
-          <RegisterButton onClick={(e) => login(e)} type="submit" value="">
-            Log In
-          </RegisterButton>
-        </div>
-      </LogInContainer>
+            <RegisterButton onClick={(e) => login(e)} type="submit" value="">
+              Log In
+            </RegisterButton>
+          </div>
+        </LogInContainer>
       </RegisterContainer>
     </div>
   );

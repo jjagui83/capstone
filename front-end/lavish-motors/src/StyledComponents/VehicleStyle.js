@@ -42,3 +42,8 @@ export const VehicleH3 = styled.h3`
 color: black;
 text-decoration: none;
 `;
+
+export const Vehicleheader = styled.h4`
+color: gold;
+text-shadow: 2px 2px 2px grey;
+`;

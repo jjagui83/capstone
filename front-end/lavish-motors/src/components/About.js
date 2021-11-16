@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutContainer, ContactTitle } from "../StyledComponents/AboutStyle";
+import { AboutContainer, ContactTitle, AboutTitle } from "../StyledComponents/AboutStyle";
 import {
   HomepageStyle,
   Image,
@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div>
       <ContactTitle className="shadow p-3 mb-5 bg-light">
-        <h4>About</h4>
+        <AboutTitle>ABOUT</AboutTitle>
       </ContactTitle>
       <AboutContainer>
         <Description className="Description">

@@ -1,10 +1,10 @@
 import React from 'react'
-import { MainContainer, ContactTitle } from "../StyledComponents/ContactStyle"
+import { MainContainer, ContactTitle, Contactheader } from "../StyledComponents/ContactStyle"
 
 export default function Contact() {
     return (
         <div>
-             <ContactTitle className="shadow p-3 mb-5 bg-light"><h4>Contact Us</h4></ContactTitle>
+             <ContactTitle className="shadow p-3 mb-5 bg-light"><Contactheader>CONTACT US</Contactheader></ContactTitle>
         <MainContainer>
             <p>
             We put you behind the wheel of the best cars in the world. Visit our location at George Bush Intercontinental Airport or Hartsfield–Jackson Atlanta International Airport to choose from our unsurpassed selection of luxury car rentals.

@@ -22,6 +22,7 @@ gap: 15px;
 border-radius: 8px;
 height: 400px;
 background-color: #B7CFDC;
+padding: 15px;
 `;
 
 export const LogoContainer = styled.div`
@@ -46,7 +47,8 @@ export const HomeH1 = styled.h1`
 margin-top: 15px;
 margin-bottom: 15px;
 text-align: center;
-color: black;
+color: gold;
+text-shadow: 2px 2px 2px grey;
 `;
 
 export const Description = styled.p`
