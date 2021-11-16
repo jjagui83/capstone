@@ -18,10 +18,11 @@ export const Button = styled.button`
 //   background-color: #282C34;
   color: #fff;
   border: none;
+  box-shadow: 3px 3px 3px gray;
   border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  font-size: 1.2em;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 15px;
   cursor: pointer;
   &:hover {
     background-color: #fff;
