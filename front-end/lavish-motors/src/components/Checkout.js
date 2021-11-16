@@ -11,7 +11,7 @@ class Checkout extends React.Component {
     super(props);
     this.state = {
       location: "Atlanta",
-      date: ""
+      date: "",
     };
   }
 
@@ -19,7 +19,7 @@ class Checkout extends React.Component {
     if (this.props.location || this.props.date) {
       this.setState({
         location: this.props.location,
-        date: this.props.date
+        date: this.props.date,
       });
     }
   }
@@ -32,22 +32,22 @@ class Checkout extends React.Component {
       this.setState({
         redirect: false,
         location: this.props.location,
-        date: this.props.date
+        date: this.props.date,
       });
     }
   }
 
-  handleDateChange = selectedDate => {
-    if(selectedDate){
-    this.setState({
-      date: selectedDate._d.toISOString().slice(0, 10)
-    });
-  }
+  handleDateChange = (selectedDate) => {
+    if (selectedDate) {
+      this.setState({
+        date: selectedDate._d.toISOString().slice(0, 10),
+      });
+    }
   };
 
   handleChange = (e, data) => {
     this.setState({
-      location: data.value
+      location: data.value,
     });
   };
 
@@ -113,7 +113,7 @@ class Checkout extends React.Component {
                   defaultValue={this.props.location}
                   style={{
                     height: "32px",
-                    width: "205px"
+                    width: "205px",
                   }}
                 />
                 <Form.Field>
@@ -124,7 +124,11 @@ class Checkout extends React.Component {
                     defaultValue={moment(this.props.date, dateFormat)}
                   />
                 </Form.Field>
-                <Button style={{ height: "32px", width: "205px", marginTop: "25px" }} type="submit" onClick={this.handleSubmit}>
+                <Button
+                  style={{ height: "32px", width: "205px", marginTop: "25px" }}
+                  type="submit"
+                  onClick={this.handleSubmit}
+                >
                   Submit
                 </Button>
               </Form.Group>
