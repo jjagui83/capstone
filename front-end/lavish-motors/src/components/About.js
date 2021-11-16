@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div>
       <ContactTitle className="shadow p-3 mb-5 bg-light">
-        <AboutTitle>About</AboutTitle>
+        <AboutTitle>ABOUT</AboutTitle>
       </ContactTitle>
       <AboutContainer>
         <Description className="Description">

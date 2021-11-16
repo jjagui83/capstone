@@ -5,7 +5,7 @@ text-align: center;
 
 `;
 
-export const RegisterHeader = styled.h4`
+export const RegisterHeader = styled.h3`
 color: gold;
 text-shadow: 2px 2px 2px grey;
 `;

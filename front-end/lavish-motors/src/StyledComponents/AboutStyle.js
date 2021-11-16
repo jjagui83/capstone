@@ -10,7 +10,7 @@ export const ContactTitle = styled.div`
 text-align: center;
 `;
 
-export const AboutTitle = styled.h4`
+export const AboutTitle = styled.h3`
 color: gold;
 text-shadow: 2px 2px 2px grey;
 `;

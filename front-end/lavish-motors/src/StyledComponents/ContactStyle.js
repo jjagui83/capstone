@@ -13,7 +13,7 @@ export const ContactTitle = styled.div`
 text-align: center;
 `;
 
-export const Contactheader = styled.h4`
+export const Contactheader = styled.h3`
 color: gold;
 text-shadow: 2px 2px 2px grey;
 `;

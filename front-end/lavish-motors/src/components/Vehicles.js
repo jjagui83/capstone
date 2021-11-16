@@ -47,7 +47,7 @@ class Products extends Component {
 
     return (
       <div>
-        <VehicleContainer2 className="shadow p-3 mb-5 bg-light"><Vehicleheader>Browse Vehicles here</Vehicleheader></VehicleContainer2>
+        <VehicleContainer2 className="shadow p-3 mb-5 bg-light"><Vehicleheader>BROWSE VEHICLES HERE</Vehicleheader></VehicleContainer2>
         <div className="container">
           <div className="row">{productItems}</div>
         </div>
