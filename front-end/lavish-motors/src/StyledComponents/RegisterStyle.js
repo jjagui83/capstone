@@ -21,5 +21,5 @@ color: black;
 &:active {
   background-color: white;
   box-shadow: 0 3px black;
-  transform: translateY(5px);
+  transform: translateY(5px);}
 `;

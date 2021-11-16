@@ -64,12 +64,21 @@ function Register(props) {
   };
 
   return (
-    <div>
-      <RegisterTitle className="shadow p-3 mb-5 bg-light">
-        <h1>Credentials</h1>
-      </RegisterTitle>
-      <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
-        <h1>Log In </h1>
+   <div>
+     <RegisterTitle className="shadow p-3 mb-5 bg-light"><h4>Credentials</h4></RegisterTitle>
+    <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
+      <h1>Log In </h1>
+
+      <input
+      className="shadow p-1 mb-2 bg-white rounded"
+        onChange={(e) =>
+          setFormData({ ...formData, [e.target.name]: e.target.value })
+        }
+        type="text"
+        placeholder="First Name"
+        name="firstName"
+        value={formData?.firstName}
+      />
 
         <input
           className="shadow p-1 mb-2 bg-white rounded"
