@@ -62,7 +62,7 @@ class Checkout extends React.Component {
   };
 
   render() {
-    const locationOptions = {city1: "Atlanta", city2: "Houston"};
+    const locationOptions = { city1: "Atlanta", city2: "Houston" };
     const map = new Map();
     // for (const carInstance of this.props.carDetails) {
     //   if (!map.has(carInstance.location)) {
