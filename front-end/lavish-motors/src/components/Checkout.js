@@ -62,7 +62,7 @@ class Checkout extends React.Component {
   };
 
   render() {
-    const locationOptions = ["Atlanta", "Houston"];
+    const locationOptions = {city1: "Atlanta", city2: "Houston"};
     const map = new Map();
     // for (const carInstance of this.props.carDetails) {
     //   if (!map.has(carInstance.location)) {
@@ -76,7 +76,7 @@ class Checkout extends React.Component {
     // }
 
     if (this.state.redirect) {
-      return <Redirect to={`/car/${this.state.location}/${this.state.date}`} />;
+      return <Redirect to={`/Confirmation`} />;
     }
     const dateFormat = "MM-DD-YYYY";
 

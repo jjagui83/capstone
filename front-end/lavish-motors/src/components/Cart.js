@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { MainContainer, Button, CartH1, CartH3, CartH6, CartTitle } from "../StyledComponents/BasketStyle";
 import { VehicleImage } from '../StyledComponents/VehicleStyle'
-function Basket(props) {
+function Cart(props) {
     const { cartItems } = props;
 
     return (
@@ -54,4 +54,4 @@ function Basket(props) {
 const mapStateToProps = (state) => ({
   cartItems: state.cart.items,
 });
-export default connect(mapStateToProps, { addToCart, removeFromCart })(Basket);
+export default connect(mapStateToProps, { addToCart, removeFromCart })(Cart);
