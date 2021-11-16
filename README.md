@@ -18,11 +18,11 @@ npm install
 
 ## Author
 
-👤 **Pamela Long, Jose Aguilar, Xavier McGriff**
+👤 **Pamela Long, Jose Aguilar, Xavier McGriff, Justin Gibbs**
 
 * Website: TBD
-* Github: [@jjagui83](https://github.com/jjagui83)
-* LinkedIn: [@justin-gibbs-215319141](https://linkedin.com/in/justin-gibbs-215319141)
+* Github: [@Jose's Repo](https://github.com/jjagui83), [@Pamela's Repo](https://github.com/PamelaLong), [@Xavier's Repo](https://github.com/xmcgriff92), [@Justin's Repo](https://github.com/wonkyDialup)
+* LinkedIn: [@Justin Gibbs](https://linkedin.com/in/justin-gibbs-215319141), [@Xavier McGriff](https://linkedin.com/in/xavier-mcgriff-a1025b222), [@Pamela Long](https://www.linkedin.com/in/pamela-long-0049b297), [@Jose Aguilar](https://www.linkedin.com/in/jose-aguilar-53943621b/)
 
 ## 🤝 Contributing
 
