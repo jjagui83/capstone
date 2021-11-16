@@ -12,6 +12,7 @@ justify-content: center;
 
 export const RegisterButton = styled.button`
 margin: 2px;
+margin-bottom: 15px;
 font-size: 12px;
 padding: 2px;
 width: 100px;

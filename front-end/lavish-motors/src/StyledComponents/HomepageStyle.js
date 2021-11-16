@@ -22,6 +22,7 @@ gap: 15px;
 border-radius: 8px;
 height: 400px;
 background-color: #B7CFDC;
+padding: 15px;
 `;
 
 export const LogoContainer = styled.div`
