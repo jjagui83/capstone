@@ -7,6 +7,8 @@ width: 100%;
 
 export const BannerTextWrapper = styled.div`
 height: 90vh;
+display: flex;
+text-align: center;
 background-image: url("https://images.unsplash.com/photo-1570294645755-cbd74614549d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1499&q=80");
 -webkit-background-size: cover;
 background-position: fixed;
