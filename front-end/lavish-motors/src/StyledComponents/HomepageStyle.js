@@ -24,9 +24,22 @@ height: 400px;
 background-color: #B7CFDC;
 `;
 
-export const GridColContainer = styled.div`
+export const LogoContainer = styled.div`
 margin-bottom: 15px;
+justify-content: center;
 text-align: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+`;
+
+export const LogoMainContainer = styled.div`
+text-align: center;
+`;
+
+export const LogoImage = styled.img`
+height: 250px;
+width: 175px;
 `;
 
 export const HomeH1 = styled.h1`
