@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const RegisterTitle = styled.div`
 text-align: center;
+
+`;
+
+export const RegisterContainer = styled.div`
+display: flex;
+justify-content: center;
 `;
 
 export const RegisterButton = styled.button`

@@ -6,6 +6,7 @@ import { LogInContainer } from "../StyledComponents/HomepageStyle";
 import {
   RegisterButton,
   RegisterTitle,
+  RegisterContainer
 } from "../StyledComponents/RegisterStyle";
 import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router";
@@ -66,6 +67,7 @@ function Register(props) {
   return (
    <div>
      <RegisterTitle className="shadow p-3 mb-5 bg-light"><h4>Credentials</h4></RegisterTitle>
+     <RegisterContainer>
     <LogInContainer className="shadow p-3 mb-5 bg-white rounded">
       <h1>Log In </h1>
 
@@ -134,6 +136,7 @@ function Register(props) {
           </RegisterButton>
         </div>
       </LogInContainer>
+      </RegisterContainer>
     </div>
   );
 }
