@@ -7,7 +7,7 @@ function Basket(props) {
 
     return (
       <div>
-        <CartTitle className="shadow p-3 mb-5 bg-light"><h1>Cart</h1></CartTitle>
+        <CartTitle className="shadow p-3 mb-5 bg-light"><h4>Cart</h4></CartTitle>
       <MainContainer className="shadow p-3 mb-5 bg-light">
         {cartItems.length === 0 ? (
           "You currently don't have any vehicle selected to rent."
