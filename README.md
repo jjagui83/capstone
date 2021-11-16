@@ -22,7 +22,7 @@ npm install
 
 * Website: TBD
 * Github: [@jjagui83](https://github.com/jjagui83)
-* LinkedIn: [@Justin Gibbs](https://linkedin.com/in/justin-gibbs-215319141),[@Xavier McGriff](https://linkedin.com/in/xavier-mcgriff-a1025b222),[@Pamela Long](https://www.linkedin.com/in/pamela-long-0049b297),[@Jose Aguilar](https://www.linkedin.com/in/pamela-long-0049b297)
+* LinkedIn: [@Justin Gibbs](https://linkedin.com/in/justin-gibbs-215319141), [@Xavier McGriff](https://linkedin.com/in/xavier-mcgriff-a1025b222), [@Pamela Long](https://www.linkedin.com/in/pamela-long-0049b297), [@Jose Aguilar](https://www.linkedin.com/in/jose-aguilar-53943621b/)
 
 ## 🤝 Contributing
 
