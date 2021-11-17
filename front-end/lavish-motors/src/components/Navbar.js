@@ -6,8 +6,8 @@ import { createClient } from "@supabase/supabase-js";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo/Logo2.png";
-import { NavImage, NavSignOutButton } from "../StyledComponents/NavbarStyle";
+import Logo from "../assets/logo/Logo2.png";
+import { NavImage, NavSignOutButton, NavContainer } from "../StyledComponents/NavbarStyle";
 
 
 function BootstrapNavbar() {
@@ -44,7 +44,7 @@ function BootstrapNavbar() {
 
 
   return (
-    <div>
+    <NavContainer>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/"><NavImage src={Logo}/></Navbar.Brand>
@@ -64,7 +64,7 @@ function BootstrapNavbar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </NavContainer>
   );
 }
 

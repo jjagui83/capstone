@@ -4,11 +4,15 @@ import { Link } from "react-router-dom"
 export const NavbarContainer = styled.div`
 background-color: black;
 width: 100%;
-font-family: 'Raleway', sans-serif;
+font-family: roboto;
 display: flex;
 justify-content: center;
 align-items: center;
 padding: 25px 0px 15px 25px;
+`;
+
+export const NavContainer = styled.div`
+font-family: roboto;
 `;
 
 export const NavImage = styled.img`
