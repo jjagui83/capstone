@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
 background-color: #212529;
 border-radius: 5px;
 padding: 15px;
-margin-bottom: 20px;
+margin-bottom: 5px;
 `;
 
 export const CardHeader = styled.h2`
@@ -19,8 +19,8 @@ font-family: roboto;
 export const CardImage = styled.img`
 border: 2px solid white;
 box-shadow: 5px 5px 5px black;
-height: 150px;
-width: 150px;
+height: 125px;
+width: 75px;
 border-radius: 50%;
 `
 
