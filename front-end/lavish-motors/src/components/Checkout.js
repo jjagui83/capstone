@@ -1,143 +1,99 @@
-import React from "react";
-import { Button, Select, Form } from "semantic-ui-react";
-import { Redirect } from "react-router-dom";
-import { DatePicker } from "antd";
-import moment from "moment";
+import React, { useState } from "react";
+import {
+  Elements,
+  CardElement,
+  useStripe,
+  useElements,
+} from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import "./Checkout.css"
 
-import "antd/dist/antd.css";
-
-class Checkout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      location: "Atlanta",
-      date: "",
-    };
-  }
-
-  componentDidMount() {
-    if (this.props.location || this.props.date) {
-      this.setState({
-        location: this.props.location,
-        date: this.props.date,
-      });
+ const Checkout = () => {
+  const stripe = loadStripe(
+    "pk_test_***************"
+  );
+  return (
+    <Elements stripe={stripe}>
+      <CheckoutForm />
+    </Elements>
+  );
+};
+function CheckoutForm() {
+  const [isPaymentLoading, setPaymentLoading] = useState(false);
+  const stripe = useStripe();
+  const elements = useElements();
+  const payMoney = async (e) => {
+    e.preventDefault();
+    if (!stripe || !elements) {
+      return;
     }
-  }
-
-  componentDidUpdate(prevState) {
-    if (
-      prevState.location !== this.props.location ||
-      prevState.date !== this.props.date
-    ) {
-      this.setState({
-        redirect: false,
-        location: this.props.location,
-        date: this.props.date,
-      });
-    }
-  }
-
-  handleDateChange = (selectedDate) => {
-    if (selectedDate) {
-      this.setState({
-        date: selectedDate._d.toISOString().slice(0, 10),
-      });
-    }
-  };
-
-  handleChange = (e, data) => {
-    this.setState({
-      location: data.value,
+    setPaymentLoading(true);
+    // const clientSecret = getClientSecret();
+    
+    const paymentResult = await stripe.confirmCardPayment( {
+      payment_method: {
+        card: elements.getElement(CardElement),
+        billing_details: {
+          name: "Faruq Yusuff",
+        },
+      },
     });
-  };
-
-  handleSubmit = () => {
-    if (this.state.location === "") {
-      alert("Please enter location");
-    } else if (this.state.date === "") {
-      alert("Please select date");
+    setPaymentLoading(false);
+    if (paymentResult.error) {
+      alert(paymentResult.error.message);
     } else {
-      this.setState({ redirect: true });
+      if (paymentResult.paymentIntent.status === "succeeded") {
+        alert("Success!");
+      }
     }
   };
 
-  render() {
-    const locationOptions = {city1: "Atlanta", city2: "Houston"};
-    const map = new Map();
-    // for (const carInstance of this.props.carDetails) {
-    //   if (!map.has(carInstance.location)) {
-    //     map.set(carInstance.location, true);
-    //     locationOptions.push({
-    //       key: carInstance.location,
-    //       text: carInstance.location,
-    //       value: carInstance.location
-    //     });
-    //   }
-    // }
-
-    if (this.state.redirect) {
-      return <Redirect to={`/Confirmation`} />;
-    }
-    const dateFormat = "MM-DD-YYYY";
-
-    return (
-      <div>
-        {this.props.landing ? (
-          <Form>
-            <Form.Field>
-              <label>Location</label>
-              <Select
-                placeholder="Select your location"
-                options={locationOptions}
-                onChange={this.handleChange}
-              />
-            </Form.Field>
-            <Form.Field>
-              <label>Date</label>
-              <DatePicker onChange={this.handleDateChange} />
-            </Form.Field>
-            <Button type="submit" onClick={this.handleSubmit}>
-              Submit
-            </Button>
-          </Form>
-        ) : (
-          <div>
-            <Form>
-              <Form.Group widths="equal">
-                <Form.Select
-                  fluid
-                  label="Location"
-                  options={locationOptions}
-                  placeholder="Select Your location"
-                  onChange={this.handleChange}
-                  defaultValue={this.props.location}
-                  style={{
-                    height: "32px",
-                    width: "205px",
-                  }}
-                />
-                <Form.Field>
-                  <label>Date</label>
-                  <DatePicker
-                    style={{ height: "32px", width: "205px" }}
-                    onChange={this.handleDateChange}
-                    defaultValue={moment(this.props.date, dateFormat)}
-                  />
-                </Form.Field>
-                <Button
-                  style={{ height: "32px", width: "205px", marginTop: "25px" }}
-                  type="submit"
-                  onClick={this.handleSubmit}
-                >
-                  Submit
-                </Button>
-              </Form.Group>
-            </Form>
+  return (
+    <div
+      style={{
+        padding: "3rem",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "500px",
+          margin: "0 auto",
+        }}
+      >
+        <form
+          style={{
+            display: "block",
+            width: "100%",
+          }}
+          onSubmit = {payMoney}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <CardElement
+              className="card"
+              options={{
+                style: {
+                  base: {
+                    backgroundColor: "white"
+                  } 
+                },
+              }}
+            />
+            <button
+              className="pay-button"
+              disabled={isPaymentLoading}
+            >
+              {isPaymentLoading ? "Reservation Confirmed" : "Pay"}
+            </button>
           </div>
-        )}
+        </form>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
 export default Checkout;

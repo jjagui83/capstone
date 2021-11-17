@@ -20,7 +20,7 @@ export const CardImage = styled.img`
 border: 2px solid white;
 box-shadow: 5px 5px 5px black;
 height: 150px;
-width: 100px;
+width: 150px;
 border-radius: 50%;
 `
 

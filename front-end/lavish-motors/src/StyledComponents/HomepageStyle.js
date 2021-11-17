@@ -53,8 +53,8 @@ text-align: center;
 `;
 
 export const LogoImage = styled.img`
-height: 250px;
-width: 175px;
+height: auto;
+width: 10%;
 `;
 
 export const HomeH1 = styled.h1`
