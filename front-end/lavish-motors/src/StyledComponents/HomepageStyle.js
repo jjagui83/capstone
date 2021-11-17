@@ -12,14 +12,11 @@ width: 100%;
 
 export const TestContainer = styled.div`
 margin-top: 35px;
-display: flex;
-flex-direction: column;
+display: grid;
 text-align: center;
-justify-content: center;
-align-items: center;
 width: 100%;
 gap: 15px;
-height: 400px;
+height: 75vh;
 background-color: black;
 padding: 15px;
 `;
@@ -59,7 +56,7 @@ width: 10%;
 
 export const HomeH1 = styled.h1`
 margin-top: 15px;
-margin-bottom: 15px;
+margin-bottom: 5px;
 text-align: center;
 color: gold;
 text-shadow: 2px 2px 2px grey;
