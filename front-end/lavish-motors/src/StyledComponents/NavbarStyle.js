@@ -13,7 +13,7 @@ padding: 25px 0px 15px 25px;
 
 export const NavImage = styled.img`
 width: 100px;
-height: 55px;
+height: 50px;
 `;
 
 export const NavSignOutButton = styled.button`

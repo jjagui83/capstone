@@ -10,7 +10,6 @@ import {
   LogoMainContainer,
   TestContainer
 } from "../StyledComponents/HomepageStyle";
-import Logo from "../assets/logo/logo6.png";
 import Banner from "./Banner";
 import Register from "./Register";
 import Testimonials from "./Testimonials";
