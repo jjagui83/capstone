@@ -10,6 +10,20 @@ export const HomeContainer = styled.div`
 width: 100%;
 `;
 
+export const TestContainer = styled.div`
+margin-top: 35px;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+align-items: center;
+width: 100%;
+gap: 15px;
+height: 400px;
+background-color: black;
+padding: 15px;
+`;
+
 export const LogInContainer =styled.div`
 margin-top: 35px;
 display: flex;
