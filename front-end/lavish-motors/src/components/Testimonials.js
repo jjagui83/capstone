@@ -49,6 +49,7 @@ export default function Testimonials() {
               <CardPosition>CEO</CardPosition>
             </CardContainer>
           </Col>
+
         </Row>
       </Container>
     </TestimonialsContainer>
