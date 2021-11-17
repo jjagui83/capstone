@@ -45,10 +45,12 @@ color: white;
 font-size: 50px;
 animation-name: ${FadeIn};
 animation-duration: 8s;
+font-family: roboto;
 `;
 
 export const BannerH1 = styled.h1`
 color: white;
+font-family: roboto;
 font-size: 75px;
 animation-name: ${FadeIn};
 animation-duration: 13s;
@@ -63,6 +65,7 @@ width: 160px;
 height: 40px;
 border-radius: 60px;
 background-color: gold;
+font-family: roboto;
 color: black;
 
 &:hover {

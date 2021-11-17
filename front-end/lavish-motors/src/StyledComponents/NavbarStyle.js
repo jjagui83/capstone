@@ -24,6 +24,7 @@ height: 30px;
 border-radius: 60px;
 background-color: gold;
 color: black;
+font-family: roboto;
 
 &:hover {
   background-color: white;

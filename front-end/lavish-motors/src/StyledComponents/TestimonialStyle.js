@@ -13,6 +13,7 @@ margin-bottom: 20px;
 
 export const CardHeader = styled.h2`
 color: white;
+font-family: roboto;
 `;
 
 export const CardImage = styled.img`
@@ -25,8 +26,10 @@ border-radius: 50%;
 
 export const CardTitle = styled.h4`
 color: white;
+font-family: roboto;
 `;
 
 export const CardPosition = styled.h4`
 color: gold;
+font-family: roboto;
 `;
