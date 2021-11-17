@@ -8,7 +8,6 @@ import {
   CardPosition,
 } from "../StyledComponents/TestimonialStyle";
 import { Container, Row, Col } from "react-bootstrap";
-import TestimonialCard from "./TestimonialCard";
 
 export default function Testimonials() {
   return (
@@ -16,7 +15,7 @@ export default function Testimonials() {
       <Container>
         <Row>
           <Col>
-            <CardContainer>
+            <CardContainer class="shadow p-1 mb-5 bg-dark rounded">
               <CardHeader>"blah blah blah"</CardHeader>
               <CardImage
                 src="https://www.glam.com/wp-content/uploads/2021/07/Screenshot-2021-07-09-6.32.47-PM.png"
@@ -28,7 +27,7 @@ export default function Testimonials() {
           </Col>
 
           <Col>
-            <CardContainer>
+            <CardContainer class="shadow p-1 mb-5 bg-dark rounded">
               <CardHeader>"blah blah blah"</CardHeader>
               <CardImage
                 src="https://d1bvpoagx8hqbg.cloudfront.net/259/e7f1793a4005be07cbd0f0e978cdb69a.jpg"
@@ -40,7 +39,7 @@ export default function Testimonials() {
           </Col>
 
           <Col>
-            <CardContainer>
+            <CardContainer class="shadow p-1 mb-5 bg-dark rounded">
               <CardHeader>"blah blah blah"</CardHeader>
               <CardImage
                 src="https://www.glam.com/wp-content/uploads/2021/07/Screenshot-2021-07-09-6.32.47-PM.png"
