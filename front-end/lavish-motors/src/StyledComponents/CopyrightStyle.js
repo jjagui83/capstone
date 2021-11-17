@@ -7,6 +7,7 @@ export const CopyrightContainer = styled.div`
 export const Links = styled.a`
   color: #ffff;
   text-decoration: none;
+  font-family: roboto;
   &:hover {
     color: #ffff;
     text-decoration: underline;

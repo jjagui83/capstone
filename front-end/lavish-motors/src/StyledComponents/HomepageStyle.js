@@ -63,6 +63,7 @@ margin-bottom: 15px;
 text-align: center;
 color: gold;
 text-shadow: 2px 2px 2px grey;
+font-family: roboto;
 `;
 
 export const Description = styled.p`
@@ -71,4 +72,5 @@ export const Description = styled.p`
   line-height: 1.5;
   color: black;
   margin-bottom: 3rem;
+  font-family: roboto;
   `
