@@ -13,6 +13,7 @@ color: white;
 `;
 
 export const CardImage = styled.img`
+border: 2px solid white;
 height: 150px;
 width: 100px;
 border-radius: 50%;
