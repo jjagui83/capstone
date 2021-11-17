@@ -9,7 +9,11 @@ export default function Banner() {
              <BannerOverlay>        
                     <BannerH3>Welcome</BannerH3>
                     <BannerH1> To Lavish Motors</BannerH1>
-                    <BannerButton>View Vehicles</BannerButton>
+                    {/* <BannerButton>View Vehicles</BannerButton> */}
+                    <form action="/vehicles">
+                         <BannerButton type="submit" value="View Vehicles">View Vehicles</BannerButton>
+                    </form>
+                    
              </BannerOverlay>
          </BannerTextWrapper>
         </div>
