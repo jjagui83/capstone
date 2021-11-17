@@ -6,8 +6,9 @@ import { createClient } from "@supabase/supabase-js";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo/Logo2.png";
 import { NavImage, NavSignOutButton, NavContainer } from "../StyledComponents/NavbarStyle";
+import Logo from '../assets/Logo/logo2.png'
+
 
 
 function BootstrapNavbar() {
