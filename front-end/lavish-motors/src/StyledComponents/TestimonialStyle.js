@@ -16,7 +16,7 @@ color: white;
 `;
 
 export const CardImage = styled.img`
-border: 2px solid gold;
+border: 2px solid white;
 box-shadow: 5px 5px 5px black;
 height: 150px;
 width: 150px;
