@@ -33,7 +33,7 @@ export default function Copyright () {
       <Nav.Link href="#home"><Links href="https://github.com/jjagui83/capstone">
               Github{" "}
             </Links></Nav.Link>
-      <Nav.Link href="">Copyright © 2021 Lavish Motors Exotic Rentals. All rights reserved.</Nav.Link>
+      <Nav.Link href="">Copyright © 2021 Lavish Motors Exotic Rentals. All rights reserved</Nav.Link>
     </Nav>
     </Container>
   </Navbar>
