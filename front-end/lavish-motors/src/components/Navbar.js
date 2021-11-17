@@ -6,7 +6,7 @@ import { createClient } from "@supabase/supabase-js";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo/Logo2.png";
+import Logo from "../assets/Logo/Logo2.png";
 import { NavImage, NavSignOutButton, NavContainer } from "../StyledComponents/NavbarStyle";
 
 
@@ -27,10 +27,7 @@ function BootstrapNavbar() {
     const signout = async (e) => {
       e.preventDefault();
       const { user, session, error } = await supabase.auth.signOut({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        password: formData.password,
+    
       });
       if (error) {
         alert(error)
