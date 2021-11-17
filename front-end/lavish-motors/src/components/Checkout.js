@@ -88,7 +88,7 @@ function CheckoutForm() {
               className="pay-button"
               disabled={isPaymentLoading}
             >
-              {isPaymentLoading ? "Loading..." : "Pay"}
+              {isPaymentLoading ? "Reservation Confirmed" : "Pay"}
             </button>
           </div>
         </form>

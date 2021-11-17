@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {CopyrightContainer, Links} from "../StyledComponents/CopyrightStyle";
 import { NavImage } from "../StyledComponents/NavbarStyle";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Logo from "../assets/logo/Logo2.png";
+import Logo from "../assets/Logo/Logo2.png";
 
 
 
