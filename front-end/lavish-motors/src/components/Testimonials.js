@@ -15,7 +15,7 @@ export default function Testimonials() {
       <Container>
         <Row>
           <Col>
-            <CardContainer class="shadow p-1 mb-5 bg-dark rounded">
+            <CardContainer >
               <CardHeader>"blah blah blah"</CardHeader>
               <CardImage
                 src="https://www.glam.com/wp-content/uploads/2021/07/Screenshot-2021-07-09-6.32.47-PM.png"
@@ -27,7 +27,7 @@ export default function Testimonials() {
           </Col>
 
           <Col>
-            <CardContainer class="shadow p-1 mb-5 bg-dark rounded">
+            <CardContainer >
               <CardHeader>"blah blah blah"</CardHeader>
               <CardImage
                 src="https://d1bvpoagx8hqbg.cloudfront.net/259/e7f1793a4005be07cbd0f0e978cdb69a.jpg"
@@ -42,7 +42,7 @@ export default function Testimonials() {
             <CardContainer class="shadow p-1 mb-5 bg-dark rounded">
               <CardHeader>"blah blah blah"</CardHeader>
               <CardImage
-                src="https://www.glam.com/wp-content/uploads/2021/07/Screenshot-2021-07-09-6.32.47-PM.png"
+                src="https://media.istockphoto.com/photos/the-joyful-face-of-a-middleaged-man-over-50-years-picture-id1189586669?k=20&m=1189586669&s=612x612&w=0&h=EiTurFzDZIiRFNgCrjmakAnZzCVKigOHfvZ8ygDKlq0="
                 alt=""
               />
               <CardTitle>fhgfghfgfh</CardTitle>
