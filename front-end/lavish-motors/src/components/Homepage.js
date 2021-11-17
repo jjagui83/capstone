@@ -7,11 +7,13 @@ import {
   LogInContainer,
   LogoContainer,
   LogoImage, 
-  LogoMainContainer
+  LogoMainContainer,
+  TestContainer
 } from "../StyledComponents/HomepageStyle";
 import Logo from "../assets/logo/logo6.png";
 import Banner from "./Banner";
 import Register from "./Register";
+import Testimonials from "./Testimonials";
 
 export default function Homepage() {
   return (
@@ -34,6 +36,11 @@ export default function Homepage() {
         <LogoImage src="https://seeklogo.net/wp-content/uploads/2017/01/ferrari-logo.png" alt=""/>
       </LogoContainer>
     </LogoMainContainer>
+
+    <TestContainer>
+    <HomeH1>TESTIMONIALS</HomeH1>
+      <Testimonials/>
+    </TestContainer>
       
     </HomeContainer>
   );
