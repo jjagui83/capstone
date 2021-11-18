@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const supabase = require("@supabase/supabase-js");
 const app = express();
-
-const PORT = 3001;
+require("dotenv").config()
+ const PORT = process.env.PORT||3001;
 
 app.use(express.json());
 app.use(cors());
@@ -11,6 +11,10 @@ app.use(cors());
 
 // NEW user_login table WORKS!!!
 // NEED BCRYPT!!!
+app.get("/", (req,res) => {
+  res.send("kWe made it")
+});
+
 app.post("/create_user", (req, res) => {
   const { first_name, last_name, email, password, error } =
     supabase.auth.signUp({
