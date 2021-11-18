@@ -35,19 +35,19 @@
 //   justify-content: center;
 //   cursor: pointer;
 
+//   ${(props) =>
+//     props.isToday &&
+//     css`
+//       border: 1px solid #eee;
+//     `}
 
+//   ${(props) =>
+//     props.isSelected &&
+//     css`
+//       background-color: #eee;
+//     `}
 // `;
-// ${(props) =>
-//   props.isToday &&
-//   css`
-//     border: 1px solid #eee;
-//   `}
 
-// ${(props) =>
-//   props.isSelected &&
-//   css`
-//     background-color: #eee;
-//   `}
 // export function Calendar() {
 //   const DAYS = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 //   const DAYS_LEAP = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
