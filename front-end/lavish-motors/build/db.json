@@ -1,0 +1,140 @@
+{
+
+"products": [
+    { 
+        "id": 1,
+        "make": "Ferrari",
+        "model": "488 Pista",
+        "year": "2019",
+        "color": "Rosso Corsa",
+        "price": "2,508/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL2ltYWdlcy51bml0c2ludmVudG9yeS5jb20vdXBsb2Fkcy9waG90b3MvMjA2OS8yMDIxLTA2LTI1L2IyMjM0ZDA5ODZkNjg4Njg4ZWI2ZThlMDcyYmRmZTI3LmpwZw&hmac=h1_-jahmbmc"
+     },
+    { 
+        "id": 2,
+        "make": "Porsche",
+        "model": "911 Speedster",
+        "year": "2019",
+        "color": "Carrara White Metallic",
+        "price": "913/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cDovL2NvbnRlbnQuaG9tZW5ldGlvbC5jb20vMzU4Lzk1NzIvMHgwLzgyZmM4OGY0NDg5NjQxYWJiMzA5NTMxYzMwNzBjYTY2LmpwZw&hmac=b5pu4nL_XVw"
+     },
+    { 
+        "id": 3,
+        "make": "Rolls-Royce",
+        "model": "Cullinan",
+        "year": "2020",
+        "color": "Silver",
+        "price": "1,421/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9jZG4uZGVhbGVyYWNjZWxlcmF0ZS5jb20vd2lyZXMvMS8xMzIvNTUyMS83OTB4MTAyNC8yMDIwLXJvbGxzLXJveWNlLWN1bGxpbmFu&hmac=-csyCgPGk68"
+     },
+    { 
+        "id": 4,
+        "make": "Lamborghini",
+        "model": "Huracan STO",
+        "year": "2021",
+        "color": "Blue",
+        "price": "1,588/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vQTNJLXpUa0ovNjQweDAvMTYzNTUzMTIwNS91L2VjbC94SXNiLzhiUWkvdE0ySy91dXBzL3RjU1kvVncuanBn&hmac=5gVsrzxXrgY"
+     },
+    { 
+        "id": 5,
+        "make": "Mercedes-Benz",
+        "model": "G36 AMG",
+        "year": "2021",
+        "color": "Gray",
+        "price": "780/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vYnRwaE5HTkcvNjQweDAvMTYyOTMzNTc1My91L2VjbC9kNmtpLzlvVG8vRHJBai90b0F1L1JqcXkvMncuanBn&hmac=2SV_povADRI"
+     },
+    { 
+        "id": 6,
+        "make": "Bugatti",
+        "model": "Chiron",
+        "year": "2019",
+        "color": "Black/red",
+        "price": "9,452/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vLTRicmEzV0UvNjQweDAvMTYyNzkyOTQ5Mi91L2VjbC9vZ1FjL1JXVXcvYU01Yi9UNHVKL1lIZVMvOEEuanBn&hmac=msaPcq2Tq08"
+     },
+    { 
+        "id": 7,
+        "make": "Bentley",
+        "model": "Mulsanne",
+        "year": "2020",
+        "color": "Glacier White",
+        "price": "828/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9jZG4ubW90b3JjYXIuY29tLzgxMS8yMDY2MTgzOC8yMDY2MTgzOF84XzEwMjQuanBn&hmac=e_9-MsLEszk"
+     },
+    { 
+        "id": 8,
+        "make": "Koenigsegg",
+        "model": "Regera",
+        "year": "2021",
+        "color": "Silve Carbon/Clear Carbon",
+        "price": "16,438/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly93d3cuY2hhcmxvdHRlbWNsYXJlbi5jb20vZ2FsbGVyaWFfaW1hZ2VzLzE3NTgvMTc1OF9wM19sLmpwZw&hmac=z6iSlm6DfLU"
+     },
+    { 
+        "id": 9,
+        "make": "Shelby",
+        "model": "Cobra",
+        "year": "1965",
+        "color": "Black",
+        "price": "1,301/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9jZG4xLm1lY3VtLmNvbS9hdWN0aW9ucy9mbDAxMjIvZmwwMTIyLTQ4NzMzMi9pbWFnZXMvMS0xNjMwMzUyMzc0NzkwLmpwZw&hmac=1iTezsb01vU"
+     },
+    { 
+        "id": 10,
+        "make": "Terradyne",
+        "model": "Gurkha LAPV",
+        "year": "2017",
+        "color": "Black",
+        "price": "1,027/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vbXFRNEUtRzMvNjQweDAvMTYyNjg5NjIwOC91L2VjbC9UMTBRLzE0SjIvWmNJUy9XaTR0L1J1MmYvSUEuanBn&hmac=StxhCA10wUM"
+     },
+    { 
+        "id": 11,
+        "make": "Ford",
+        "model": "Shelby GT500",
+        "year": "1967",
+        "color": "Gunmetal Gray",
+        "price": "808/ day",
+        "image": "https://www.dupontregistry.com/autos/virtual_folder/vehicle_photos/f7e97603-e5c6-4500-b20d-680bede6bac4/4baa32ee-c5e3-4508-b67d-ed25408e605b/21_09_21_SHELBY_7.jpg?404=privatelg&width=644&height=428"
+     },
+     {
+        "id": 12,
+        "make": "Lamborghini",
+        "model": "Aventador SS Roadster",
+        "year": "2018",
+        "color": "Blue",
+        "price": "2,500/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9jZG4uZGVhbGVyYWNjZWxlcmF0ZS5jb20vZnVzaW9uLzEvOTE0LzM1NzUwLzc5MHgxMDI0LzIwMTgtbGFtYm9yZ2hpbmktYXZlbnRhZG9yLXMtcm9hZHN0ZXI&hmac=uYPrPL_UiBM"
+     },
+     {
+        "id": 13,
+        "make": "Aston Martin",
+        "model": "DBS Superleggera",
+        "year": "2019",
+        "color": "Black",
+        "price": "2,333/ day",
+        "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vRi1nMmphTHgvNjQweDAvMTYzMzM2OTA2MS91L2VjbC81SjYyL1MyZHYvaXIydS94MWxTL0dZUnkvOWcuanBn&hmac=S20fmuT5yqI" 
+     },
+     {
+      "id": 14,
+      "make": "Mclaren",
+      "model": "600 LT Spider",
+      "year": "2020",
+      "color": "Mauvine Blue",
+      "price": "1,249/ day",
+      "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly93d3cubWNsYXJlbmNmLmNvbS9nYWxsZXJpYV9pbWFnZXMvMTUxLzE1MV9wMzlfbC5qcGc&hmac=oZ5Dh4Fzclo" 
+   },
+   {
+      "id": 15,
+      "make": "Mercedes-Benz",
+      "model": "AMG GT C",
+      "year": "2018",
+      "color": "Black",
+      "price": "1399/ day",
+      "image": "https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9pbnZlbnRvcnkuZGVhbGVyc29ja2V0LmNvbS9hcGkvcGhvdG8vUkVXWlc4TXcvNjQweDAvMTYzNDU4MDk3Ny91L2VjbC9UVTY1L0ppRzUvYmwyNy95czhFLzFaVkIvN3cuanBn&hmac=41NBEskxaxs" 
+   }
+    ]
+}
