@@ -35,7 +35,7 @@ class Products extends Component {
           </p>
           {/* <b>{util.formatCurrency(product.price)}</b> */}
           <form
-            action="/cart"
+            action="/Cart"
             className=""
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
