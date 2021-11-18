@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { NavImage, NavSignOutButton, NavContainer } from "../StyledComponents/NavbarStyle";
-import Logo from '../assets/Logo/logo2.png'
+import logo from '../assets/Logo/logo2.png'
 
 
 
@@ -28,10 +28,7 @@ function BootstrapNavbar() {
     const signout = async (e) => {
       e.preventDefault();
       const { user, session, error } = await supabase.auth.signOut({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        password: formData.password,
+    
       });
       if (error) {
         alert(error)
@@ -48,7 +45,7 @@ function BootstrapNavbar() {
     <NavContainer>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/"><NavImage src={Logo}/></Navbar.Brand>
+          <Navbar.Brand href="/"><NavImage src={logo}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
