@@ -7,8 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { NavImage, NavSignOutButton, NavContainer } from "../StyledComponents/NavbarStyle";
-import logo from '../assets/Logo/logo2.png'
-
+import {logo} from "../assets/Logo/logo2.png"
 
 
 function BootstrapNavbar() {
