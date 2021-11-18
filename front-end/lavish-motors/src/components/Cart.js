@@ -38,7 +38,7 @@ function Cart(props) {
               ))}
             </ul>
 
-            <form action="/checkout"
+            <form action="/Checkout"
             className="btn btn-primary" 
             >
             <input type="submit" value="Rent Me">
