@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { CopyrightContainer, Links } from "../StyledComponents/CopyrightStyle";
 import { NavImage } from "../StyledComponents/NavbarStyle";
 import { Navbar, Nav, Container } from "react-bootstrap";

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { firstName, lastName, email } from "../actions/userActions";
+
 import { useDispatch } from "react-redux";
 import { LogInContainer } from "../StyledComponents/HomepageStyle";
 import {

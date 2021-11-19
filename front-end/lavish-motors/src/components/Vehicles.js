@@ -45,7 +45,7 @@ class Products extends Component {
           >
             
           </form>
-          <VehicleInput onClick={(e) => this.props.addToCart(this.props.cartItems, product)}acion="/Cart" type="submit" value="Rent Me"></VehicleInput>
+          <VehicleInput onClick={(e) => this.props.addToCart(this.props.cartItems, product)}action="/Cart" type="submit" value="Rent Me"></VehicleInput>
         </div>
       </VehicleContainer>
     ));
