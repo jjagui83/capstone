@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 export const NavbarContainer = styled.div`
 background-color: black;
 width: 100%;
-font-family: roboto;
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -12,7 +12,7 @@ padding: 25px 0px 15px 25px;
 `;
 
 export const NavContainer = styled.div`
-font-family: roboto;
+
 `;
 
 export const NavImage = styled.img`
@@ -28,7 +28,6 @@ height: 30px;
 border-radius: 60px;
 background-color: gold;
 color: black;
-font-family: roboto;
 
 &:hover {
   background-color: white;

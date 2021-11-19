@@ -7,12 +7,14 @@ import {
   CardTitle,
   CardPosition,
 } from "../StyledComponents/TestimonialStyle";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card, Carousel} from "react-bootstrap";
+import logo from "../assets/Logo/logo1.png"
 
 export default function Testimonials() {
   return (
     <TestimonialsContainer>
-      <Container>
+   
+      {/* <Container>
         <Row>
           <Col>
             <CardContainer >
@@ -51,7 +53,7 @@ export default function Testimonials() {
           </Col>
 
         </Row>
-      </Container>
+      </Container> */}
     </TestimonialsContainer>
   );
 }

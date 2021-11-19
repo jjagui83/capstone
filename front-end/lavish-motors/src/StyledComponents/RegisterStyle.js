@@ -8,7 +8,6 @@ text-align: center;
 export const RegisterHeader = styled.h3`
 color: gold;
 text-shadow: 2px 2px 2px grey;
-font-family: roboto;
 `;
 
 export const RegisterContainer = styled.div`
@@ -26,7 +25,6 @@ height: 30px;
 border-radius: 60px;
 background-color: gold;
 color: black;
-font-family: roboto;
 
 &:hover {
   background-color: white;

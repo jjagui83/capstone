@@ -13,20 +13,19 @@ margin-bottom: 5px;
 
 export const CardHeader = styled.h2`
 color: white;
-font-family: roboto;
 `;
 
 export const CardImage = styled.img`
 border: 2px solid white;
 box-shadow: 5px 5px 5px black;
-height: 125px;
-width: 75px;
-border-radius: 50%;
+height: 450px;
+width: 300px;
+
 `
 
 export const CardTitle = styled.h4`
 color: white;
-font-family: roboto;
+
 `;
 
 export const CardPosition = styled.h4`

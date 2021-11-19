@@ -20,10 +20,22 @@ import store from "./store";
 import Copyright from "./components/Copyright";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Register from "./components/Register";
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body{
+    font-family: 'Anton', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+  }
+`;
 
 function App() {
   return (
     <Router>
+      <GlobalStyle/>
       <Switch>
         <Provider store={store}>
           <div className="">

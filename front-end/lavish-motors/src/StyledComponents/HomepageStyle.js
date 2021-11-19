@@ -16,7 +16,7 @@ display: grid;
 text-align: center;
 width: 100%;
 gap: 15px;
-height: 75vh;
+height: 25vh;
 background-color: black;
 padding: 15px;
 `;
@@ -60,14 +60,13 @@ margin-bottom: 5px;
 text-align: center;
 color: gold;
 text-shadow: 2px 2px 2px grey;
-font-family: roboto;
 `;
 
-export const Description = styled.p`
+export const Description = styled.div`
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
   color: black;
   margin-bottom: 3rem;
-  font-family: roboto;
+  text-align-center;
   `

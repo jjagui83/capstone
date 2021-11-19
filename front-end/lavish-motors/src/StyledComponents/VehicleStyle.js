@@ -21,7 +21,6 @@ background-color: gold;
 border-radius: 60px;
 width: 150px;
 color: black;
-font-family: roboto;
 
 &:hover {
     background-color: white;
@@ -37,17 +36,14 @@ export const VehicleH6 = styled.h6`
 color: black;
 margin-top: 5px;
 text-decoration: none;
-font-family: roboto;
 `;
 
 export const VehicleH3 = styled.h3`
 color: black;
 text-decoration: none;
-font-family: roboto;
 `;
 
 export const Vehicleheader = styled.h4`
 color: gold;
 text-shadow: 2px 2px 2px grey;
-font-family: roboto;
 `;

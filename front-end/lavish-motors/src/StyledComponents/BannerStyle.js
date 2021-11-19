@@ -40,17 +40,16 @@ to {
 }
 `;
 
-export const BannerH3 = styled.h3`
+export const BannerLogo = styled.img`
 color: white;
 font-size: 50px;
 animation-name: ${FadeIn};
-animation-duration: 8s;
+animation-duration: 10s;
 font-family: roboto;
 `;
 
 export const BannerH1 = styled.h1`
 color: white;
-font-family: roboto;
 font-size: 75px;
 animation-name: ${FadeIn};
 animation-duration: 13s;
@@ -59,13 +58,13 @@ animation-duration: 13s;
 
 export const BannerButton = styled.button`
 animation-name: ${FadeIn};
+margin: 4px;
 animation-duration: 16s;
 padding: 5px;
-width: 160px;
-height: 40px;
+width: 190px;
+height: 50px;
 border-radius: 60px;
 background-color: gold;
-font-family: roboto;
 color: black;
 
 &:hover {

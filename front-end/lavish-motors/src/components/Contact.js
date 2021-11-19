@@ -1,5 +1,6 @@
 import React from 'react'
-import { MainContainer, ContactTitle, Contactheader } from "../StyledComponents/ContactStyle"
+import { MainContainer, ContactTitle, Contactheader } from "../StyledComponents/ContactStyle";
+import { Description } from '../StyledComponents/HomepageStyle';
 
 export default function Contact() {
     return (
@@ -9,6 +10,8 @@ export default function Contact() {
             <p>
             We put you behind the wheel of the best cars in the world. Visit our location at George Bush Intercontinental Airport or Hartsfield–Jackson Atlanta International Airport to choose from our unsurpassed selection of luxury car rentals.
             </p>
+
+            
             <ul>
                 <li>Phone: <b>800.867.5309</b></li>
                 <li>Email: <b>contact@lavishmotors.com</b></li>
