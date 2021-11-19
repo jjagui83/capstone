@@ -38,12 +38,12 @@ function Cart(props) {
               ))}
             </ul>
 
-            <form action="/Checkout"
+            {/* <form action="/Checkout"
             className="btn btn-primary" 
-            >
-            <input type="submit" value="Rent Me">
-            </input>
-          </form>
+            > */}
+            <Button type="submit" value="Rent Me">Rent me
+            </Button>
+          {/* </form> */}
           </div>
         )}
       </MainContainer>
