@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
-import { MainContainer, Button, CartH1, CartH3, CartH6, CartTitle, Cartheader } from "../StyledComponents/BasketStyle";
+import { MainContainer, Button, CartH1, CartH3, CartH6, CartTitle, Cartheader, CartInput} from "../StyledComponents/BasketStyle";
 import { VehicleImage } from '../StyledComponents/VehicleStyle';
 import { useHistory } from "react-router";
 function Cart(props) {
@@ -46,13 +46,9 @@ function Cart(props) {
               ))}
             </ul>
 
-            <form 
-            className="btn btn-primary" 
-            >
-            
-          </form>
-          <input  onClick={(e) => signout(e)}type="submit" value="Rent Me">
-            </input>
+           
+          <CartInput  onClick={(e) => signout(e)}type="submit" value="Rent Me">
+            </CartInput>
           </div>
         )}
       </MainContainer>
