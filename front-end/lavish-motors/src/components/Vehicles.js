@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { useHistory } from "react-router";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import "../App.css";
@@ -13,10 +14,13 @@ import {
   Vehicleheader
 } from "../StyledComponents/VehicleStyle";
 
+
 class Products extends Component {
   componentDidMount() {
     this.props.fetchProducts();
-  }
+  };
+
+
   render() {
     const productItems = this.props.products.map((product) => (
       <VehicleContainer className="col-md-4" key={product.model}>
@@ -35,8 +39,8 @@ class Products extends Component {
           </p>
          
           <form
+            acion="/Cart"
             
-            href="/Cart"
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
             <VehicleInput type="submit" value="Rent Me"></VehicleInput>
