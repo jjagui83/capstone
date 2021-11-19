@@ -33,10 +33,10 @@ class Products extends Component {
             <VehicleH6>{product.make}</VehicleH6>
             <VehicleH3>{product.model}</VehicleH3>
           </p>
-          {/* <b>{util.formatCurrency(product.price)}</b> */}
+         
           <form
             action="/Cart"
-            className=""
+            href="/Cart"
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
             <VehicleInput type="submit" value="Rent Me"></VehicleInput>
