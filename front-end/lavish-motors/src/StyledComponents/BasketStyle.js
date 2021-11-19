@@ -31,6 +31,23 @@ export const Button = styled.button`
   }
   `
 
+export const CartInput = styled.input`
+background-color: gold;
+border-radius: 60px;
+width: 150px;
+color: black;
+font-family: roboto;
+
+&:hover {
+    background-color: white;
+}
+
+&:active {
+    background-color: white;
+    transform: translateY(6px);
+}
+`;
+
   export const Cartheader = styled.h4`
 color: gold;
 text-shadow: 2px 2px 2px grey;
