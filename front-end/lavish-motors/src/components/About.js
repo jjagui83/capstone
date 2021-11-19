@@ -1,8 +1,7 @@
 import React from "react";
 import { AboutContainer, ContactTitle, AboutTitle } from "../StyledComponents/AboutStyle";
 import {
-  HomepageStyle,
-  Image,
+  
   Description,
 } from "../StyledComponents/HomepageStyle";
 

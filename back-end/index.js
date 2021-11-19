@@ -10,7 +10,7 @@ app.use(cors());
 // app.use(supabase());
 
 // NEW user_login table WORKS!!!
-// NEED BCRYPT!!!
+
 app.get("/", (req,res) => {
   res.send("kWe made it")
 });
@@ -26,7 +26,7 @@ app.post("/create_user", (req, res) => {
 });
 
 // AUTH user_login table WORKS!!!
-// NEED BCRYPT!!!!
+
 app.get("/read/user_login", (req, res) => {
   const { email, password, error } = supabase.auth.signIn({
     email: "",
@@ -53,16 +53,7 @@ app.get("/read_cars", (req, res) => {
         total_price: "",
       })
       .match({ car_name: "" });
-  //         if (err) {
-  //           console.log(err);
-  //           res.status(401).send(err);
-  //         }
-  //         res.send(result);
-  //       });
-  //     });
-  //   } catch (err) {
-  //     res.send(err);
-  //   }
+
 });
 
 // delete from cart NEED TO RUN
@@ -101,41 +92,4 @@ app.delete("/delete_car/:car_name", (req, res) => {
 });
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
 
-// STOP RIGHT THERE!!
-// NO FOR REAL JUST STOP!!
 
-// manually put car in cars table WORKS
-// don't need for supabase
-// app.post("/create_car", (req, res) => {
-//   try {
-//     creds.connect(() => {
-//       const {
-//         car_name,
-//         car_model,
-//         year,
-//         color,
-//         day_price,
-//         week_price,
-//         car_seats,
-//         image,
-//       } = req.body;
-//       creds.query(
-//         `INSERT INTO cars(
-//       car_name,
-//       car_model,
-//       year,
-//       color,
-//       day_price,
-//       week_price,
-//       car_seats,
-//       image)
-//       VALUES(
-//         '${car_name}',
-//         '${car_model}',
-//         '${year}',
-//         '${color}',
-//         '${day_price}',
-//         '${week_price}',
-//         '${car_seats}',
-//         '${image}')`,
-//       )})}})

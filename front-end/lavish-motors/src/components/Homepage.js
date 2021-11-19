@@ -1,17 +1,13 @@
 import React from "react";
-import {
-  Description,
+import {  
   HomeContainer,
-  HomeH1,
-  HomeImage,
-  LogInContainer,
+  HomeH1,  
   LogoContainer,
   LogoImage, 
   LogoMainContainer,
   TestContainer
 } from "../StyledComponents/HomepageStyle";
 import Banner from "./Banner";
-import Register from "./Register";
 import Testimonials from "./Testimonials";
 
 export default function Homepage() {
