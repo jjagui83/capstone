@@ -2,17 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const supabase = require("@supabase/supabase-js");
 const app = express();
-require("dotenv").config()
- const PORT = process.env.PORT||3001;
+require("dotenv").config();
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(cors());
-// app.use(supabase());
 
-// NEW user_login table WORKS!!!
-// NEED BCRYPT!!!
-app.get("/", (req,res) => {
-  res.send("kWe made it")
+app.get("/", (req, res) => {
+  res.send("kWe made it");
 });
 
 app.post("/create_user", (req, res) => {
@@ -25,8 +22,6 @@ app.post("/create_user", (req, res) => {
     });
 });
 
-// AUTH user_login table WORKS!!!
-// NEED BCRYPT!!!!
 app.get("/read/user_login", (req, res) => {
   const { email, password, error } = supabase.auth.signIn({
     email: "",
@@ -34,12 +29,10 @@ app.get("/read/user_login", (req, res) => {
   });
 });
 
-// sign out of lavish motors? Giving problems
 app.put("/update/user_login", (req, res) => {
   const { error } = await supabase.auth.signOut({});
 });
 
-// update cars to cart NEED TO RUN
 app.get("/read_cars", (req, res) => {
   const { car_name, image, pickup_date, return_date, day_price, total_price } =
     supabase
@@ -53,19 +46,8 @@ app.get("/read_cars", (req, res) => {
         total_price: "",
       })
       .match({ car_name: "" });
-  //         if (err) {
-  //           console.log(err);
-  //           res.status(401).send(err);
-  //         }
-  //         res.send(result);
-  //       });
-  //     });
-  //   } catch (err) {
-  //     res.send(err);
-  //   }
 });
 
-// delete from cart NEED TO RUN
 app.delete("/delete_car/:car_name", (req, res) => {
   const {
     first_name,
@@ -87,55 +69,10 @@ app.delete("/delete_car/:car_name", (req, res) => {
       total_price: "",
     })
     .match({ car_name: "" });
-  creds.connect(
-    async () => {
-      const data = await creds.query(
-        `DELETE FROM cart WHERE car_name = ${car_name}`
-      );
-    }
-    //     res.send(data);
-    //   });
-    // } catch (err) {
-    //   res.send(err);
-  );
+  creds.connect(async () => {
+    const data = await creds.query(
+      `DELETE FROM cart WHERE car_name = ${car_name}`
+    );
+  });
 });
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
-
-// STOP RIGHT THERE!!
-// NO FOR REAL JUST STOP!!
-
-// manually put car in cars table WORKS
-// don't need for supabase
-// app.post("/create_car", (req, res) => {
-//   try {
-//     creds.connect(() => {
-//       const {
-//         car_name,
-//         car_model,
-//         year,
-//         color,
-//         day_price,
-//         week_price,
-//         car_seats,
-//         image,
-//       } = req.body;
-//       creds.query(
-//         `INSERT INTO cars(
-//       car_name,
-//       car_model,
-//       year,
-//       color,
-//       day_price,
-//       week_price,
-//       car_seats,
-//       image)
-//       VALUES(
-//         '${car_name}',
-//         '${car_model}',
-//         '${year}',
-//         '${color}',
-//         '${day_price}',
-//         '${week_price}',
-//         '${car_seats}',
-//         '${image}')`,
-//       )})}})
