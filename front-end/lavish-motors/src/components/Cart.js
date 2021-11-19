@@ -1,9 +1,17 @@
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { MainContainer, Button, CartH1, CartH3, CartH6, CartTitle, Cartheader } from "../StyledComponents/BasketStyle";
-import { VehicleImage } from '../StyledComponents/VehicleStyle'
+import { VehicleImage } from '../StyledComponents/VehicleStyle';
+import { useHistory } from "react-router";
 function Cart(props) {
     const { cartItems } = props;
+    const history = useHistory();
+
+    const signout = async (e) => {
+      e.preventDefault();    
+        history.push("/Checkout");
+      }
+  
 
     return (
       <div>
@@ -38,10 +46,10 @@ function Cart(props) {
               ))}
             </ul>
 
-            <form action="/Checkout"
+            <form 
             className="btn btn-primary" 
             >
-            <input type="submit" value="Rent Me">
+            <input  onClick={(e) => signout(e)}type="submit" value="Rent Me">
             </input>
           </form>
           </div>
