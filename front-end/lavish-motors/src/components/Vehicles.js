@@ -35,7 +35,7 @@ class Products extends Component {
           </p>
          
           <form
-            action="/Cart"
+            
             href="/Cart"
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
           >
