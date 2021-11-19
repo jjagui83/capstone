@@ -33,7 +33,7 @@ function BootstrapNavbar() {
         alert(error)
         ;
       } else {
-        history.push("/About")
+        history.push("/Register")
         ;
       }
     };

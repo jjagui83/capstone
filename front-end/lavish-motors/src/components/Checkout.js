@@ -74,7 +74,24 @@ function CheckoutForm() {
               alignItems: "center",
             }}
           >
+             <input
+            className="firstName"
+            
+        
+            placeholder="First Name"
+            
+           
+          />
+               <input
+            className="lastName"
+            
+        
+            placeholder="Last Name"
+            
+           
+          />
             <CardElement
+            
               className="card"
               options={{
                 style: {
