@@ -49,9 +49,10 @@ function Cart(props) {
             <form 
             className="btn btn-primary" 
             >
-            <input  onClick={(e) => signout(e)}type="submit" value="Rent Me">
-            </input>
+            
           </form>
+          <input  onClick={(e) => signout(e)}type="submit" value="Rent Me">
+            </input>
           </div>
         )}
       </MainContainer>
