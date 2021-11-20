@@ -6,6 +6,7 @@ width: 110px;
 border-radius: 50%;
 margin-bottom: 20px;
 border: 2px solid white;
+box-shadow: 7px 7px 7px black;
 
 `;
 
@@ -14,6 +15,18 @@ margin-top: 15px;
 color: gold;
 font-size: 50px;
 text-shadow: 3px 3px 3px grey;
+`;
+
+export const TestName = styled.h6`
+color: white;
+font-size: 20px;
+text-shadow: 7px 7px 7px black;
+`;
+
+export const TestQuote = styled.h1`
+color: gold;
+font-size: 35px;
+text-shadow: 7px 7px 7px black;
 `;
 
 export const TestContainer = styled.div`
@@ -35,6 +48,7 @@ height: 300px;
 width: 280px;
 padding: 25px;
 background-color: #212529;
+border-radius: 20px;
 `;
 
 export const TestMainContainer = styled.div`
