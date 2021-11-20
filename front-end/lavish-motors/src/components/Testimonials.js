@@ -26,9 +26,9 @@ export default function Testimonials() {
           </TestInfoContainer>
 
           <TestInfoContainer >
-            <h5>Margeret Redfield</h5>
+            <h5>Travis Barker</h5>
             <TestImage
-              src="https://hooversun.com/downloads/19884/download/Alex%20Newman.png?cb=ee76b3d1e57bffbabfbe860ebfe78d1d&w=640"
+              src="https://i1.sndcdn.com/avatars-000153396504-4rqwv5-t500x500.jpg"
               alt=""
             />
             <h1>"Excellent service. Drove my dream car in style"</h1>
