@@ -10,6 +10,7 @@ import {
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Description } from "../StyledComponents/HomepageStyle";
 import AboutGrid from "./AboutGrid";
+import Testimonials from "./Testimonials";
 
 export default function About() {
   return (
@@ -21,6 +22,8 @@ export default function About() {
       <AboutContainer>
         <AboutGrid />
       </AboutContainer>
+      
+      <Testimonials/>
     </div>
   );
 }
