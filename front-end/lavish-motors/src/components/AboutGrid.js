@@ -25,7 +25,7 @@ export default function AboutGrid() {
               <AboutImage src="http://pngwebicons.com/uploads/car/1024/car_icon3274.png" alt=""/>
               <AboutHeading>Variety of Brands</AboutHeading>
                 <h6>
-              from
+              From
               manufacturers like Ferrari, Lamborghini, Rolls Royce, Aston
               Martin, Bentley, Mercedes, Cadillac, Maserati, Range Rover,
               BMW and Porsche.
@@ -36,7 +36,7 @@ export default function AboutGrid() {
               <AboutImage src="https://icons.iconarchive.com/icons/aha-soft/free-large-love/512/Smile-icon.png" alt="" />
               <AboutHeading>Customer Service</AboutHeading>
                 <h6>
-                Customer Service is our top priority! We provide 
+            Is our top priority! We provide 
                 Luxury Car Rentals, Exotic Car Rentals and Sport Car Rentals in Texas.
                 </h6>
             </AboutInfoContainer>
