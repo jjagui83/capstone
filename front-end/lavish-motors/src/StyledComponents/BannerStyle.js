@@ -63,6 +63,7 @@ animation-duration: 16s;
 padding: 5px;
 width: 190px;
 height: 50px;
+font-size: 18px;
 border-radius: 60px;
 background-color: gold;
 color: black;

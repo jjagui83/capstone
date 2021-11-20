@@ -12,11 +12,13 @@ width: 100%;
 
 export const TestContainer = styled.div`
 margin-top: 35px;
-display: grid;
+display: flex;
+justify-content: center;
+align-items: center;
 text-align: center;
 width: 100%;
 gap: 15px;
-height: 25vh;
+height: 30vh;
 background-color: black;
 padding: 15px;
 `;

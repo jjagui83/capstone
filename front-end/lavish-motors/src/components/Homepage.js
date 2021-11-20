@@ -35,9 +35,10 @@ export default function Homepage() {
     </LogoMainContainer>
 
     <TestContainer>
-    <HomeH1>DRIVE IN CLASS</HomeH1>
-      <Testimonials/>
+    <HomeH1>RIDE IN LUXURY</HomeH1>
     </TestContainer>
+
+   
       
     </HomeContainer>
   );

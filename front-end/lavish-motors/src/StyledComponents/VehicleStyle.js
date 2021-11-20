@@ -6,7 +6,8 @@ width: 300px;
 `;
 
 export const VehicleContainer = styled.div`
-grid-gap: 8px 8px;
+display: flex;
+justify-content: center;
 margin-bottom: 10px;
 background-color: white;
 text-align: center;
