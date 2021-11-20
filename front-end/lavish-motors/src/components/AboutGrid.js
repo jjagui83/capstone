@@ -11,7 +11,7 @@ export default function AboutGrid() {
              <AboutGridContainer>
             
             <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
-              <AboutImage src="https://images.unsplash.com/photo-1580446623001-3abf670c5c55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80" alt=""/>
+              <AboutImage src="https://freepngimg.com/thumb/money/5-money-bag-png-image.png" alt=""/>
               <h1>Best Rates</h1>
                 <h6>
                 At Lavish Auto Exotic Car Rental, We give the best prices and premier exotic
@@ -21,7 +21,7 @@ export default function AboutGrid() {
             </AboutInfoContainer>
          
             <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
-              <AboutImage src="" alt=""/>
+              <AboutImage src="http://pngwebicons.com/uploads/car/1024/car_icon3274.png" alt=""/>
               <h1>Variety of Brands</h1>
                 <h6>
               from
