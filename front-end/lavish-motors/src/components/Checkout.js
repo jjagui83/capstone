@@ -6,7 +6,7 @@ import {
   useElements,
 } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import { PayButton, NameInput } from '../StyledComponents/CheckoutStyle';
+import { PayButton, NameInput, CheckoutContainer } from '../StyledComponents/CheckoutStyle';
 import "./Checkout.css";
 
 const Checkout = () => {
@@ -48,7 +48,7 @@ function CheckoutForm() {
   };
 
   return (
-    <div
+    <CheckoutContainer
       style={{
         padding: "3rem",
       }}
@@ -91,7 +91,7 @@ function CheckoutForm() {
           </div>
         </form>
       </div>
-    </div>
+    </CheckoutContainer>
   );
 }
 export default Checkout;

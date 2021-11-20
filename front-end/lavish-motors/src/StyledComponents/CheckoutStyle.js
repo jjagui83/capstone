@@ -42,6 +42,10 @@ box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
 }
 `;
 
+export const CheckoutContainer = styled.div`
+height: 80vh;
+`;
+
 // const Frame = styled.div`
 //   width: 400px;
 //   border: 1px solid lightgrey;
