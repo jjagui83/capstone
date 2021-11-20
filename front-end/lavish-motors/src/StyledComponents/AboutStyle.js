@@ -20,7 +20,7 @@ text-shadow: 2px 2px 2px grey;
 export const AboutImage = styled.img`
 height: 70px;
 width: 110px;
-margin-bottom: 15px;
+margin-bottom: 10px;
 
 `;
 
@@ -32,6 +32,12 @@ justify-content: center;
 align-items: center;
 height: 300px;
 width: 280px;
+`;
+
+export const AboutHeading = styled.h2`
+color: gold;
+font-size: 35px;
+text-shadow: 3px 3px 3px grey;
 `;
 
 export const AboutGridContainer = styled.div`

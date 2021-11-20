@@ -2,7 +2,8 @@ import React from 'react';
 import {
     AboutImage,
     AboutGridContainer,
-    AboutInfoContainer
+    AboutInfoContainer,
+    AboutHeading
 } from "../StyledComponents/AboutStyle";
 
 export default function AboutGrid() {
@@ -12,7 +13,7 @@ export default function AboutGrid() {
             
             <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
               <AboutImage src="https://freepngimg.com/thumb/money/5-money-bag-png-image.png" alt=""/>
-              <h1>Best Rates</h1>
+              <AboutHeading>Best Rates</AboutHeading>
                 <h6>
                 At Lavish Auto Exotic Car Rental, We give the best prices and premier exotic
               car rental service and private jet charter (Coming Soon!) in
@@ -22,7 +23,7 @@ export default function AboutGrid() {
          
             <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
               <AboutImage src="http://pngwebicons.com/uploads/car/1024/car_icon3274.png" alt=""/>
-              <h1>Variety of Brands</h1>
+              <AboutHeading>Variety of Brands</AboutHeading>
                 <h6>
               from
               manufacturers like Ferrari, Lamborghini, Rolls Royce, Aston
@@ -32,8 +33,8 @@ export default function AboutGrid() {
             </AboutInfoContainer>
 
             <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
-              <AboutImage src="" alt="" />
-              <h1>Customer Service</h1>
+              <AboutImage src="https://icons.iconarchive.com/icons/aha-soft/free-large-love/512/Smile-icon.png" alt="" />
+              <AboutHeading>Customer Service</AboutHeading>
                 <h6>
                 Customer Service is our top priority! We provide 
                 Luxury Car Rentals, Exotic Car Rentals and Sport Car Rentals in Texas.
