@@ -11,7 +11,7 @@ export default function AboutGrid() {
         <div>
              <AboutGridContainer>
             
-            <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
+            <AboutInfoContainer className="shadow p-3 mb-5 bg-light rounded">
               <AboutImage src="https://freepngimg.com/thumb/money/5-money-bag-png-image.png" alt=""/>
               <AboutHeading>Best Rates</AboutHeading>
                 <h6>
@@ -21,7 +21,7 @@ export default function AboutGrid() {
                 </h6>
             </AboutInfoContainer>
          
-            <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
+            <AboutInfoContainer className="shadow p-3 mb-5 bg-light rounded">
               <AboutImage src="http://pngwebicons.com/uploads/car/1024/car_icon3274.png" alt=""/>
               <AboutHeading>Variety of Brands</AboutHeading>
                 <h6>
@@ -32,7 +32,7 @@ export default function AboutGrid() {
                 </h6>
             </AboutInfoContainer>
 
-            <AboutInfoContainer className="shadow p-3 mb-5 bg-light">
+            <AboutInfoContainer className="shadow p-3 mb-5 bg-light rounded">
               <AboutImage src="https://icons.iconarchive.com/icons/aha-soft/free-large-love/512/Smile-icon.png" alt="" />
               <AboutHeading>Customer Service</AboutHeading>
                 <h6>
