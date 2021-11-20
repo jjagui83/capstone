@@ -13,6 +13,7 @@ text-shadow: 2px 2px 2px grey;
 export const RegisterContainer = styled.div`
 display: flex;
 justify-content: center;
+height: 80vh;
 `;
 
 export const RegisterButton = styled.button`

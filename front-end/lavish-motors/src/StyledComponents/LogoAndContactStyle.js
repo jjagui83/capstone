@@ -19,6 +19,6 @@ width: 50vh;
 text-shadow: 8px 8px 8px black;
 `;
 
-export const LogoH3 = styled.h4`
+export const LogoH3 = styled.h5`
 text-shadow: 2px 2px 2px grey;
 `;
