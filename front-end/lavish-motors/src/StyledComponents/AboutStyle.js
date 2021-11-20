@@ -5,12 +5,11 @@ text-align: center;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%;
-height: 500px;
 `;
 
 export const ContactTitle = styled.div`
 text-align: center;
+margin-bottom: 25px;
 `;
 
 export const AboutTitle = styled.h3`
@@ -19,14 +18,22 @@ text-shadow: 2px 2px 2px grey;
 `;
 
 export const AboutImage = styled.img`
-height: 50px;
-width: 90px;
+height: 70px;
+width: 110px;
 border-radius: 50%;
+margin-bottom: 20px;
+border: 2px solid black;
+
 `;
 
 export const AboutInfoContainer = styled.div`
-height: 200px
-width: 180px;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+align-items: center;
+height: 300px;
+width: 280px;
 `;
 
 export const AboutGridContainer = styled.div`
@@ -34,7 +41,7 @@ display: grid;
 grid-template-rows: repeat(1, 1fr);
 grid-template-columns: repeat(3, 1fr);
 margin: 15px;
-grid-gap: 15px 15px;
+grid-gap: 13px 13px;
 
 @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
