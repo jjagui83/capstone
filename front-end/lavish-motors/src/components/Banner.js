@@ -17,11 +17,9 @@ export default function Banner() {
          <BannerTextWrapper>
              <BannerOverlay>      
                     <BannerH1>LAVISH MOTORS</BannerH1>
-                   
-                                   
+                            
                          <BannerButton  onClick={(e) => vehicle(e)} type="submit" value="View Vehicles">View Vehicles</BannerButton>
-                                      
-                    
+                                        
              </BannerOverlay>
          </BannerTextWrapper>
         </div>
