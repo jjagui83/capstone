@@ -41,6 +41,7 @@ text-decoration: none;
 
 export const VehicleH3 = styled.h3`
 color: black;
+text-shadow: 7px 7px 7px grey;
 text-decoration: none;
 `;
 
