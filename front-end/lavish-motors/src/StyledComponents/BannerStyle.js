@@ -52,7 +52,8 @@ export const BannerH1 = styled.h1`
 color: white;
 font-size: 75px;
 animation-name: ${FadeIn};
-animation-duration: 13s;
+text-shadow: 9px 9px 9px black;
+animation-duration: 10s;
 `;
 
 
