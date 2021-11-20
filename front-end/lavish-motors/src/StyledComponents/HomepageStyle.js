@@ -74,13 +74,14 @@ width: 10%;
 export const HomeH1 = styled.h1`
 margin-top: 15px;
 margin-bottom: 5px;
+font-size: 50px;
 text-align: center;
 color: gold;
 text-shadow: 2px 2px 2px grey;
 `;
 
 export const Description = styled.div`
-  font-size: 1.5rem;
+  font-size: 10px;
   font-weight: 300;
   line-height: 1.5;
   color: black;
