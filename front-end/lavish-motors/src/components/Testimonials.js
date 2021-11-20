@@ -33,7 +33,7 @@ export default function Testimonials() {
               src="https://i1.sndcdn.com/avatars-000153396504-4rqwv5-t500x500.jpg"
               alt=""
             />
-            <TestQuote>"Sick options dude."</TestQuote>
+            <TestQuote>"Sick choices dudes."</TestQuote>
           </TestInfoContainer>
 
           <TestInfoContainer >
