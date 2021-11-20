@@ -36,6 +36,7 @@ text-align: center;
 justify-content: center;
 align-items: center;
 background-color: black;
+
 `;
 
 export const TestInfoContainer = styled.div`
@@ -49,6 +50,7 @@ width: 280px;
 padding: 25px;
 background-color: #212529;
 border-radius: 20px;
+margin-bottom: 20px;
 `;
 
 export const TestMainContainer = styled.div`
