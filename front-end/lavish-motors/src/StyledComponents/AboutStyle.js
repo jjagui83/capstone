@@ -6,7 +6,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
-height: 650px;
+height: 500px;
 `;
 
 export const ContactTitle = styled.div`
@@ -22,6 +22,11 @@ export const AboutImage = styled.img`
 height: 50px;
 width: 90px;
 border-radius: 50%;
+`;
+
+export const AboutInfoContainer = styled.div`
+height: 200px
+width: 180px;
 `;
 
 export const AboutGridContainer = styled.div`
