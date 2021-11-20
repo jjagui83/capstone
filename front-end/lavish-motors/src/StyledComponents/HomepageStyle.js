@@ -23,6 +23,21 @@ background-color: black;
 padding: 15px;
 `;
 
+export const LogoContainer2 = styled.div`
+margin-top: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100%;
+gap: 15px;
+height: 55vh;
+background-color: white;
+padding: 15px;
+`;
+
+
+
 export const LogInContainer =styled.div`
 margin-top: 35px;
 display: flex;

@@ -5,11 +5,12 @@ import {
   LogoContainer,
   LogoImage, 
   LogoMainContainer,
-  TestContainer
+  TestContainer,
+  LogoContainer2
 } from "../StyledComponents/HomepageStyle";
+import { LogoContactContainer } from "../StyledComponents/LogoAndContactStyle";
 import Banner from "./Banner";
-import Testimonials from "./Testimonials";
-
+import LogoAndContact from "./LogoAndContact";
 export default function Homepage() {
   return (
     <HomeContainer>
@@ -39,6 +40,8 @@ export default function Homepage() {
     </TestContainer>
 
    
+     <LogoAndContact/>
+ 
       
     </HomeContainer>
   );
