@@ -55,11 +55,13 @@ text-shadow: 2px 2px 2px grey;
 
   export const CartH1 = styled.h1`
   color: green;
+  text-shadow: 7px 7px 7px grey;
   
   `;
 
   export const CartH3 = styled.h3`
   color: black;
+  text-shadow: 7px 7px 7px grey;
  
   `;
 
