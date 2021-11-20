@@ -1,57 +1,61 @@
 import React from "react";
-import { TestimonialsContainer } from "../StyledComponents/TestimonialStyle";
 import {
-  CardContainer,
-  CardHeader,
-  CardImage,
-  CardTitle,
-  CardPosition,
-} from "../StyledComponents/TestimonialStyle";
-import { Container, Row, Col } from "react-bootstrap";
+  TestGridContainer,
+  TestInfoContainer,
+  TestImage,
+  TestContainer,
+  TestMainContainer,
+  TestHeading,
+  TestName,
+  TestQuote
+} from "../StyledComponents/TestimonialsStyle";
 
 export default function Testimonials() {
   return (
-    <TestimonialsContainer>
-      <Container>
-        <Row>
-          <Col>
-            <CardContainer >
-              <CardHeader>"Great experience and customer service"</CardHeader>
-              <CardImage
-                src="https://www.glam.com/wp-content/uploads/2021/07/Screenshot-2021-07-09-6.32.47-PM.png"
-                alt=""
-              />
-              <CardTitle>Amber King</CardTitle>
-              <CardPosition></CardPosition>
-            </CardContainer>
-          </Col>
+    <div>
+      <TestContainer>
+        <TestHeading>TESTIMONIALS</TestHeading>
+      </TestContainer>
+      <TestMainContainer>
+        <TestGridContainer>
+          <TestInfoContainer >
+            <TestName>Jhene Aiko</TestName>
+            <TestImage
+              src="https://urbanislandz.com/wp-content/uploads/2019/04/Jhene-Aiko.jpg"
+              alt=""
+            />
+            <TestQuote>"I love the energy here. So worth it."</TestQuote>
+          </TestInfoContainer>
 
-          <Col>
-            <CardContainer >
-              <CardHeader>"Best luxury rental in the area!"</CardHeader>
-              <CardImage
-                src="https://d1bvpoagx8hqbg.cloudfront.net/259/e7f1793a4005be07cbd0f0e978cdb69a.jpg"
-                alt=""
-              />
-              <CardTitle>Darius Camp</CardTitle>
-              <CardPosition></CardPosition>
-            </CardContainer>
-          </Col>
+          <TestInfoContainer >
+            <TestName>Travis Barker</TestName>
+            <TestImage
+              src="https://i1.sndcdn.com/avatars-000153396504-4rqwv5-t500x500.jpg"
+              alt=""
+            />
+            <TestQuote>"Sick choices dudes."</TestQuote>
+          </TestInfoContainer>
 
-          <Col>
-            <CardContainer class="shadow p-1 mb-5 bg-dark rounded">
-              <CardHeader>"The best place to drive all my dream cars"</CardHeader>
-              <CardImage
-                src="https://media.istockphoto.com/photos/the-joyful-face-of-a-middleaged-man-over-50-years-picture-id1189586669?k=20&m=1189586669&s=612x612&w=0&h=EiTurFzDZIiRFNgCrjmakAnZzCVKigOHfvZ8ygDKlq0="
-                alt=""
-              />
-              <CardTitle>Mike Lebegue</CardTitle>
-              <CardPosition></CardPosition>
-            </CardContainer>
-          </Col>
+          <TestInfoContainer >
+            <TestName>Paul Wall</TestName>
+            <TestImage
+              src="https://img.discogs.com/3Gehc1-bvXiCM4zmX0DcoX0RTRs=/600x764/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-192683-1601145898-8267.jpeg.jpg"
+              alt=""
+            />
+            <TestQuote>"These folks legit, Fasho. Hold it dinnne"</TestQuote>
+          </TestInfoContainer>
 
-        </Row>
-      </Container>
-    </TestimonialsContainer>
+          <TestInfoContainer >
+            <TestName>Kanye West</TestName>
+            <TestImage
+              src="https://i.guim.co.uk/img/media/f6ae1d61f3e3f30bc78e4b5301da1c87522f717c/0_62_2000_1200/master/2000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=48593c6e6f5b91d6eb7d14680d10d0ef"
+              alt=""
+            />
+            <TestQuote>"Lamborghini Countach. Dope."</TestQuote>
+          </TestInfoContainer>
+
+        </TestGridContainer>
+      </TestMainContainer>
+    </div>
   );
 }

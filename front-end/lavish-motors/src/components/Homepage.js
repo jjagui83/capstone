@@ -5,11 +5,12 @@ import {
   LogoContainer,
   LogoImage, 
   LogoMainContainer,
-  TestContainer
+  TestContainer,
+  LogoContainer2
 } from "../StyledComponents/HomepageStyle";
+import { LogoContactContainer } from "../StyledComponents/LogoAndContactStyle";
 import Banner from "./Banner";
-import Testimonials from "./Testimonials";
-
+import LogoAndContact from "./LogoAndContact";
 export default function Homepage() {
   return (
     <HomeContainer>
@@ -29,13 +30,18 @@ export default function Homepage() {
         <LogoImage src="https://www.carlogos.org/logo/Rolls-Royce-logo-2048x2048.png" alt=""/>
         <LogoImage src="https://download.logo.wine/logo/Bentley/Bentley-Logo.wine.png" alt=""/>
         <LogoImage src="https://seeklogo.net/wp-content/uploads/2017/01/ferrari-logo.png" alt=""/>
+        <LogoImage src="https://www.carlogos.org/logo/Jeep-logo-3D-2560x1440.png" alt=""/>
+        <LogoImage src="https://www.carlogos.org/car-logos/bmw-logo-1997-1200x1200.png" alt=""/>
       </LogoContainer>
     </LogoMainContainer>
 
     <TestContainer>
-    <HomeH1>TESTIMONIALS</HomeH1>
-      <Testimonials/>
+    <HomeH1>RIDE IN LUXURY</HomeH1>
     </TestContainer>
+
+   
+     <LogoAndContact/>
+ 
       
     </HomeContainer>
   );

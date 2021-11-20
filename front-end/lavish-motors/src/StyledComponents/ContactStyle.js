@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   background-color:  #fff;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
 `
 
 export const ContactTitle = styled.div`
@@ -16,5 +17,11 @@ text-align: center;
 export const Contactheader = styled.h3`
 color: gold;
 text-shadow: 2px 2px 2px grey;
-font-family: roboto;
+
+`;
+
+export const AboutContainer =styled.div`
+text-align: center;
+display: flex;
+justify-content: center;
 `;

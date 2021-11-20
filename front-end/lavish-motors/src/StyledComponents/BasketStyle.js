@@ -24,7 +24,6 @@ export const Button = styled.button`
   margin-bottom: 20px;
   font-size: 15px;
   cursor: pointer;
-  font-family: roboto;
   &:hover {
     background-color: #fff;
     color: #282C34;
@@ -36,7 +35,7 @@ background-color: gold;
 border-radius: 60px;
 width: 150px;
 color: black;
-font-family: roboto;
+
 
 &:hover {
     background-color: white;
@@ -51,21 +50,23 @@ font-family: roboto;
   export const Cartheader = styled.h4`
 color: gold;
 text-shadow: 2px 2px 2px grey;
-font-family: roboto;
+
 `;
 
   export const CartH1 = styled.h1`
   color: green;
-  font-family: roboto;
+  text-shadow: 7px 7px 7px grey;
+  
   `;
 
   export const CartH3 = styled.h3`
   color: black;
-  font-family: roboto;
+  text-shadow: 7px 7px 7px grey;
+ 
   `;
 
   export const CartH6 = styled.h6`
   margin-top: 15px;
   color: black;
-  font-family: roboto;
+  
   `;

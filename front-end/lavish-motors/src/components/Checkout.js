@@ -6,12 +6,11 @@ import {
   useElements,
 } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import "./Checkout.css"
+import { PayButton, NameInput, CheckoutContainer } from '../StyledComponents/CheckoutStyle';
+import "./Checkout.css";
 
- const Checkout = () => {
-  const stripe = loadStripe(
-    "pk_test_***************"
-  );
+const Checkout = () => {
+  const stripe = loadStripe("pk_test_***************");
   return (
     <Elements stripe={stripe}>
       <CheckoutForm />
@@ -29,8 +28,8 @@ function CheckoutForm() {
     }
     setPaymentLoading(true);
     // const clientSecret = getClientSecret();
-    
-    const paymentResult = await stripe.confirmCardPayment( {
+
+    const paymentResult = await stripe.confirmCardPayment({
       payment_method: {
         card: elements.getElement(CardElement),
         billing_details: {
@@ -49,12 +48,12 @@ function CheckoutForm() {
   };
 
   return (
-    <div
+    <CheckoutContainer
       style={{
         padding: "3rem",
       }}
     >
-      <div
+      <div className="shadow p-3 mb-5 bg-white rounded"
         style={{
           maxWidth: "500px",
           margin: "0 auto",
@@ -65,7 +64,7 @@ function CheckoutForm() {
             display: "block",
             width: "100%",
           }}
-          onSubmit = {payMoney}
+          onSubmit={payMoney}
         >
           <div
             style={{
@@ -74,43 +73,25 @@ function CheckoutForm() {
               alignItems: "center",
             }}
           >
-             <input
-            className="firstName"
-            
-        
-            placeholder="First Name"
-            
-           
-          />
-               <input
-            className="lastName"
-            
-        
-            placeholder="Last Name"
-            
-           
-          />
+            <NameInput className="firstName" placeholder="First Name" />
+            <NameInput className="lastName" placeholder="Last Name" />
             <CardElement
-            
               className="card"
               options={{
                 style: {
                   base: {
-                    backgroundColor: "white"
-                  } 
+                    backgroundColor: "white",
+                  },
                 },
               }}
             />
-            <button
-              className="pay-button"
-              disabled={isPaymentLoading}
-            >
+            <PayButton className="pay-button" disabled={isPaymentLoading}>
               {isPaymentLoading ? "Reservation Confirmed" : "Pay"}
-            </button>
+            </PayButton>
           </div>
         </form>
       </div>
-    </div>
+    </CheckoutContainer>
   );
 }
 export default Checkout;

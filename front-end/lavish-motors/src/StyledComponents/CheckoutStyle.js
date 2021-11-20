@@ -1,6 +1,50 @@
 // import React from "react";
 // import { useState, useEffect } from "react";
-// import styled from "styled-components";
+import styled from "styled-components";
+
+export const PayButton = styled.button`
+    padding: 0.7rem 2rem;
+    width: 100%;
+    margin: 1rem 0;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #556cd6;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 500ms;
+    cursor: pointer;
+  
+    &:disabled {
+        background-color: #afafaf;
+        box-shadow: none;
+        cursor: default;
+    }
+
+    &:disabled:hover {
+        box-shadow: none;
+    }
+
+    &:hover {
+        box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.2);
+    }
+`;
+
+export const NameInput = styled.input`
+background-color: white;
+margin: 5px;
+padding: 10px 20px 11px;
+border-radius: 5px;
+width: 100%;
+border: 1px solid #afafaf;
+box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+}
+`;
+
+export const CheckoutContainer = styled.div`
+height: 80vh;
+`;
 
 // const Frame = styled.div`
 //   width: 400px;
