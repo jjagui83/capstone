@@ -1,7 +1,7 @@
 import React from 'react'
 import {  BannerOverlay, BannerTextWrapper, BannerLogo, BannerButton, BannerH1 } from '../StyledComponents/BannerStyle'
 import { useHistory } from "react-router";
-import logo from "../assets/Logo/logo1.png"
+import Logo from "../assets/Logo/Logo1.png"
 
 
 
