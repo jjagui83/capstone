@@ -1,7 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
-import { LogoContactContainer, LogoImage, LogoH3 } from "../StyledComponents/LogoAndContactStyle";
-import Logo from "../assets/Logo/Logo1.png";
+import {
+  LogoContactContainer,
+  LogoImage,
+  LogoH3,
+} from "../StyledComponents/LogoAndContactStyle";
+import Logo from "../assets/Logo/logo1.png";
 
 export default function LogoAndContact() {
   return (
