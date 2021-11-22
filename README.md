@@ -8,7 +8,7 @@
 
 > Colors And Fonts
 <div>
-    <h2 backround="#212529" color="#FFFF">#212529</h2>
+    <h2 backround-color:#212529 color:#FFFF>#212529</h2>
     <h2>#FEA500</h2>
     <h2>#E9E9E9</h2>
 </div>
