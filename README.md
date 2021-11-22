@@ -14,6 +14,16 @@
     <h2>Font Style: Anton</h2>
 </div>
 
+> Technologies Used
+<ul>
+  <li>React</li>
+  <li>Redux</li>
+  <li>CSS</li>
+  <li>Bootstrap</li>
+  <li>Netlify</li>
+  <li>Typescript</li>
+</ul>
+
 ### 🏠 [Homepage](https://lavish-auto.netlify.app/)
 
 ## Install
