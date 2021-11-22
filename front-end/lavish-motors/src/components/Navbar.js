@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { NavImage, NavSignOutButton, NavContainer } from "../StyledComponents/NavbarStyle";
-import logo from "../assets/Logo/logo2.png"
+import Logo from "../assets/Logo/Logo2.png"
 
 
 function BootstrapNavbar() {
@@ -44,7 +44,7 @@ function BootstrapNavbar() {
     <NavContainer>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/"><NavImage src={logo}/></Navbar.Brand>
+          <Navbar.Brand href="/"><NavImage src={Logo}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
