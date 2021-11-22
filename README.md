@@ -8,7 +8,7 @@
 
 > TBD
 
-### 🏠 [Homepage](www.lavish-auto.com)
+### 🏠 [Homepage](https://lavish-auto.netlify.app/)
 
 ## Install
 
@@ -20,7 +20,8 @@ npm install
 
 👤 **Pamela Long, Jose Aguilar, Xavier McGriff, Justin Gibbs**
 
-* Website: https://lavish-auto.netlify.app
+* Medium Article: https://medium.com/@usmc.pnlong/lavish-motors-5ab1cc443616
+* Website: https://lavish-auto.netlify.app/
 * Github: [@Jose's Repo](https://github.com/jjagui83), [@Pamela's Repo](https://github.com/PamelaLong), [@Xavier's Repo](https://github.com/xmcgriff92), [@Justin's Repo](https://github.com/wonkyDialup)
 * LinkedIn: [@Justin Gibbs](https://linkedin.com/in/justin-gibbs-215319141), [@Xavier McGriff](https://linkedin.com/in/xavier-mcgriff-a1025b222), [@Pamela Long](https://www.linkedin.com/in/pamela-long-0049b297), [@Jose Aguilar](https://www.linkedin.com/in/jose-aguilar-53943621b/)
 
