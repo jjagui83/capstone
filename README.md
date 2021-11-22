@@ -8,9 +8,10 @@
 
 > Colors And Fonts
 <div>
-    <h2 style="backround-color:#212529 color:#FFFF;">#212529</h2>
-    <h2>#FEA500</h2>
-    <h2>#E9E9E9</h2>
+    <h2 style="backround-color:#212529 color:#FFFF;">Main Color: #212529</h2>
+    <h2>Logo Color: #FEA500</h2>
+    <h2>Secondary Color: #E9E9E9</h2>
+    <h2>Font Style: Anton</h2>
 </div>
 
 ### 🏠 [Homepage](https://lavish-auto.netlify.app/)
